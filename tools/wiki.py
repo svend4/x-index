@@ -33,6 +33,7 @@ import os
 import re
 import sqlite3
 import ssl
+import subprocess
 import sys
 import time
 import unicodedata
@@ -919,6 +920,340 @@ def queue(args: argparse.Namespace) -> int:
     return 0
 
 
+# ---------------------------------------------------------------- выдержки первоисточников и проверка карточек
+
+EVIDENCE_DIR = WIKI / "raw" / "evidence"
+EVAL_DIR = WIKI / "eval"
+FACT_SECTIONS = ["## Суть", "## Для чего", "## Возможности", "## Ограничения и риски"]
+JUDGE_SECTIONS = ["## Чем выделяется", "## Когда не подходит"]
+QUOTE_SECTIONS = FACT_SECTIONS + JUDGE_SECTIONS + ["## Альтернативы"]
+EXEMPT_CLAIMS = ("в каталоге", "описание в каталоге", "нет описания", "описание отсутствует",
+                 "описание в источнике отсутствует", "описание в каталоге отсутствует", "нет данных")
+CITE_RE = re.compile(r"\[(\d{1,2})\]")
+QUOTE_RE = re.compile(r"«([^»]+)»")
+TOKEN_RE = re.compile(r"^[a-z][a-z0-9]*(?:[_\-][a-z0-9]+)+$")
+EVIDENCE_HEADER = ("<!-- Выдержки первоисточников для карточки {cid}. Фрагменты дословные. "
+                   "Файл создаёт tools/wiki.py evidence; не править вручную. -->")
+
+
+def norm_text(text: str) -> str:
+    """Сравнение выдержек и цитат без различий в кавычках, префиксах цитаты, обратных кавычках и пробелах."""
+    for quote_char in ("«", "»", "“", "”", "„"):
+        text = text.replace(quote_char, '"')
+    text = re.sub(r"(?m)^\s*>\s?", "", text)
+    text = text.replace("`", "")
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def split_sections(body: str) -> dict[str, str]:
+    sections: dict[str, list[str]] = {}
+    current = None
+    for line in body.splitlines():
+        if line.startswith("## "):
+            current = line.strip()
+            sections[current] = []
+        elif current is not None:
+            sections[current].append(line)
+    return {name: "\n".join(lines) for name, lines in sections.items()}
+
+
+def _next_evidence_number(text: str) -> int:
+    numbers = [int(m) for m in re.findall(r"^## \[(\d+)\]", text, re.M)]
+    return max(numbers, default=0) + 1
+
+
+def _excerpt(spec: dict, max_lines: int) -> tuple[str, int, int]:
+    src_path = Path(spec["src"])
+    if not src_path.is_absolute():
+        src_path = ROOT / src_path
+    lines = src_path.read_text(encoding="utf-8").splitlines()
+    if spec.get("section"):
+        header = str(spec["section"]).strip()
+        start = next((i for i, line in enumerate(lines) if line.strip() == header), None)
+        if start is None:
+            raise ValueError(f"в {src_path.name} нет раздела «{header}»")
+        end = next((i for i in range(start + 1, len(lines)) if lines[i].startswith("### ")), len(lines))
+        chunk = lines[start:end]
+    elif spec.get("grep"):
+        chunk = [line for line in lines if str(spec["grep"]) in line]
+        if not chunk:
+            raise ValueError(f"в {src_path.name} нет строки с «{spec['grep']}»")
+    elif spec.get("lines"):
+        first, last = (int(x) for x in str(spec["lines"]).split("-", 1))
+        chunk = lines[first - 1:last]
+    else:
+        chunk = lines
+    shown = chunk[:max_lines]
+    return "\n".join(shown).rstrip(), len(shown), len(chunk)
+
+
+def _render_entry(number: int, spec: dict, excerpt: str, shown: int, total: int) -> str:
+    out = [f"\n## [{number}] {spec['label']}"]
+    if spec.get("url"):
+        out.append(f"- Источник: {spec['url']}")
+    out.append(f"- Снимок: {today()}")
+    if total > shown:
+        out.append(f"- Фрагмент обрезан: показаны первые {shown} строк из {total}")
+    out += ["- Фрагмент:", "", "````text", excerpt, "````", ""]
+    return "\n".join(out)
+
+
+def evidence_cmd(args: argparse.Namespace) -> int:
+    if not args.card:
+        print("укажите id карточки", file=sys.stderr)
+        return 2
+    EVIDENCE_DIR.mkdir(parents=True, exist_ok=True)
+    path = EVIDENCE_DIR / f"{args.card}.md"
+    try:
+        if args.plan:
+            plan = json.loads(Path(args.plan).read_text(encoding="utf-8"))
+            specs = plan.get(args.card, [])
+            if not specs:
+                print(f"в плане нет записей для {args.card}", file=sys.stderr)
+                return 2
+            text = EVIDENCE_HEADER.format(cid=args.card) + "\n"
+            for number, spec in enumerate(specs, 1):
+                excerpt, shown, total = _excerpt(spec, args.max_lines)
+                text += _render_entry(number, spec, excerpt, shown, total)
+            path.write_text(text, encoding="utf-8")
+            print(f"{args.card}: записей {len(specs)} → {path.relative_to(ROOT).as_posix()}")
+            return 0
+        if not args.src or not args.label:
+            print("для ручного режима нужны --src и --label", file=sys.stderr)
+            return 2
+        spec: dict = {"src": args.src, "label": args.label, "url": args.url or ""}
+        if args.section:
+            spec["section"] = args.section
+        elif args.grep:
+            spec["grep"] = args.grep
+        elif args.lines:
+            spec["lines"] = args.lines
+        excerpt, shown, total = _excerpt(spec, args.max_lines)
+    except (ValueError, OSError) as exc:
+        print(f"ошибка: {exc}", file=sys.stderr)
+        return 2
+    base = path.read_text(encoding="utf-8") if path.exists() else EVIDENCE_HEADER.format(cid=args.card) + "\n"
+    number = _next_evidence_number(base)
+    path.write_text(base + _render_entry(number, spec, excerpt, shown, total), encoding="utf-8")
+    print(f"[{number}] добавлено: {shown} строк → {path.relative_to(ROOT).as_posix()}")
+    return 0
+
+
+def _lint_map() -> dict:
+    proc = subprocess.run([sys.executable, str(Path(__file__).resolve()), "lint", "--limit", "1000000"],
+                          capture_output=True, text=True, encoding="utf-8")
+    result: dict = defaultdict(lambda: {"errors": [], "warnings": []})
+    for line in proc.stdout.splitlines():
+        for prefix, kind in (("ОШИБКА ", "errors"), ("внимание ", "warnings")):
+            if line.startswith(prefix):
+                rel, _, msg = line[len(prefix):].partition(": ")
+                result[rel][kind].append(msg)
+    return result
+
+
+def verify_card(path: Path, lint_issues: dict) -> tuple[list[str], list[str]]:
+    rel = path.relative_to(ROOT).as_posix()
+    errors = list(lint_issues.get(rel, {}).get("errors", []))
+    warnings = list(lint_issues.get(rel, {}).get("warnings", []))
+    meta, body = parse_card(path)
+    cid = str(meta.get("id", path.stem))
+    if str(meta.get("status")) == "stub":
+        return errors, warnings
+    ev_path = EVIDENCE_DIR / f"{cid}.md"
+    if not ev_path.exists():
+        errors.append(f"нет выдержек: {ev_path.relative_to(ROOT).as_posix()} (запустите evidence)")
+        return errors, warnings
+    ev_text = ev_path.read_text(encoding="utf-8")
+    ev_numbers = {int(m) for m in re.findall(r"^## \[(\d+)\]", ev_text, re.M)}
+    corpus_parts = [ev_text]
+    inv_dir = latest_snapshot(RAW_SESSION, "inventory.json")
+    if inv_dir:
+        for item in json.loads((inv_dir / "inventory.json").read_text(encoding="utf-8"))["items"]:
+            if item.get("id") == cid and item.get("platform_description"):
+                corpus_parts.append(str(item["platform_description"]))
+    corpus = norm_text("\n".join(corpus_parts))
+    sections = split_sections(body)
+    src_nums = {int(m) for m in re.findall(r"^\s*(\d+)\.\s", sections.get("## Источники", ""), re.M)}
+    for number in sorted(src_nums - ev_numbers):
+        errors.append(f"«Источники»: номер {number} без выдержки в {ev_path.name}")
+    for number in sorted(ev_numbers - src_nums):
+        warnings.append(f"выдержка [{number}] не перечислена в «Источники»")
+    body_wo_src = "\n".join(text for name, text in sections.items() if name != "## Источники")
+    for number in sorted({int(c) for c in CITE_RE.findall(body_wo_src)}):
+        if number not in ev_numbers:
+            errors.append(f"ссылка [{number}] не имеет выдержки")
+        elif number not in src_nums:
+            errors.append(f"ссылка [{number}] не перечислена в «Источники»")
+    for name in FACT_SECTIONS:
+        for line in sections.get(name, "").splitlines():
+            text = line.strip()
+            if not text or text.startswith("#") or text == PENDING:
+                continue
+            if text.lstrip("-* ").lower().startswith("нет данных") or CITE_RE.search(text):
+                continue
+            errors.append(f"«{name[3:]}»: утверждение без ссылки на выдержку: {text[:100]}")
+    for name in JUDGE_SECTIONS:
+        for line in sections.get(name, "").splitlines():
+            text = line.strip()
+            if not text.startswith("-"):
+                continue
+            if text.lstrip("- ").startswith("Мнение:") or CITE_RE.search(text):
+                continue
+            errors.append(f"«{name[3:]}»: пункт не помечен «Мнение:» и без ссылки: {text[:100]}")
+    for name in QUOTE_SECTIONS:
+        for quote in QUOTE_RE.findall(sections.get(name, "")):
+            needle = norm_text(quote)
+            if needle and needle not in corpus:
+                errors.append(f"цитата не найдена в выдержках: «{quote[:90]}»")
+    for line in sections.get("## Заявлено автором", "").splitlines():
+        if not line.lstrip().startswith(">"):
+            continue
+        fragments = QUOTE_RE.findall(line)
+        if not fragments:
+            claim = norm_text(line)
+            if not claim or claim.lower().startswith(EXEMPT_CLAIMS):
+                continue
+            fragments = [claim]
+        for fragment in fragments:
+            needle = norm_text(fragment)
+            if needle and not needle.lower().startswith(EXEMPT_CLAIMS) and needle not in corpus:
+                errors.append(f"заявление автора не совпадает с выдержками: {needle[:90]}")
+    for token in re.findall(r"`([^`\n]{3,80})`", body_wo_src):
+        if TOKEN_RE.match(token) and norm_text(token) not in corpus:
+            warnings.append(f"идентификатор `{token}` не найден в выдержках")
+    return errors, warnings
+
+
+def verify_cmd(args: argparse.Namespace) -> int:
+    lint_issues = _lint_map()
+    if args.all:
+        paths = [p for p, m, _ in load_cards()[0] if str(m.get("status")) in ("draft", "verified")]
+    else:
+        paths = []
+        for target in args.targets:
+            candidate = Path(target)
+            if not candidate.is_absolute():
+                candidate = ROOT / target
+            if candidate.exists():
+                paths.append(candidate)
+                continue
+            found = sorted(CARDS.rglob(f"{target}.md"))
+            if not found:
+                print(f"карточка не найдена: {target}", file=sys.stderr)
+                return 2
+            paths.append(found[0])
+    report = []
+    total_errors = 0
+    for path in paths:
+        errors, warnings = verify_card(path, lint_issues)
+        total_errors += len(errors)
+        report.append({"path": path.relative_to(ROOT).as_posix(), "errors": errors, "warnings": warnings})
+    if args.json:
+        print(json.dumps(report, ensure_ascii=False, indent=1))
+    else:
+        for item in report:
+            mark = "ОК" if not item["errors"] else "ОШИБКИ"
+            print(f"{mark} {item['path']} (ошибок {len(item['errors'])}, предупреждений {len(item['warnings'])})")
+            for msg in item["errors"]:
+                print(f"  ОШИБКА {msg}")
+            for msg in item["warnings"]:
+                print(f"  внимание {msg}")
+        print(f"проверено карточек: {len(report)}, с ошибками: {sum(1 for r in report if r['errors'])}")
+    return 1 if total_errors else 0
+
+
+def _ranked_card_ids(con: sqlite3.Connection, terms: list[str], k: int, mode: str) -> list[str]:
+    sql = ("SELECT cards_fts.id FROM cards_fts WHERE cards_fts MATCH :q "
+           "ORDER BY bm25(cards_fts, 0.0, 6.0, 3.0, 3.0, 1.0) LIMIT :k")
+    joiners = {"and": [" AND "], "or": [" OR "], "fallback": [" AND ", " OR "]}[mode]
+    found: list[str] = []
+    for joiner in joiners:
+        for (cid,) in con.execute(sql, {"q": joiner.join(terms), "k": k}).fetchall():
+            if cid not in found:
+                found.append(cid)
+        if len(found) >= k:
+            break
+    return found[:k]
+
+
+def _metrics(rows: list[dict]) -> dict:
+    n = max(len(rows), 1)
+    return {
+        "вопросов": len(rows),
+        "hit@k": sum(1 for r in rows if r["hit"]) / n,
+        "recall@k": sum(r["recall"] for r in rows) / n,
+        "MRR": sum(r["rr"] for r in rows) / n,
+        "запрещённые в топ-3": sum(1 for r in rows if r["avoid_in_top3"]) / n,
+    }
+
+
+def eval_cmd(args: argparse.Namespace) -> int:
+    index(args)
+    qfile = Path(args.file) if args.file else EVAL_DIR / "questions.jsonl"
+    if not qfile.is_absolute():
+        qfile = ROOT / qfile
+    questions = [json.loads(line) for line in qfile.read_text(encoding="utf-8").splitlines() if line.strip()]
+    con = sqlite3.connect(INDEX_DB)
+    try:
+        ids = {row[0] for row in con.execute("SELECT id FROM cards")}
+        if args.validate:
+            bad = [(q["qid"], cid) for q in questions
+                   for cid in list(q.get("expect", [])) + list(q.get("avoid", [])) if cid not in ids]
+            for qid, cid in bad:
+                print(f"несуществующий id в {qid}: {cid}")
+            print(f"вопросов: {len(questions)}, несуществующих ссылок: {len(bad)}")
+            return 1 if bad else 0
+        modes = ["and", "or", "fallback"] if args.mode == "all" else [args.mode]
+        runs: dict[str, list[dict]] = {}
+        for mode in modes:
+            rows = []
+            for q in questions:
+                expect = set(q.get("expect", []))
+                avoid = set(q.get("avoid", []))
+                terms = fts_terms(q["q"])
+                ranked = _ranked_card_ids(con, terms, args.k, mode) if terms else []
+                ranks = [pos for pos, cid in enumerate(ranked, 1) if cid in expect]
+                rows.append({
+                    "qid": q["qid"], "domain": q.get("domain", ""), "q": q["q"],
+                    "expect": sorted(expect), "avoid": sorted(avoid), "ranked": ranked,
+                    "hit": bool(ranks), "rr": (1.0 / ranks[0]) if ranks else 0.0,
+                    "recall": (len(set(ranked) & expect) / len(expect)) if expect else 0.0,
+                    "avoid_in_top3": sorted(set(ranked[:3]) & avoid),
+                })
+            runs[mode] = rows
+    finally:
+        con.close()
+
+    summary = {mode: _metrics(rows) for mode, rows in runs.items()}
+    main_mode = "fallback" if "fallback" in runs else modes[0]
+    lines = ["# Замер поиска по карточкам", "",
+             f"Дата: {today()}. Вопросов: {len(questions)}. Глубина выдачи: {args.k}. Карточек в индексе: {len(ids)}.", "",
+             "## Сводка", "",
+             "| режим | вопросов | hit@k | recall@k | MRR | запрещённые в топ-3 |",
+             "|---|---:|---:|---:|---:|---:|"]
+    for mode, m in summary.items():
+        lines.append(f"| {mode} | {m['вопросов']} | {m['hit@k']:.2f} | {m['recall@k']:.2f} | {m['MRR']:.2f} | {m['запрещённые в топ-3']:.2f} |")
+    lines += ["", f"## По доменам (режим {main_mode})", "", "| домен | вопросов | hit@k | MRR |", "|---|---:|---:|---:|"]
+    for domain in sorted({r["domain"] for r in runs[main_mode]}):
+        m = _metrics([r for r in runs[main_mode] if r["domain"] == domain])
+        lines.append(f"| {domain or '—'} | {m['вопросов']} | {m['hit@k']:.2f} | {m['MRR']:.2f} |")
+    lines += ["", f"## Промахи (режим {main_mode}): ожидаемой карточки нет в выдаче", "",
+              "| qid | вопрос | ожидалось | в выдаче (топ-5) |", "|---|---|---|---|"]
+    for r in runs[main_mode]:
+        if not r["hit"] and r["expect"]:
+            lines.append(f"| {r['qid']} | {r['q'].replace('|', '/')} | {', '.join(r['expect'])} | {', '.join(r['ranked'][:5]) or '—'} |")
+    out = Path(args.out) if args.out else EVAL_DIR / "report.md"
+    if not out.is_absolute():
+        out = ROOT / out
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    out.with_suffix(".json").write_text(json.dumps({"summary": summary, "runs": runs}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    for mode, m in summary.items():
+        print(f"{mode}: hit@{args.k}={m['hit@k']:.2f} recall@{args.k}={m['recall@k']:.2f} MRR={m['MRR']:.2f} запрещённые_в_топ3={m['запрещённые в топ-3']:.2f}")
+    print(f"отчёт: {out.relative_to(ROOT).as_posix()}")
+    return 0
+
+
 # ---------------------------------------------------------------- CLI
 
 def main(argv: list[str] | None = None) -> int:
@@ -963,6 +1298,32 @@ def main(argv: list[str] | None = None) -> int:
     q = sub.add_parser("queue", help="очередь заданий для агентов-обогатителей")
     q.add_argument("--batch", type=int, default=20)
     q.set_defaults(func=queue)
+
+    evd = sub.add_parser("evidence", help="дословные выдержки первоисточников для карточки")
+    evd.add_argument("card", nargs="?")
+    evd.add_argument("--plan", help="JSON-план выдержек: карточка -> список записей")
+    evd.add_argument("--src", help="ручной режим: файл-источник (относительно корня или абсолютный)")
+    evd.add_argument("--grep", help="ручной режим: строка, содержащая этот фрагмент")
+    evd.add_argument("--section", help="ручной режим: раздел, начинающийся строкой «### …»")
+    evd.add_argument("--lines", help="ручной режим: диапазон строк А-Б")
+    evd.add_argument("--label", help="подпись источника для карточки (без путей и идентификаторов аккаунта)")
+    evd.add_argument("--url", help="адрес источника, если есть")
+    evd.add_argument("--max-lines", dest="max_lines", type=int, default=40)
+    evd.set_defaults(func=evidence_cmd)
+
+    vfy = sub.add_parser("verify", help="проверить карточку: схема, ссылки, выдержки, цитаты, заявления автора")
+    vfy.add_argument("targets", nargs="*", help="id карточки или путь к файлу")
+    vfy.add_argument("--all", action="store_true", help="все карточки в статусах draft и verified")
+    vfy.add_argument("--json", action="store_true")
+    vfy.set_defaults(func=verify_cmd)
+
+    evl = sub.add_parser("eval", help="замер поиска по эталонному набору вопросов")
+    evl.add_argument("--file", help="JSONL с полями qid, domain, q, expect, avoid")
+    evl.add_argument("--k", type=int, default=10)
+    evl.add_argument("--mode", choices=["and", "or", "fallback", "all"], default="all")
+    evl.add_argument("--out", help="куда записать отчёт (по умолчанию wiki/eval/report.md)")
+    evl.add_argument("--validate", action="store_true", help="только проверить, что все id существуют")
+    evl.set_defaults(func=eval_cmd)
 
     args = parser.parse_args(argv)
     return args.func(args)

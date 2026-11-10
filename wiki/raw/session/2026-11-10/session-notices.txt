@@ -1,0 +1,15 @@
+Системные уведомления о статусе MCP-серверов в сессии 2026-11-10. Текст в кавычках дословный, из уведомления. Строка начинается с идентификатора карточки в квадратных скобках.
+[amplitude] plugin:data:amplitude — в уведомлении «The following MCP servers require authentication before their tools can be used:»; сервер требует авторизации.
+[amplitude-eu] plugin:data:amplitude-eu — в уведомлении «The following MCP servers require authentication before their tools can be used:»; сервер требует авторизации.
+[bigquery] plugin:data:bigquery: "Incompatible auth server: does not support dynamic client registration" (уведомление о сбое подключения: «configured but failed to connect»).
+[definite] plugin:data:definite (ENDPOINT_NOT_FOUND): "MCP endpoint not found at https://api.definite.app. Check the URL in your MCP config." (уведомление о сбое подключения).
+[hex] plugin:data:hex — в уведомлении «The following MCP servers require authentication before their tools can be used:»; сервер требует авторизации.
+[guru] plugin:enterprise-search:guru — в уведомлении «The following MCP servers require authentication before their tools can be used:»; сервер требует авторизации.
+[asana] plugin:productivity:asana: "Incompatible auth server: does not support dynamic client registration" (уведомление о сбое подключения).
+[atlassian-plugin] plugin:productivity:atlassian — в уведомлении «The following MCP servers require authentication before their tools can be used:»; сервер требует авторизации.
+[clickup] plugin:productivity:clickup — в уведомлении «The following MCP servers require authentication before their tools can be used:»; сервер требует авторизации.
+[linear] plugin:productivity:linear — в уведомлении «The following MCP servers require authentication before their tools can be used:»; сервер требует авторизации.
+[monday] plugin:productivity:monday — в уведомлении «The following MCP servers require authentication before their tools can be used:»; сервер требует авторизации.
+[slack] plugin:productivity:slack — в уведомлении «The following MCP servers require authentication before their tools can be used:»; сервер требует авторизации.
+[telegram] plugin:telegram:telegram (CONNECTION_CLOSED): "Connection closed" (уведомление о сбое подключения).
+[pdf-viewer-plugin] plugin:pdf-viewer:pdf — в уведомлении «The following MCP servers are still connecting»; позже инструменты появились в списке сессии.
