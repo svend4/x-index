@@ -5,14 +5,14 @@ kind: "plugin"
 vendor: "уточнить"
 cluster: "03-docs-knowledge"
 group: "заметки и wiki"
-summary: "Плагин, который строит Obsidian-вики из исходного кода и файлов raw/ через скиллы vault и vault-update; в составе также агенты file-analyzer и page-writer."
+summary: "По описанию реестра плагин строит Obsidian-вики из исходного кода и файлов raw/ через скиллы vault и vault-update; в составе также агенты file-analyzer и page-writer."
 status: "draft"
 data_class: "unknown"
 price: "unknown"
 auth: "unknown"
 hosting: "unknown"
 languages: []
-source_urls: ["https://github.com/burakolgun/vault-anything", "https://burakolgun.github.io/vault-anything/", "raw://session/2026-11-10/inventory.json"]
+source_urls: ["https://github.com/burakolgun/vault-anything", "https://burakolgun.github.io/vault-anything/", "raw://session/2026-11-10/inventory.json", "raw://evidence/vault-anything.md"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -22,7 +22,7 @@ tags: ["Obsidian", "вики", "wiki", "vault-anything", "vault-update", "llm-co
 # Vault Anything
 
 ## Суть
-- Плагин генерирует Obsidian-вики из исходного кода и файлов каталога raw/ [1].
+- По описанию в реестре [1] плагин генерирует Obsidian-вики из исходного кода и файлов каталога raw/.
 - По манифесту это генератор LLM-вики в стиле Karpathy из исходного кода и статических документов; лицензия MIT [2].
 
 ## Для чего
@@ -32,8 +32,8 @@ tags: ["Obsidian", "вики", "wiki", "vault-anything", "vault-update", "llm-co
 - Группа инвентаря: «заметки и wiki» [1].
 
 ## Возможности
-- Скиллы vault и vault-update [1].
-- Агенты file-analyzer и page-writer [1].
+- Заявлены скиллы vault и vault-update [1].
+- Заявлены агенты file-analyzer и page-writer [1].
 - нет данных о порядке работы скиллов, аргументах запуска и проверке качества: в выдержках только состав [1][2].
 
 ## Чем выделяется
@@ -41,7 +41,7 @@ tags: ["Obsidian", "вики", "wiki", "vault-anything", "vault-update", "llm-co
 - Мнение: открытая лицензия MIT [2] позволяет проверить код плагина до подключения.
 
 ## Ограничения и риски
-- Скиллы vault и vault-update генерируют вики из исходного кода и файлов raw/ [1]; функции агентов file-analyzer и page-writer в выдержке не описаны [1].
+- По описанию реестра скиллы vault и vault-update генерируют вики из исходного кода и файлов raw/ [1]; функции агентов file-analyzer и page-writer в выдержке не описаны [1].
 - Класс данных не оценён: в выдержке не описана передача содержимого файлов наружу [1].
 - Выдержки не описывают, какие файлы из исходного кода и каталога raw/ попадают в генерацию вики [1].
 - В инвентаре поставщик не определён, в манифесте указан автор [1][2].
@@ -53,17 +53,18 @@ tags: ["Obsidian", "вики", "wiki", "vault-anything", "vault-update", "llm-co
 - Мнение: проекты, где содержимое файлов нельзя передавать наружу; выдержки не описывают, передаётся ли оно за пределы владельца [1].
 
 ## Альтернативы
-- [[obsidian-notes]] — см. карточку; этот плагин строит вики из исходного кода и файлов raw/ [1].
-- [[documentation-generator]] — если нужна документация проекта; этот плагин строит вики из исходного кода и файлов raw/ [1]; см. карточку.
+- [[obsidian-notes]] — см. карточку; по описанию в реестре [1] этот плагин строит вики из исходного кода и файлов raw/.
+- [[documentation-generator]] — см. карточку.
 
 ## Источники
 1. инвентарь сессии: запись позиции (поле source указывает на локальный плагин) — raw://session/2026-11-10/inventory.json (снимок 2026-11-10, сверка не проводилась)
-2. манифест плагина (начало файла), снимок 2026-11-10 — https://github.com/burakolgun/vault-anything; поле homepage — https://burakolgun.github.io/vault-anything/
+2. манифест плагина (начало файла), снимок 2026-11-10 — raw://evidence/vault-anything.md; адрес репозитория в манифесте — https://github.com/burakolgun/vault-anything; поле homepage — https://burakolgun.github.io/vault-anything/
 
 ## Заявлено автором
+Поле platform_description записи инвентаря [1], дословно (заявление реестра, не проверено):
+
 > Скиллы vault и vault-update: генерация Obsidian-вики из исходного кода и файлов raw/; агенты file-analyzer и page-writer
 
-Поле platform_description записи инвентаря [1].
+Описание в манифесте [2], дословно (заявление автора, не проверено):
 
-Описание в манифесте [2]:
 > Generate Karpathy-style Obsidian LLM wikis from source code and static documents

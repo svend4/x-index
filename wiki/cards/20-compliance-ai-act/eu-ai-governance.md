@@ -11,7 +11,7 @@ price: "unknown"
 auth: "unknown"
 hosting: "unknown"
 languages: ["en"]
-source_urls: ["raw://session/2026-11-10/inventory.json", "https://lexbeam-software.github.io/eu-ai-governance-plugin/"]
+source_urls: ["raw://session/2026-11-10/inventory.json", "https://lexbeam-software.github.io/eu-ai-governance-plugin/", "raw://evidence/eu-ai-governance.md", "raw://session/2026-11-10/tools-by-server.txt"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -35,6 +35,7 @@ jurisdiction: "EU"
 - Скиллы: классификация риска, соответствие, оценка вендора, DPIA, политика, управление рисками, документация [1].
 - Рабочие процессы DPIA и FRIA [2].
 - Проверка вендоров и политик; пакеты доказательств (evidence packs) [2].
+- нет данных в выдержках этой карточки о том, входит ли MCP-сервер [[eu-ai-act-mcp]] в плагин; список инструментов сессии по серверам: raw://session/2026-11-10/tools-by-server.txt.
 
 ## Чем выделяется
 - Заявлено автором: подход назван «Source-grounded EU AI Act governance» [2].
@@ -44,6 +45,7 @@ jurisdiction: "EU"
 - Манифест указывает на юридическое предупреждение (LEGAL-DISCLAIMER) [2].
 - Слово «Source-grounded» — заявление поставщика; как именно проверяются первоисточники, в выдержках не описано: нет данных [2].
 - Версия 1.1.3, лицензия Apache-2.0 [2].
+- Политика конфиденциальности плагина (privacyPolicyUrl в манифесте) ведёт в репозиторий eu-ai-act-mcp [2]; её содержание в выдержках не описано: нет данных.
 - нет данных: цена, лимиты, способ подключения, место обработки данных и класс данных.
 
 ## Когда не подходит
@@ -51,12 +53,11 @@ jurisdiction: "EU"
 - Мнение: команды вне Европы, так как описание адресовано европейским командам [2].
 
 ## Альтернативы
-- [[eu-ai-act-mcp]] — см. карточку; политика конфиденциальности плагина ведёт в репозиторий eu-ai-act-mcp [2].
 - [[data-protection]] — DPIA есть и в этом плагине [1][2]; состав GDPR-скиллов см. в карточке.
 
 ## Источники
-1. Инвентарь сессии: запись позиции (список скиллов сессии), снимок 2026-11-10 — raw://session/2026-11-10/inventory.json
-2. Манифест плагина (начало файла), снимок 2026-11-10 — https://lexbeam-software.github.io/eu-ai-governance-plugin/ (адрес homepage из манифеста).
+1. Инвентарь сессии: запись позиции (список скиллов сессии), снимок 2026-11-10 — raw://session/2026-11-10/inventory.json; список инструментов сессии по серверам, снимок 2026-11-10 — raw://session/2026-11-10/tools-by-server.txt (сверка не проводилась).
+2. Манифест плагина (начало файла), снимок 2026-11-10 — raw://evidence/eu-ai-governance.md; адрес homepage из манифеста — https://lexbeam-software.github.io/eu-ai-governance-plugin/.
 Сверка с первоисточником не проводилась (verified_on: null).
 
 ## Заявлено автором
