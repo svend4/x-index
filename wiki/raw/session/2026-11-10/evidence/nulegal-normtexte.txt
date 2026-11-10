@@ -1,0 +1,81 @@
+# Тексты норм из nu:legal (recht.nulegal.eu), снимок 2026-11-10
+Источник: nu:legal – recht.nulegal.eu (CC BY 4.0), https://recht.nulegal.eu. Тексты получены инструментом getNorm 2026-11-10. Это nicht-amtliche Lesefassung; verbindlich ist das Bundesgesetzblatt.
+Служебные строки nu:legal (Zitiervorschlag, Datenquelle, лицензия) не включены. Включены только абзацы, на которые опирается карточка german-legal-deadline-calculator. У § 41 SGB X приведено только начало абзаца (1), перечень 1–6 опущен.
+Метаданные версий записаны при снимке и не являются текстом нормы (даты наблюдения, а не даты вступления в силу):
+- BGB § 187, § 188, § 193: первое наблюдение 2019-06-10, date_basis archive_floor.
+- SGG § 64, § 67, § 87, § 151, § 164: первое наблюдение 2019-06-10, date_basis archive_floor.
+- SGG § 84: первое наблюдение 2024-01-03, date_basis observed; версий в архиве 2.
+- SGB I § 45: первое наблюдение 2019-06-10, date_basis archive_floor.
+- SGB X § 27, § 41: первое наблюдение 2019-06-10, date_basis archive_floor.
+- SGB X § 37: первое наблюдение 2025-12-31, date_basis observed; версий в архиве 5.
+- SGB X § 67: первое наблюдение 2019-12-02, date_basis observed; версий в архиве 2.
+
+## § 187 BGB — Fristbeginn
+Stand: 10.11.2026 (zuletzt mit der konsolidierten Fassung abgeglichen). Diesen Text führen wir unverändert seit mindestens 10.06.2019, dem Beginn unseres Archivs.
+(1) Ist für den Anfang einer Frist ein Ereignis oder ein in den Lauf eines Tages fallender Zeitpunkt maßgebend, so wird bei der Berechnung der Frist der Tag nicht mitgerechnet, in welchen das Ereignis oder der Zeitpunkt fällt.
+(2) Ist der Beginn eines Tages der für den Anfang einer Frist maßgebende Zeitpunkt, so wird dieser Tag bei der Berechnung der Frist mitgerechnet. Das Gleiche gilt von dem Tage der Geburt bei der Berechnung des Lebensalters.
+
+## § 188 BGB — Fristende
+Stand: 10.11.2026 (zuletzt mit der konsolidierten Fassung abgeglichen). Diesen Text führen wir unverändert seit mindestens 10.06.2019, dem Beginn unseres Archivs.
+(1) Eine nach Tagen bestimmte Frist endigt mit dem Ablauf des letzten Tages der Frist.
+(2) Eine Frist, die nach Wochen, nach Monaten oder nach einem mehrere Monate umfassenden Zeitraum - Jahr, halbes Jahr, Vierteljahr - bestimmt ist, endigt im Falle des § 187 Abs. 1 mit dem Ablauf desjenigen Tages der letzten Woche oder des letzten Monats, welcher durch seine Benennung oder seine Zahl dem Tage entspricht, in den das Ereignis oder der Zeitpunkt fällt, im Falle des § 187 Abs. 2 mit dem Ablauf desjenigen Tages der letzten Woche oder des letzten Monats, welcher dem Tage vorhergeht, der durch seine Benennung oder seine Zahl dem Anfangstag der Frist entspricht.
+(3) Fehlt bei einer nach Monaten bestimmten Frist in dem letzten Monat der für ihren Ablauf maßgebende Tag, so endigt die Frist mit dem Ablauf des letzten Tages dieses Monats.
+
+## § 193 BGB — Sonn- und Feiertag; Sonnabend
+Stand: 10.11.2026 (zuletzt mit der konsolidierten Fassung abgeglichen). Diesen Text führen wir unverändert seit mindestens 10.06.2019, dem Beginn unseres Archivs.
+Ist an einem bestimmten Tage oder innerhalb einer Frist eine Willenserklärung abzugeben oder eine Leistung zu bewirken und fällt der bestimmte Tag oder der letzte Tag der Frist auf einen Sonntag, einen am Erklärungs- oder Leistungsort staatlich anerkannten allgemeinen Feiertag oder einen Sonnabend, so tritt an die Stelle eines solchen Tages der nächste Werktag.
+
+## § 64 SGG
+Stand: 10.11.2026 (zuletzt mit der konsolidierten Fassung abgeglichen). Diesen Text führen wir unverändert seit mindestens 10.06.2019, dem Beginn unseres Archivs.
+(1) Der Lauf einer Frist beginnt, soweit nichts anderes bestimmt ist, mit dem Tag nach der Zustellung oder, wenn diese nicht vorgeschrieben ist, mit dem Tag nach der Eröffnung oder Verkündung.
+(2) Eine nach Tagen bestimmte Frist endet mit dem Ablauf ihres letzten Tages, eine nach Wochen oder Monaten bestimmte Frist mit dem Ablauf desjenigen Tages der letzten Woche oder des letzten Monats, welcher nach Benennung oder Zahl dem Tag entspricht, in den das Ereignis oder der Zeitpunkt fällt. Fehlt dem letzten Monat der entsprechende Tag, so endet die Frist mit dem Monat.
+(3) Fällt das Ende einer Frist auf einen Sonntag, einen gesetzlichen Feiertag oder einen Sonnabend, so endet die Frist mit Ablauf des nächsten Werktags.
+
+## § 84 SGG
+Stand: 10.11.2026 (zuletzt mit der konsolidierten Fassung abgeglichen). Diese Fassung haben wir zuerst am 03.01.2024 gesehen; das ist ein Beobachtungsdatum, kein amtliches Inkrafttretensdatum.
+(1) Der Widerspruch ist binnen eines Monats, nachdem der Verwaltungsakt dem Beschwerten bekanntgegeben worden ist, schriftlich, in elektronischer Form nach § 36a Absatz 2 des Ersten Buches Sozialgesetzbuch, schriftformersetzend nach § 36a Absatz 2a des Ersten Buches Sozialgesetzbuch und § 9a Absatz 5 des Onlinezugangsgesetzes oder zur Niederschrift bei der Stelle einzureichen, die den Verwaltungsakt erlassen hat. Die Frist beträgt bei Bekanntgabe im Ausland drei Monate.
+
+## § 87 SGG
+Stand: 10.11.2026 (zuletzt mit der konsolidierten Fassung abgeglichen). Diesen Text führen wir unverändert seit mindestens 10.06.2019, dem Beginn unseres Archivs.
+(1) Die Klage ist binnen eines Monats nach Bekanntgabe des Verwaltungsakts zu erheben. Die Frist beträgt bei Bekanntgabe im Ausland drei Monate. Bei einer öffentlichen Bekanntgabe nach § 85 Abs. 4 beträgt die Frist ein Jahr. Die Frist beginnt mit dem Tag zu laufen, an dem seit dem Tag der letzten Veröffentlichung zwei Wochen verstrichen sind.
+(2) Hat ein Vorverfahren stattgefunden, so beginnt die Frist mit der Bekanntgabe des Widerspruchsbescheids.
+
+## § 151 SGG
+Stand: 10.11.2026 (zuletzt mit der konsolidierten Fassung abgeglichen). Diesen Text führen wir unverändert seit mindestens 10.06.2019, dem Beginn unseres Archivs.
+(1) Die Berufung ist bei dem Landessozialgericht innerhalb eines Monats nach Zustellung des Urteils schriftlich oder zu Protokoll des Urkundsbeamten der Geschäftsstelle einzulegen.
+
+## § 164 SGG
+Stand: 10.11.2026 (zuletzt mit der konsolidierten Fassung abgeglichen). Diesen Text führen wir unverändert seit mindestens 10.06.2019, dem Beginn unseres Archivs.
+(1) Die Revision ist bei dem Bundessozialgericht innerhalb eines Monats nach Zustellung des Urteils oder des Beschlusses über die Zulassung der Revision (§ 160a Absatz 4 Satz 1 oder § 161 Abs. 3 Satz 2) schriftlich einzulegen. Die Revision muß das angefochtene Urteil angeben; eine Ausfertigung oder beglaubigte Abschrift des angefochtenen Urteils soll beigefügt werden, sofern dies nicht schon nach § 160a Abs. 1 Satz 3 geschehen ist. Satz 2 zweiter Halbsatz gilt nicht, soweit nach § 65a elektronische Dokumente übermittelt werden.
+(2) Die Revision ist innerhalb von zwei Monaten nach Zustellung des Urteils oder des Beschlusses über die Zulassung der Revision zu begründen. Die Begründungsfrist kann auf einen vor ihrem Ablauf gestellten Antrag von dem Vorsitzenden verlängert werden. Die Begründung muß einen bestimmten Antrag enthalten, die verletzte Rechtsnorm und, soweit Verfahrensmängel gerügt werden, die Tatsachen bezeichnen, die den Mangel ergeben.
+
+## § 67 SGG
+Stand: 10.11.2026 (zuletzt mit der konsolidierten Fassung abgeglichen). Diesen Text führen wir unverändert seit mindestens 10.06.2019, dem Beginn unseres Archivs.
+(1) Wenn jemand ohne Verschulden verhindert war, eine gesetzliche Verfahrensfrist einzuhalten, so ist ihm auf Antrag Wiedereinsetzung in den vorigen Stand zu gewähren.
+(2) Der Antrag ist binnen eines Monats nach Wegfall des Hindernisses zu stellen. Die Tatsachen zur Begründung des Antrags sollen glaubhaft gemacht werden. Innerhalb der Antragsfrist ist die versäumte Rechtshandlung nachzuholen. Ist dies geschehen, so kann die Wiedereinsetzung auch ohne Antrag gewährt werden.
+(3) Nach einem Jahr seit dem Ende der versäumten Frist ist der Antrag unzulässig, außer wenn der Antrag vor Ablauf der Jahresfrist infolge höherer Gewalt unmöglich war.
+
+## § 27 SGB X — Wiedereinsetzung in den vorigen Stand
+Stand: 10.11.2026 (zuletzt mit der konsolidierten Fassung abgeglichen). Diesen Text führen wir unverändert seit mindestens 10.06.2019, dem Beginn unseres Archivs.
+(1) War jemand ohne Verschulden verhindert, eine gesetzliche Frist einzuhalten, ist ihm auf Antrag Wiedereinsetzung in den vorigen Stand zu gewähren. Das Verschulden eines Vertreters ist dem Vertretenen zuzurechnen.
+(2) Der Antrag ist innerhalb von zwei Wochen nach Wegfall des Hindernisses zu stellen. Die Tatsachen zur Begründung des Antrages sind bei der Antragstellung oder im Verfahren über den Antrag glaubhaft zu machen. Innerhalb der Antragsfrist ist die versäumte Handlung nachzuholen. Ist dies geschehen, kann Wiedereinsetzung auch ohne Antrag gewährt werden.
+(3) Nach einem Jahr seit dem Ende der versäumten Frist kann die Wiedereinsetzung nicht mehr beantragt oder die versäumte Handlung nicht mehr nachgeholt werden, außer wenn dies vor Ablauf der Jahresfrist infolge höherer Gewalt unmöglich war.
+
+## § 37 SGB X — Bekanntgabe des Verwaltungsaktes
+Stand: 10.11.2026 (zuletzt mit der konsolidierten Fassung abgeglichen). Diese Fassung haben wir zuerst am 31.12.2025 gesehen; das ist ein Beobachtungsdatum, kein amtliches Inkrafttretensdatum.
+(2) Ein schriftlicher Verwaltungsakt, der im Inland durch die Post übermittelt wird, gilt am vierten Tag nach der Aufgabe zur Post als bekannt gegeben. Ein Verwaltungsakt, der im Inland oder Ausland elektronisch übermittelt wird, gilt am vierten Tag nach der Absendung als bekannt gegeben. Dies gilt nicht, wenn der Verwaltungsakt nicht oder zu einem späteren Zeitpunkt zugegangen ist; im Zweifel hat die Behörde den Zugang des Verwaltungsaktes und den Zeitpunkt des Zugangs nachzuweisen.
+(4) Die öffentliche Bekanntgabe eines schriftlichen oder elektronischen Verwaltungsaktes wird dadurch bewirkt, dass sein verfügender Teil in der jeweils vorgeschriebenen Weise entweder ortsüblich oder in der sonst für amtliche Veröffentlichungen vorgeschriebenen Art bekannt gemacht wird. In der Bekanntmachung ist anzugeben, wo der Verwaltungsakt und seine Begründung eingesehen werden können. Der Verwaltungsakt gilt zwei Wochen nach der Bekanntmachung als bekannt gegeben. In einer Allgemeinverfügung kann ein hiervon abweichender Tag, jedoch frühestens der auf die Bekanntmachung folgende Tag bestimmt werden.
+
+## § 41 SGB X — Heilung von Verfahrens- und Formfehlern
+Stand: 10.11.2026 (zuletzt mit der konsolidierten Fassung abgeglichen). Diesen Text führen wir unverändert seit mindestens 10.06.2019, dem Beginn unseres Archivs.
+(1) Eine Verletzung von Verfahrens- oder Formvorschriften, die nicht den Verwaltungsakt nach § 40 nichtig macht, ist unbeachtlich, wenn
+
+## § 67 SGB X — Begriffsbestimmungen
+Stand: 10.11.2026 (zuletzt mit der konsolidierten Fassung abgeglichen). Diese Fassung haben wir zuerst am 02.12.2019 gesehen; das ist ein Beobachtungsdatum, kein amtliches Inkrafttretensdatum.
+(1) Die nachfolgenden Begriffsbestimmungen gelten ergänzend zu Artikel 4 der Verordnung (EU) 2016/679 des Europäischen Parlaments und des Rates vom 27. April 2016 zum Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten, zum freien Datenverkehr und zur Aufhebung der Richtlinie 95/46/EG (Datenschutz-Grundverordnung) (ABl. L 119 vom 4.5.2016, S. 1; L 314 vom 22.11.2016, S. 72; L 127 vom 23.5.2018, S. 2) in der jeweils geltenden Fassung.
+
+## § 45 SGB I — Verjährung
+Stand: 10.11.2026 (zuletzt mit der konsolidierten Fassung abgeglichen). Diesen Text führen wir unverändert seit mindestens 10.06.2019, dem Beginn unseres Archivs.
+(1) Ansprüche auf Sozialleistungen verjähren in vier Jahren nach Ablauf des Kalenderjahrs, in dem sie entstanden sind.
+(2) Für die Hemmung, die Ablaufhemmung, den Neubeginn und die Wirkung der Verjährung gelten die Vorschriften des Bürgerlichen Gesetzbuchs sinngemäß.
+(3) Die Verjährung wird auch durch schriftlichen Antrag auf die Sozialleistung oder durch Erhebung eines Widerspruchs gehemmt. Die Hemmung endet sechs Monate nach Bekanntgabe der Entscheidung über den Antrag oder den Widerspruch.
