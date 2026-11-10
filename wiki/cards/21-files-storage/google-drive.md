@@ -17,7 +17,6 @@ verified_on: null
 updated: "2026-11-10"
 group: "облачные диски"
 tags: ["Google Drive", "файлы", "хранилище", "общие диски", "права доступа"]
-curator_hint: "test"
 ---
 # Google Drive
 

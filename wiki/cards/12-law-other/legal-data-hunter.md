@@ -18,7 +18,6 @@ verified_on: null
 updated: "2026-11-10"
 jurisdiction: "multi"
 tags: ["правовой поиск", "законы", "судебная практика", "доктрина", "многоюрисдикционный", "юрисдикции"]
-curator_hint: "test"
 ---
 # Legal Data Hunter (коннектор)
 
