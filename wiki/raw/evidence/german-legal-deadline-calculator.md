@@ -370,7 +370,7 @@ Stand: 10.11.2026 (zuletzt mit der konsolidierten Fassung abgeglichen). Diese Fa
 (4) Die öffentliche Bekanntgabe eines schriftlichen oder elektronischen Verwaltungsaktes wird dadurch bewirkt, dass sein verfügender Teil in der jeweils vorgeschriebenen Weise entweder ortsüblich oder in der sonst für amtliche Veröffentlichungen vorgeschriebenen Art bekannt gemacht wird. In der Bekanntmachung ist anzugeben, wo der Verwaltungsakt und seine Begründung eingesehen werden können. Der Verwaltungsakt gilt zwei Wochen nach der Bekanntmachung als bekannt gegeben. In einer Allgemeinverfügung kann ein hiervon abweichender Tag, jedoch frühestens der auf die Bekanntmachung folgende Tag bestimmt werden.
 ````
 
-## [19] § 41 SGB X (Heilung von Verfahrens- und Formfehlern): начало абзаца (1), текст nu:legal
+## [19] § 41 SGB X (Heilung von Verfahrens- und Formfehlern): абзацы (1)–(3) с перечнем 1–6, текст nu:legal
 - Снимок: 2026-11-10
 - Фрагмент:
 
@@ -378,6 +378,14 @@ Stand: 10.11.2026 (zuletzt mit der konsolidierten Fassung abgeglichen). Diese Fa
 ## § 41 SGB X — Heilung von Verfahrens- und Formfehlern
 Stand: 10.11.2026 (zuletzt mit der konsolidierten Fassung abgeglichen). Diesen Text führen wir unverändert seit mindestens 10.06.2019, dem Beginn unseres Archivs.
 (1) Eine Verletzung von Verfahrens- oder Formvorschriften, die nicht den Verwaltungsakt nach § 40 nichtig macht, ist unbeachtlich, wenn
+- 1. der für den Erlass des Verwaltungsaktes erforderliche Antrag nachträglich gestellt wird,
+- 2. die erforderliche Begründung nachträglich gegeben wird,
+- 3. die erforderliche Anhörung eines Beteiligten nachgeholt wird,
+- 4. der Beschluss eines Ausschusses, dessen Mitwirkung für den Erlass des Verwaltungsaktes erforderlich ist, nachträglich gefasst wird,
+- 5. die erforderliche Mitwirkung einer anderen Behörde nachgeholt wird,
+- 6. die erforderliche Hinzuziehung eines Beteiligten nachgeholt wird.
+(2) Handlungen nach Absatz 1 Nr. 2 bis 6 können bis zur letzten Tatsacheninstanz eines sozial- oder verwaltungsgerichtlichen Verfahrens nachgeholt werden.
+(3) Fehlt einem Verwaltungsakt die erforderliche Begründung oder ist die erforderliche Anhörung eines Beteiligten vor Erlass des Verwaltungsaktes unterblieben und ist dadurch die rechtzeitige Anfechtung des Verwaltungsaktes versäumt worden, gilt die Versäumung der Rechtsbehelfsfrist als nicht verschuldet. Das für die Wiedereinsetzungsfrist maßgebende Ereignis tritt im Zeitpunkt der Nachholung der unterlassenen Verfahrenshandlung ein.
 ````
 
 ## [20] § 67 SGB X (Begriffsbestimmungen): абзац (1), текст nu:legal
