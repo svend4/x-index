@@ -7,12 +7,12 @@ cluster: "06-dev-code"
 group: "IDE и агенты для кода"
 summary: "Скилл для многокомпонентных HTML-артефактов claude.ai на React, Tailwind CSS и shadcn/ui; в сессии 2026-11-10 включён."
 status: "draft"
-data_class: "A"
+data_class: "unknown"
 price: "unknown"
 auth: "unknown"
 hosting: "unknown"
 languages: []
-source_urls: ["raw://session/2026-11-10/inventory.json"]
+source_urls: ["raw://session/2026-11-10/inventory.json", "raw://evidence/web-artifacts-builder.md"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -29,6 +29,7 @@ tags: ["web-artifacts-builder", "артефакты", "HTML-артефакты",
 ## Для чего
 - Сложные артефакты, в которых нужны состояние, маршрутизация и компоненты shadcn/ui [2].
 - Сборка проекта в один HTML-файл для показа пользователю [2].
+- Группа инвентаря: IDE и агенты для кода [1].
 - нет данных о целевой аудитории сверх описания.
 
 ## Возможности
@@ -44,8 +45,8 @@ tags: ["web-artifacts-builder", "артефакты", "HTML-артефакты",
 - Мнение: руководство прямо предупреждает против шаблонного оформления: чрезмерного центрирования, фиолетовых градиентов, одинаковых скруглений и шрифта Inter [2].
 
 ## Ограничения и риски
-- Класс данных A: в выдержке не описана передача содержимого проекта наружу [2].
-- Для работы нужен Node 18 или новее: в руководстве указана совместимость с Node 18+ [2].
+- Класс данных не оценён: в выдержке не описана передача содержимого проекта наружу [2].
+- Руководство указывает совместимость с Node 18+; версию Vite скрипт определяет автоматически и фиксирует её [2].
 - Инициализация и сборка выполняются скриптами из руководства [2].
 - нет данных о цене, способе входа и месте обработки данных.
 
@@ -61,4 +62,11 @@ tags: ["web-artifacts-builder", "артефакты", "HTML-артефакты",
 2. локальный файл скилла (начало) — raw://evidence/web-artifacts-builder.md
 
 ## Заявлено автором
+
+> Многокомпонентные HTML-артефакты: React, Tailwind, shadcn/ui, маршрутизация, состояние
+
+Поле platform_description записи инвентаря [1]; заявление автора, не проверено по выдержкам.
+
 > Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui).
+
+Описание в начале SKILL.md [2]; заявление автора, не проверено по выдержкам.

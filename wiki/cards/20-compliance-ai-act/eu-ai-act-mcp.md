@@ -12,7 +12,7 @@ price: "unknown"
 auth: "unknown"
 hosting: "unknown"
 languages: ["en"]
-source_urls: ["https://lexbeam.com", "raw://session/2026-11-10/inventory.json"]
+source_urls: ["https://lexbeam.com", "raw://session/2026-11-10/inventory.json", "raw://session/2026-11-10/tools-by-server.txt", "raw://session/2026-11-10/evidence/mcp-instructions.txt"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -32,6 +32,7 @@ jurisdiction: "EU"
 - Проверка сроков и обязанностей [2].
 - Оценка исключения по статье 6(3) перед тем, как на него опираться [2][3].
 - Чек-лист по Annex IV [2].
+- Группа инвентаря: AI Act [1].
 
 ## Возможности
 - Инструменты: `euaiact_classify_system`, `euaiact_assess_system`, `euaiact_assess_art6_3_exception`, `euaiact_check_gpai_systemic_risk`, `euaiact_get_article`, `euaiact_get_obligations`, `euaiact_check_deadlines`, `euaiact_annex_iv_checklist`, `euaiact_answer_question`, `euaiact_calculate_penalty` [2].
@@ -45,7 +46,7 @@ jurisdiction: "EU"
 
 ## Ограничения и риски
 - Сервер сам называет себя общей справкой: «General guidance, not legal advice.» [3]
-- Окончательные решения о классификации и соответствии, по инструкциям сервера, принимает юрист [3].
+- По инструкциям сервера, для окончательных решений о классификации и соответствии нужна консультация юриста [3].
 - нет данных: что уходит на сервер и где он обрабатывает данные.
 - нет данных: правила обращения с описанием ИИ-системы (персональные данные, коммерческая тайна).
 - Класс данных не установлен: в выдержках нет описания потоков данных [1][2].
@@ -67,5 +68,10 @@ jurisdiction: "EU"
 Сверка с первоисточником не проводилась (verified_on: null).
 
 ## Заявлено автором
-> «Первичные ориентиры по Регламенту (ЕС) 2024/1689: 10 инструментов (Annex III и IV, сроки, классификация, статьи)» [1]
-> «This server provides first-pass guidance on the EU AI Act (Regulation 2024/1689) via 10 tools and curated resources exposing Annex III, Annex IV, the timeline, risk levels, operational article summaries, and one bounded system assessment.» [3]
+Поле platform_description записи инвентаря [1], дословно (заявление реестра, не проверено):
+
+> Первичные ориентиры по Регламенту (ЕС) 2024/1689: 10 инструментов (Annex III и IV, сроки, классификация, статьи)
+
+Описание из системных инструкций сервера [3]:
+
+> This server provides first-pass guidance on the EU AI Act (Regulation 2024/1689) via 10 tools and curated resources exposing Annex III, Annex IV, the timeline, risk levels, operational article summaries, and one bounded system assessment.

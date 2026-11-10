@@ -12,7 +12,7 @@ price: "unknown"
 auth: "unknown"
 hosting: "unknown"
 languages: []
-source_urls: ["raw://session/2026-11-10/inventory.json", "raw://session/2026-11-10/session-notices.txt"]
+source_urls: ["raw://session/2026-11-10/inventory.json", "raw://session/2026-11-10/evidence/notices-verbatim.txt"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -49,13 +49,13 @@ MCP-сервер Hex из плагина data относится в инвент
 
 ## Альтернативы
 
-- [[definite]] — MCP-сервер Definite из плагина data; см. карточку [[definite]].
-- [[data]] — плагин data: скиллы для SQL, анализа, статистики, визуализаций, дашбордов и валидации данных; состав см. в карточке [[data]].
-- [[amplitude]] — MCP-сервер Amplitude из плагина data для продуктовой аналитики; см. карточку [[amplitude]].
+- [[definite]] — по карточке [[definite]] это MCP-сервер плагина data; состояние и описание см. в ней.
+- [[data]] — по карточке [[data]] это плагин data с набором скиллов для работы с данными; состав см. в ней.
+- [[amplitude]] — по карточке [[amplitude]] это MCP-сервер продуктовой аналитики из плагина data; состояние и описание см. в ней.
 
 ## Источники
 1. инвентарь сессии: запись позиции (ListConnectors, ListSkills, системные уведомления) — raw://session/2026-11-10/inventory.json
-2. системное уведомление о статусе сервера, снимок 2026-11-10 — raw://session/2026-11-10/session-notices.txt. Цитата в кавычках дословная; вывод «сервер требует авторизации» записан вне кавычек, то есть как пересказ.
+2. системное уведомление: серверы, требующие авторизации, дословный текст, снимок 2026-11-10 — raw://session/2026-11-10/evidence/notices-verbatim.txt. Первая строка файла служебная, это не текст уведомления. Фраза уведомления «The following MCP servers require authentication before their tools can be used:» дословная; вывод о том, что сервер требует авторизации, записан как пересказ.
 
 ## Заявлено автором
 

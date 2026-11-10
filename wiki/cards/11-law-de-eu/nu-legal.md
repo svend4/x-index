@@ -14,7 +14,7 @@ hosting: "unknown"
 hosted: true
 languages: ["de", "en"]
 jurisdiction: "DE"
-source_urls: ["raw://session/2026-11-10/inventory.json"]
+source_urls: ["raw://session/2026-11-10/inventory.json", "raw://session/2026-11-10/tools-by-server.txt", "raw://session/2026-11-10/evidence/mcp-instructions.txt"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -29,12 +29,14 @@ curator_hint: "test"
 - Есть история версий норм и граф ссылок от решений к нормам [2][3].
 - Работает только на чтение, бесплатно и без ключа [3].
 - В сессии коннектор подключён [1].
+- Поле hosted: true выведено по [1] и [3]: позиция — коннектор (kind: connector), сервис указан с адресом recht.nulegal.eu [3].
 
 ## Для чего
 - Чтение нормы и её версий (getNorm, listNormVersions) [2].
 - Поиск по базе и разрешение идентификаторов (search, resolveIdentifiers) [2].
 - Граф ссылок от решений к нормам: кто цитирует норму или решение (listCitingDecisions) и что цитирует решение (listCitedAuthorities) [2][3].
 - Поиск адвокатов в Германии по городу и специализации с последующим открытием карточки адвоката (search_lawyers, get_lawyer) [2][3].
+- Группа инвентаря: нормы и история редакций [1].
 - нет данных о целевой аудитории инструмента.
 
 ## Возможности

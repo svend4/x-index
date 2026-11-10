@@ -12,7 +12,7 @@ price: "unknown"
 auth: "unknown"
 hosting: "unknown"
 languages: []
-source_urls: ["raw://session/2026-11-10/inventory.json"]
+source_urls: ["raw://session/2026-11-10/inventory.json", "raw://evidence/workflow-automation.md"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -45,12 +45,12 @@ tags: ["workflow", "оркестрация", "цепочки задач", "па�
 ## Ограничения и риски
 
 - В показанной части выдержки нет сетевых вызовов и учётных записей [2].
-- Пример показывает только модель задач: реальные действия задаёт пользователь через параметр action [2].
+- В показанной части примера (до try:) action передаётся в конструктор задачи [2].
 нет данных: класс данных, цена и способ подключения в выдержках не указаны.
 
 ## Когда не подходит
 
-- Когда нужна работа с JSON n8n: описание скилла говорит об оркестрации задач без n8n, см. [[samautomation-workflows]] [2].
+- Мнение: если нужна работа с JSON n8n, см. [[samautomation-workflows]]; описание скилла не упоминает n8n [2].
 - Мнение: для готовых интеграций с приложениями лучше взять коннектор, например [[make-com]] или [[zapier]]; сам скилл их не даёт [2].
 
 ## Альтернативы
@@ -60,9 +60,14 @@ tags: ["workflow", "оркестрация", "цепочки задач", "па�
 - [[zapier]] — коннектор Zapier из той же группы; другая платформа.
 
 ## Источники
+
 1. инвентарь сессии: запись позиции (ListConnectors, ListSkills, системные уведомления) — raw://session/2026-11-10/inventory.json
-2. локальный файл скилла (SKILL.md, начало, снимок 2026-11-10) — wiki/raw/evidence/workflow-automation.md
+2. файл скилла SKILL.md (начало), снимок 2026-11-10 — raw://evidence/workflow-automation.md
 
 ## Заявлено автором
 
+Поле platform_description записи инвентаря [1], дословно (заявление записи, не проверенный факт):
+> Оркестрация задач: цепочки, условия, параллельное выполнение, обработка ошибок, шаблоны
+
+Описание из файла скилла [2], заявление автора, не проверенный факт:
 > Workflow automation and orchestration: task chains, conditional logic, parallel execution, error handling, workflow templates.

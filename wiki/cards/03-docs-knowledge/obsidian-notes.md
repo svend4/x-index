@@ -12,7 +12,7 @@ price: "unknown"
 auth: "unknown"
 hosting: "unknown"
 languages: ["en"]
-source_urls: ["raw://session/2026-11-10/inventory.json"]
+source_urls: ["raw://session/2026-11-10/inventory.json", "raw://evidence/obsidian-notes.md"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -37,9 +37,9 @@ tags: ["Obsidian", "Markdown", "wikilinks", "индексы", "MOC", "GitHub", "
 - Флаг `--to-markdown-links` переводит wikilinks, которые указывают ровно на один файл, в относительные ссылки; неоднозначные не трогает [2].
 - Скилл работает с официальным CLI Obsidian [2].
 - Скрипт использует только стандартную библиотеку Python версии 3.9 или новее [2].
+- Пишет относительные Markdown-ссылки вместо wikilinks, потому что GitHub их не показывает; в тексте скилла это прямо противопоставлено подходу с wikilinks только внутри хранилища Obsidian [2].
 
 ## Чем выделяется
-- Скилл пишет относительные Markdown-ссылки вместо wikilinks, потому что GitHub их не показывает; в тексте скилла это прямо противопоставлено подходу с wikilinks только внутри хранилища Obsidian [2].
 - Мнение: проверка сразу трёх читателей (Obsidian, GitHub, VS Code) заставляет писать переносимые ссылки и индексы.
 
 ## Ограничения и риски
@@ -47,7 +47,7 @@ tags: ["Obsidian", "Markdown", "wikilinks", "индексы", "MOC", "GitHub", "
 - Для неоднозначных ссылок скилл велит назвать пользователю кандидатов, а не угадывать цель [2].
 - В тексте скилла есть проверка свежести: при устаревшем evergreen.json он велит запустить evergreen-refresh в той же сессии [2].
 - Текст источника содержит указания; проигнорировано [2].
-- Указания касаются запуска evergreen-refresh и продолжения задачи при обновлении; при подготовке карточки они не выполнялись [2].
+- Указания касаются запуска evergreen-refresh и продолжения задачи при обновлении [2].
 - нет данных о цене, способе подключения и месте обработки данных.
 - Описание на английском; языки интерфейса в выдержках не указаны [2].
 
@@ -63,7 +63,11 @@ tags: ["Obsidian", "Markdown", "wikilinks", "индексы", "MOC", "GitHub", "
 
 ## Источники
 1. инвентарь сессии: запись позиции (ListConnectors, ListSkills, системные уведомления), снимок 2026-11-10 — raw://session/2026-11-10/inventory.json
-2. локальный файл скилла (начало), снимок 2026-11-10 — адреса нет: локальный файл скилла, raw-снимка в вики нет
+2. локальный файл скилла (начало), снимок 2026-11-10 — raw://evidence/obsidian-notes.md
 
 ## Заявлено автором
+Поле platform_description записи инвентаря [1] пустое:
+> В каталоге описание отсутствует.
+
+Описание из файла скилла [2], заявление автора, не проверенный факт:
 > Makes a folder of markdown work as an Obsidian vault that still renders on GitHub and in VS Code: lints for broken, mis-cased or ambiguous links, orphans, duplicate basenames, missing indexes and bad frontmatter (scripts/vault_lint.py), writes missing index (map of content) files, converts wikilinks to relative links, sets a folder up as a vault, decides one vault versus several, and drives the official Obsidian CLI.

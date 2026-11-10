@@ -11,7 +11,7 @@ price: "unknown"
 auth: "unknown"
 hosting: "unknown"
 languages: []
-source_urls: ["raw://session/2026-11-10/inventory.json"]
+source_urls: ["raw://session/2026-11-10/inventory.json", "raw://evidence/context-handoff.md"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -26,6 +26,7 @@ tags: ["сводка сессии", "перенос контекста", "handof
 
 ## Для чего
 - По описанию автора: перенос контекста из Claude Code в чат Claude Desktop или Claude.ai без повторного объяснения проекта [2].
+- Группа инвентаря: handoff и чекпоинты [1].
 - нет данных о целевой аудитории сверх этого описания.
 
 ## Возможности
@@ -58,4 +59,11 @@ tags: ["сводка сессии", "перенос контекста", "handof
 2. манифест плагина (начало файла), снимок 2026-11-10 — raw://evidence/context-handoff.md
 
 ## Заявлено автором
+
+> 2 скилла: handoff, handoff-writing
+
+Поле platform_description записи инвентаря [1]; это перечень скиллов, а не описание плагина.
+
 > Generates a curated session handoff summary (decisions, rejected alternatives, open blockers) so you can bring context from Claude Code into a Claude Desktop/Claude.ai chat without re-explaining your project from scratch.
+
+Описание автора из манифеста плагина [2]; заявление автора, не проверено по выдержкам.

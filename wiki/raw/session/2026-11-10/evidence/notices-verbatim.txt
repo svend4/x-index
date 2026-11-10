@@ -1,0 +1,17 @@
+# Системные уведомления сессии 2026-11-10 (дословно; первая строка — служебная, добавлена при снимке)
+The following MCP servers require authentication before their tools can be used:
+plugin:data:amplitude
+plugin:data:amplitude-eu
+plugin:data:bigquery
+plugin:data:hex
+plugin:enterprise-search:guru
+plugin:productivity:asana
+plugin:productivity:atlassian
+plugin:productivity:clickup
+plugin:productivity:linear
+plugin:productivity:monday
+plugin:productivity:slack
+
+The following MCP servers are configured but failed to connect — their tools (typically named mcp__<server>__*) are unavailable for this session:
+plugin:data:definite (ENDPOINT_NOT_FOUND): "MCP endpoint not found at https://api.definite.app. Check the URL in your MCP config."
+plugin:telegram:telegram (CONNECTION_CLOSED): "Connection closed"

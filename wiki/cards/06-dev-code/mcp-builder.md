@@ -12,7 +12,7 @@ price: "unknown"
 auth: "unknown"
 hosting: "unknown"
 languages: []
-source_urls: ["raw://session/2026-11-10/inventory.json"]
+source_urls: ["raw://session/2026-11-10/inventory.json", "raw://evidence/mcp-builder.md"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -30,6 +30,7 @@ tags: ["MCP", "Model Context Protocol", "FastMCP", "MCP SDK", "серверы MC
 - Проектирование и разработка MCP-серверов для интеграции внешних API или сервисов [2].
 - Выбор между полным покрытием API и инструментами-сценариями (workflow tools) [2].
 - нет данных о целевой аудитории сверх описания.
+- Группа инвентаря: IDE и агенты для кода [1].
 
 ## Возможности
 - Руководство описывает четыре фазы работы; первая из них — исследование и планирование [2].
@@ -43,7 +44,7 @@ tags: ["MCP", "Model Context Protocol", "FastMCP", "MCP SDK", "серверы MC
 - Мнение: руководство советует учитывать разные клиенты, потому что их работа с инструментами различается [2].
 
 ## Ограничения и риски
-- Класс данных A: руководство описывает разработку, в выдержке не описана передача данных владельца наружу [2].
+- Класс данных A выведен по [2]: руководство описывает разработку MCP-серверов текстом, а передача данных владельца наружу в выдержке не описана [2].
 - В выдержке только начало руководства; остальные фазы в ней не описаны [2].
 - нет данных о цене, способе входа и месте обработки данных.
 
@@ -60,4 +61,10 @@ tags: ["MCP", "Model Context Protocol", "FastMCP", "MCP SDK", "серверы MC
 2. локальный файл скилла (начало) — raw://evidence/mcp-builder.md
 
 ## Заявлено автором
+Поле platform_description записи инвентаря [1], дословно (заявление реестра, не проверено):
+
+> Руководство по созданию MCP-серверов на Python (FastMCP) и TypeScript (MCP SDK)
+
+Описание из файла скилла [2]:
+
 > Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools.

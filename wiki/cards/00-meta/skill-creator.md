@@ -11,9 +11,8 @@ data_class: "unknown"
 price: "unknown"
 auth: "unknown"
 hosting: "unknown"
-hosted: false
-languages: ["en", "ru"]
-source_urls: ["raw://session/2026-11-10/inventory.json"]
+languages: ["en"]
+source_urls: ["raw://session/2026-11-10/inventory.json", "raw://evidence/skill-creator.md"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -66,4 +65,5 @@ tags: ["создание skills", "оценки", "бенчмарк", "опти�
 2. локальный файл скилла (начало), снимок 2026-11-10 — raw://evidence/skill-creator.md
 
 ## Заявлено автором
+Поле platform_description записи инвентаря [1], дословно (заявление записи, не проверенный факт):
 > Создание и улучшение skills, запуск оценок, оптимизация описания для срабатывания
