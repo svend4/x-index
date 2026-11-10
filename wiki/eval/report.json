@@ -11,14 +11,14 @@
    "вопросов": 93,
    "hit@k": 0.7956989247311828,
    "recall@k": 0.7204301075268817,
-   "MRR": 0.6610513739545997,
+   "MRR": 0.6592592592592592,
    "запрещённые в топ-3": 0.1827956989247312
   },
   "fallback": {
    "вопросов": 93,
    "hit@k": 0.7956989247311828,
    "recall@k": 0.7204301075268817,
-   "MRR": 0.6592592592592592,
+   "MRR": 0.6574671445639187,
    "запрещённые в топ-3": 0.1827956989247312
   }
  },
@@ -1631,8 +1631,8 @@
      "lawve-ai",
      "amplitude-eu",
      "smart-backup-assistant",
-     "notion",
-     "verification-foundation"
+     "german-legal-deadline-calculator",
+     "notion"
     ],
     "hit": true,
     "rr": 1.0,
@@ -1861,8 +1861,8 @@
      "sozialrecht-sachsen",
      "german-legal-template-generator",
      "gmail",
-     "court-document-analyzer",
      "german-legal-deadline-calculator",
+     "court-document-analyzer",
      "legal-domain-manager",
      "internal-comms",
      "verification-foundation",
@@ -2130,8 +2130,8 @@
     ],
     "ranked": [
      "mcp-io-arxo-de-bgb",
-     "nu-legal",
      "german-legal-deadline-calculator",
+     "nu-legal",
      "hex",
      "ifttt",
      "definite",
@@ -2141,7 +2141,7 @@
      "legal-domain-manager-extended"
     ],
     "hit": true,
-    "rr": 0.5,
+    "rr": 0.3333333333333333,
     "recall": 0.5,
     "avoid_in_top3": []
    },
@@ -2752,7 +2752,7 @@
      "nu-legal",
      "notion",
      "chat-migration-assistant",
-     "claude-docs-mcp"
+     "microsoft-365"
     ],
     "hit": true,
     "rr": 1.0,
@@ -3323,10 +3323,10 @@
     ],
     "ranked": [
      "ifttt",
-     "vault-anything",
      "agent-discussion",
      "agent-handoff",
      "multi-chat-orchestrator",
+     "vault-anything",
      "make-com",
      "computer-use",
      "obsidian-notes",
@@ -3711,8 +3711,8 @@
      "notion",
      "granola",
      "memory-toolkit",
-     "docs",
      "pptx",
+     "docs",
      "doc-coauthoring",
      "obsidian-notes",
      "chat-migration-assistant",
@@ -3851,8 +3851,8 @@
      "eu-ai-act-mcp",
      "data-protection",
      "lulius",
-     "german-legal-deadline-calculator",
      "legal-domain-manager",
+     "german-legal-deadline-calculator",
      "atlassian-2",
      "court-document-analyzer",
      "chrome-browser",
@@ -3880,12 +3880,12 @@
      "mcp-eu-ansvar-eu-regulations",
      "mcp-io-github-mydatapass-mydatapass",
      "data-protection",
-     "text-extraction-engine",
      "mcp-io-github-br0ski777-gdpr-scanner",
-     "eu-ai-governance",
+     "text-extraction-engine",
      "mcp-com-rulemesh-compliance",
      "mcp-com-doubleaigents-www-dsar",
-     "mcp-io-github-siteverdict-siteverdict"
+     "mcp-io-github-siteverdict-siteverdict",
+     "mcp-com-dpolens-dpolens"
     ],
     "hit": true,
     "rr": 1.0,
@@ -4143,8 +4143,8 @@
      "lawve-ai",
      "amplitude-eu",
      "smart-backup-assistant",
-     "notion",
-     "verification-foundation"
+     "german-legal-deadline-calculator",
+     "notion"
     ],
     "hit": true,
     "rr": 1.0,
@@ -4373,8 +4373,8 @@
      "sozialrecht-sachsen",
      "german-legal-template-generator",
      "gmail",
-     "court-document-analyzer",
      "german-legal-deadline-calculator",
+     "court-document-analyzer",
      "legal-domain-manager",
      "internal-comms",
      "verification-foundation",
@@ -4642,8 +4642,8 @@
     ],
     "ranked": [
      "mcp-io-arxo-de-bgb",
-     "nu-legal",
      "german-legal-deadline-calculator",
+     "nu-legal",
      "hex",
      "ifttt",
      "definite",
@@ -4653,7 +4653,7 @@
      "legal-domain-manager-extended"
     ],
     "hit": true,
-    "rr": 0.5,
+    "rr": 0.3333333333333333,
     "recall": 0.5,
     "avoid_in_top3": []
    },
@@ -5264,7 +5264,7 @@
      "nu-legal",
      "notion",
      "chat-migration-assistant",
-     "claude-docs-mcp"
+     "microsoft-365"
     ],
     "hit": true,
     "rr": 1.0,
@@ -5835,10 +5835,10 @@
     ],
     "ranked": [
      "ifttt",
-     "vault-anything",
      "agent-discussion",
      "agent-handoff",
      "multi-chat-orchestrator",
+     "vault-anything",
      "make-com",
      "computer-use",
      "obsidian-notes",
@@ -6223,8 +6223,8 @@
      "notion",
      "granola",
      "memory-toolkit",
-     "docs",
      "pptx",
+     "docs",
      "doc-coauthoring",
      "obsidian-notes",
      "chat-migration-assistant",
@@ -6363,8 +6363,8 @@
      "eu-ai-act-mcp",
      "data-protection",
      "lulius",
-     "german-legal-deadline-calculator",
      "legal-domain-manager",
+     "german-legal-deadline-calculator",
      "atlassian-2",
      "court-document-analyzer",
      "chrome-browser",
@@ -6392,12 +6392,12 @@
      "mcp-eu-ansvar-eu-regulations",
      "mcp-io-github-mydatapass-mydatapass",
      "data-protection",
-     "text-extraction-engine",
      "mcp-io-github-br0ski777-gdpr-scanner",
-     "eu-ai-governance",
+     "text-extraction-engine",
      "mcp-com-rulemesh-compliance",
      "mcp-com-doubleaigents-www-dsar",
-     "mcp-io-github-siteverdict-siteverdict"
+     "mcp-io-github-siteverdict-siteverdict",
+     "mcp-com-dpolens-dpolens"
     ],
     "hit": true,
     "rr": 1.0,

@@ -19,7 +19,7 @@
 | комплаенс-медицина-данные | 11 | 0.91 | 0.76 |
 | память-знания | 12 | 0.75 | 0.65 |
 | почта-календарь-встречи | 12 | 0.75 | 0.62 |
-| право-фрг-еэс | 10 | 0.70 | 0.53 |
+| право-фрг-еэс | 10 | 0.70 | 0.52 |
 | право-фрг-социальное | 12 | 0.92 | 0.72 |
 | счета-бухгалтерия | 12 | 0.58 | 0.46 |
 
@@ -40,9 +40,9 @@
 | Q053 | overlapping recurring meetings, skip weekends | mcp-com-moltlinestudio-timeops | mcp-com-operatornest-tools, mcp-com-skipshit-mcp, mcp-com-autocontentapi-platform, mcp-io-github-noriget-agentcron, mcp-ai-contentsweep-supplier-feeds |
 | Q057 | Как поставить напоминание, которое придёт на почту или в календарь? | mcp-com-pingfyr-pingfyr, mcp-io-github-noriget-agentcron | morning, productivity, notion, google-calendar, gmail |
 | Q062 | Какой сервис с открытым кодом можно использовать вместо Zapier? | mcp-io-github-blinkboxhq-blinkbox | icd-10-codes, clickup, linear, monday, guru |
-| Q065 | вебхук-триггер, который будит AI-агента | mcp-ai-wakeshift-webhooks | ifttt, vault-anything, agent-discussion, agent-handoff, multi-chat-orchestrator |
+| Q065 | вебхук-триггер, который будит AI-агента | mcp-ai-wakeshift-webhooks | ifttt, agent-discussion, agent-handoff, multi-chat-orchestrator, vault-anything |
 | Q068 | Verfahrensanweisung in Flussdiagramm umwandeln | mcp-io-github-eyeinthesky6-unseen-workflow-compiler | — |
-| Q079 | заметки и закладки в чате | mcp-app-sensefold-sensefold, mcp-cn-moonlybox-moonlink, mcp-com-hjarni-hjarni | notion, granola, memory-toolkit, docs, pptx |
+| Q079 | заметки и закладки в чате | mcp-app-sensefold-sensefold, mcp-cn-moonlybox-moonlink, mcp-com-hjarni-hjarni | notion, granola, memory-toolkit, pptx, docs |
 | Q080 | Как сделать, чтобы каждая новая сессия Claude не начиналась с нуля? | mcp-com-deerdawn-deerdawn, memory-toolkit | claude-code-bundled, context-handoff, claude-docs-mcp, session-status-sweep, chrome-browser |
 | Q081 | Übergabe zwischen mehreren Agenten | mcp-com-llm-bus-llm-bus, mcp-io-github-josephibra-handoff-mcp-server | mcp-com-a2awire-agent-inbox, mcp-com-agentpmt-agentpmt, mcp-com-clauxel-agentmemorymcp-agentmemorymcp-mcp, mcp-com-agentemaillist-ai-free-transactional-email-smtp-relay, mcp-dev-agenttool-agenttool |
-| Q084 | Какие сроки AI Act уже действуют сейчас и где за ними следить? | mcp-com-aiactradar-ai-act-radar, mcp-com-lunarasociety-intelligence | eu-ai-act-mcp, data-protection, lulius, german-legal-deadline-calculator, legal-domain-manager |
+| Q084 | Какие сроки AI Act уже действуют сейчас и где за ними следить? | mcp-com-aiactradar-ai-act-radar, mcp-com-lunarasociety-intelligence | eu-ai-act-mcp, data-protection, lulius, legal-domain-manager, german-legal-deadline-calculator |
