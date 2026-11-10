@@ -1,0 +1,17 @@
+{
+  "source": "https://registry.modelcontextprotocol.io/v0/servers",
+  "query": {
+    "limit": "100",
+    "version": "latest"
+  },
+  "snapshot": "2026-11-10",
+  "fetched_at": "2026-11-10T14:10:07+00:00",
+  "pages": 613,
+  "raw_entries": 61245,
+  "unique_servers": 61245,
+  "complete": true,
+  "snapshot_file": "servers.ndjson.gz",
+  "snapshot_sha256": "34a16e91de9d5cabc39c1a422bbb0d21e45a69d5893022e298607edd432aa322",
+  "note": "Публичный API реестра MCP, без авторизации. Запросы не содержат данных пользователя; User-Agent общий. Постраничные файлы pages/ не коммитятся.",
+  "tool": "tools/wiki.py harvest-mcp"
+}

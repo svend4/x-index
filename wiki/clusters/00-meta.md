@@ -1,0 +1,102 @@
+<!-- Создано tools/wiki.py. Не править вручную: файл перезаписывается при сборке. -->
+
+# 00-meta · Мета: экосистема инструментов
+
+Каталоги, реестры, управление skills и плагинами, аудит состояния экосистемы.
+
+Карточек: 85 · draft: 1, stub: 84
+
+## управление skills и плагинами (3)
+
+- [ecosystem-curator (скилл управления экосистемой)](../cards/00-meta/ecosystem-curator.md) · `skill` · draft · класс A — Скилл куратора инструментов Claude: инвентаризация, поиск по каталогу (около 10 000 позиций, 57 категорий), оценка по шкале 0–14, пробные периоды и реестр решений. Владелец подтверждает каждую волну.
+- [multi-skill-system-builder](../cards/00-meta/multi-skill-system-builder.md) · `skill` · stub · класс unknown — Состояние: включён. Описание платформы: Мета-скилл для систем из нескольких skills (Core/Extended/Companion) при лимите описания 1024 знака
+- [skill-creator](../cards/00-meta/skill-creator.md) · `skill` · stub · класс unknown — Состояние: включён. Описание платформы: Создание и улучшение skills, запуск оценок, оптимизация описания для срабатывания
+
+## аудит и качество (3)
+
+- [audit-question-bank](../cards/00-meta/audit-question-bank.md) · `skill` · stub · класс unknown — Состояние: включён. Описание платформы: Банк вопросов для аудита существующего материала по уровням и вариантам работы V1–V5
+- [session-audit-waves](../cards/00-meta/session-audit-waves.md) · `skill` · stub · класс unknown — Состояние: включён. Описание платформы: Массовая волна аудита кода, тестов и документации параллельными запросами: только чтение, синтез
+- [session-status-sweep](../cards/00-meta/session-status-sweep.md) · `skill` · stub · класс unknown — Состояние: включён. Описание платформы: Статус нескольких параллельных сессий Claude Code в режиме только чтения, сведение в один реестр
+
+## Без группы (79)
+
+- [3DAssets.dev](../cards/00-meta/mcp-dev-3dassets-catalogue.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Search and download free CC0 GLB models and game packs, and submit new ones on a user behalf.
+- [AI Reasoning Commons](../cards/00-meta/mcp-com-aineedhelpfromotherai-reasoning-commons.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Search, reuse, verify AI reasoning. Task marketplace with leaderboard. Zero-barrier, no auth.
+- [AI Tool Directory](../cards/00-meta/mcp-ai-tooldirectory-catalog.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Search 2,000+ AI tools: pricing, alternatives, comparisons, and live, dead or acquired status.
+- [ai.raisonn/connect](../cards/00-meta/mcp-ai-raisonn-connect.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) AI-native art catalogue. Catalogue works, parse provenance, and generate signed RAIs.
+- [ai.starsinger/starsinger-mcp](../cards/00-meta/mcp-ai-starsinger-starsinger-mcp.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Make a finished AI song with real vocals from a brief, or search and stream StarSinger's AI catalog
+- [Apiguru Amazon Data](../cards/00-meta/mcp-app-apiguru-amazon-data.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Live Amazon product, review, search, deal, offer/stock and seller data across 23 marketplaces.
+- [app.cooperpetcare.www/cooper](../cards/00-meta/mcp-app-cooperpetcare-www-cooper.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Cooper: catálogo, cobertura, razas y turnos del marketplace argentino de cuidado canino.
+- [app.made/made-mcp](../cards/00-meta/mcp-app-made-made-mcp.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Generate and edit images and video with MADE: model catalog with transparent per-job pricing.
+- [ar.com.muovi/mcp-server](../cards/00-meta/mcp-ar-com-muovi-mcp-server.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) MCP server for Muovi, Argentina's trust-first local services marketplace: find pros, draft tasks.
+- [audioknihy.cz Catalog](../cards/00-meta/mcp-cz-audioknihy-catalog.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Czech audiobook catalog MCP server. Search 12 000+ titles + compare prices across 5 partners.
+- [BlinkCodes catalog](../cards/00-meta/mcp-com-blinkcodes-catalog.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Read-only catalog of gift cards, service top-ups and travel eSIMs sold by BlinkCodes.
+- [Capxule](../cards/00-meta/mcp-ai-capxule-capxule.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) The context marketplace: expert guided journeys your assistant runs step by step.
+- [Catalog QA Desk](../cards/00-meta/mcp-app-openkrill-catalog-qa.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Check an online store's product catalog before you import it or send it to a shopping feed.
+- [CISA Known Exploited Vulnerabilities (kevwatch)](../cards/00-meta/mcp-com-a2awire-data-cisa-known-exploited-vulnerability-catalog.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) CISA KEV catalog: active-exploit alerts, hourly. Be born in one call — free testnet funds.
+- [com.bizgigz/talent-ecosystem](../cards/00-meta/mcp-com-bizgigz-talent-ecosystem.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) BizGigz Talent Ecosystem - AI-powered recruiting, interviews, onboarding, learning, and deal rooms
+- [com.catalogapi/catalogapi](../cards/00-meta/mcp-com-catalogapi-catalogapi.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Check reward coverage by country, search real catalog items, and ask how CatalogAPI works.
+- [com.compsapi/ebay-sold-listings](../cards/00-meta/mcp-com-compsapi-ebay-sold-listings.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Real eBay sold listings: 3 years of price history, real accepted Best Offer prices, 8 marketplaces.
+- [com.gallandigital/marketplace](../cards/00-meta/mcp-com-gallandigital-marketplace.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Search and discover credentialed operational systems on the GallanDigital marketplace.
+- [com.ksaworks/goldseam](../cards/00-meta/mcp-com-ksaworks-goldseam.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) The U.S. Marketplace of Learning2Earning Opportunity | Sourced checklists, progress, prior learning
+- [com.lvlltd/skill-market](../cards/00-meta/mcp-com-lvlltd-skill-market.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) x402 skill catalog on lvlltd.com — search, quote, pay with Base USDC, unlock sealed packs.
+- [com.market0x/marketplace](../cards/00-meta/mcp-com-market0x-marketplace.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Buy, sell and bid on vote-escrow NFTs and .base.eth names. Non-custodial, settles on Seaport.
+- [com.promotionpros/catalog](../cards/00-meta/mcp-com-promotionpros-catalog.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Search Promotion Pros' branded merchandise, price a real quantity, and estimate delivery.
+- [com.revampvacations/revamp](../cards/00-meta/mcp-com-revampvacations-revamp.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Search Revamp's live Armenia catalog: stays, tours, restaurants; check availability; plan trips.
+- [com.superagnt/company-enrichment](../cards/00-meta/mcp-com-superagnt-company-enrichment.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) superagnt: marketing plugin for Claude and ChatGPT. Find your customers: company size and funding.
+- [com.superagnt/facebook-data](../cards/00-meta/mcp-com-superagnt-facebook-data.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) superagnt: marketing plugin for Claude and ChatGPT. Know your market: competitor ads on Facebook.
+- [com.superagnt/instagram-data](../cards/00-meta/mcp-com-superagnt-instagram-data.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) superagnt: marketing plugin for Claude and ChatGPT. Know your market: Instagram reels and hashtags.
+- [com.superagnt/lead-enrichment](../cards/00-meta/mcp-com-superagnt-lead-enrichment.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) superagnt: marketing plugin for Claude and ChatGPT. Find your customers: people by role and company.
+- [com.superagnt/linkedin-data](../cards/00-meta/mcp-com-superagnt-linkedin-data.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) superagnt: marketing plugin for Claude and ChatGPT. Know your market: LinkedIn profiles and posts.
+- [com.superagnt/reddit-data](../cards/00-meta/mcp-com-superagnt-reddit-data.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) superagnt: marketing plugin for Claude and ChatGPT. Know your market: Reddit threads and subreddits.
+- [com.superagnt/seo-data](../cards/00-meta/mcp-com-superagnt-seo-data.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) superagnt: marketing plugin for Claude and ChatGPT. Rank in search: Google rankings and keywords.
+- [com.superagnt/social-data](../cards/00-meta/mcp-com-superagnt-social-data.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) superagnt: marketing plugin for Claude and ChatGPT. Know your market across 7 social networks.
+- [com.superagnt/superagnt](../cards/00-meta/mcp-com-superagnt-superagnt.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) superagnt: marketing plugin for Claude and ChatGPT. Find customers through outbound, SEO and ads.
+- [com.superagnt/tiktok-data](../cards/00-meta/mcp-com-superagnt-tiktok-data.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) superagnt: marketing plugin for Claude and ChatGPT. Know your market: TikTok videos and creators.
+- [com.superagnt/x-twitter-data](../cards/00-meta/mcp-com-superagnt-x-twitter-data.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) superagnt: marketing plugin for Claude and ChatGPT. Know your market: tweets and followers on X.
+- [com.superagnt/youtube-data](../cards/00-meta/mcp-com-superagnt-youtube-data.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) superagnt: marketing plugin for Claude and ChatGPT. Know your market: YouTube captions and comments.
+- [com.zaimhub/catalog](../cards/00-meta/mcp-com-zaimhub-catalog.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Read-only catalog of Russian MFOs: loan terms, Bank of Russia registry data, ratings, reviews.
+- [Componecat](../cards/00-meta/mcp-com-shaftware-componecat.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Software component catalog: search your org's services, docs, APIs, dependencies, and ownership.
+- [Comunicate.eu](../cards/00-meta/mcp-eu-comunicate-publishing.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Publish press releases and advertorials on 3,800+ news sites: catalogue, prices, budget plans.
+- [ContentSweep Supplier Feeds](../cards/00-meta/mcp-ai-contentsweep-supplier-feeds.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Map and validate recurring flat supplier catalogs with approved profiles and drift checks.
+- [cp0x public data](../cards/00-meta/mcp-com-cp0x-public-data.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Read-only cp0x data: referral deals and races, DeFi geo-restrictions, and x402 catalogs.
+- [Danube AI](../cards/00-meta/mcp-com-danubeai-danube.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Marketplace gateway: 100+ services and 1,400+ tools behind one MCP connection with unified auth
+- [DiffBeam Gaussian Beam Optics](../cards/00-meta/mcp-com-gaussian-beam-diffbeam.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Read-only optical catalog search plus DiffBeam server, schema, and catalog revision metadata.
+- [Dim Hour](../cards/00-meta/mcp-com-dimhour-catalog.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Search 19,000+ verified places to eat and drink across 24 cities, each with a 0-100 quality score.
+- [Fixidu](../cards/00-meta/mcp-com-fixidu-mcp-server.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Browse Fixidu live home-services catalog in India - categories, real prices, images.
+- [GateCore Marketplace](../cards/00-meta/mcp-com-gatecoreai-marketplace.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Procure governed AI capabilities: machine-readable price, scope, trust, gateway-delegation terms.
+- [Get2Great — management and selection science magazine](../cards/00-meta/mcp-com-get2great-get2great-discovery.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Read-only Get2Great magazine essays on who is good at a job, and the management-tool catalog.
+- [Gingerguide: European city walking tours](../cards/00-meta/mcp-app-gingerguide-catalog.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Read-only European city sights: search, nearby, walking routes and itineraries in 6 languages.
+- [global.rootz.timeshare/resale](../cards/00-meta/mcp-global-rootz-timeshare-resale.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) AI-native timeshare marketplace with FL DBPR + CFPB government-source data. Source-linked.
+- [GlobalPiggy](../cards/00-meta/mcp-com-globalpiggy-ecosystem.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Read-only public content from GlobalPiggy apps: food, produce, billiards, beauty, knowledge.
+- [Graphlog Career](../cards/00-meta/mcp-ai-graphlog-career.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) The career management plugin for your own AI assistant: CVs, cover letters, interviews and more.
+- [Greenlit Books](../cards/00-meta/mcp-com-greenlitbooks-catalog.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Search the Greenlit AI books, read any chapter one free, and look up the terms they define.
+- [hamir](../cards/00-meta/mcp-app-hamir-mcp.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) News search, article lookup, story coverage and save links for hamir's RSS catalogue
+- [HasData Amazon](../cards/00-meta/mcp-com-hasdata-amazon.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Amazon keyword search, product details, seller profiles and seller catalogues, as structured JSON.
+- [Invokary Platform Requirements](../cards/00-meta/mcp-com-invokary-platform-requirements.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) What Claude, ChatGPT, Cursor and the MCP Registry require to list an MCP connector or plugin.
+- [io.apis/apis-io](../cards/00-meta/mcp-io-apis-apis-io.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Discover, rate and compare APIs and providers in the APIs.io catalog; manage a listing you own.
+- [kari catalog](../cards/00-meta/mcp-com-kari-catalog.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) kari shoe and accessory stores in Russia, Kazakhstan, Belarus: search, prices, stores, size stock
+- [kwnva.design portfolio](../cards/00-meta/mcp-design-kwnva-portfolio.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Catalog MCP for kwnva.design case studies, studio profile, and project inquiries.
+- [Kyma API](../cards/00-meta/mcp-com-kymaapi-kyma.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Live model catalog with prices and measured uptime, rankings, credits and spend, spend-capped chat.
+- [LifeVerse Product Discovery](../cards/00-meta/mcp-com-gufreelancer-lifeverse-public-catalog.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Discover and recommend public, ready-to-use LifeVerse AI products and interactive experiences.
+- [List NSFW AI](../cards/00-meta/mcp-com-listnsfwai-catalog.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Where an NSFW AI app can get listed: 273 places with price, link type, review terms, submit links.
+- [Logimu](../cards/00-meta/mcp-com-logimu-shopping-mcp.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Amazon (11 marketplaces) and Walmart US product data: search, prices, stock, history, sellers.
+- [Lowtoxgear Storefront](../cards/00-meta/mcp-com-lowtoxgear-storefront.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Read-only catalogue MCP for Lowtoxgear — Australian low-tox lifestyle brand. 5 tools.
+- [NeedAnAI — AI tool catalogue](../cards/00-meta/mcp-com-needanai-catalog.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Search, compare and watch 15,000+ AI tools: pricing, alternatives, liveness. Free, no auth.
+- [NeedToFind](../cards/00-meta/mcp-app-needtofind-needtofind.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Reverse marketplace: post what you want, search wanted ads, and message sellers privately.
+- [Omnicost](../cards/00-meta/mcp-com-omnicost-catalog.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Construction unit prices with source and date for Spain, the US and the EU. OAuth or API key.
+- [OpsLevel](../cards/00-meta/mcp-com-opslevel-mcp.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Query your OpsLevel internal developer portal: catalog, maturity data, and tech docs.
+- [Printags](../cards/00-meta/mcp-com-printags-mcp.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Order and track printed PVC, NFC and wood cards: catalogue, prices, artwork and orders.
+- [Product Page Extractor](../cards/00-meta/mcp-dev-workers-mohamed-bahaa53000-product-extractor-product-page-extractor.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Price & stock checks, catalog enrichment: product URL or HTML to JSON, with price_source. RapidAPI
+- [Purple Grain](../cards/00-meta/mcp-com-purplegrain-api.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Search and book agricultural contracting services on the Purple Grain marketplace.
+- [Retail Reason Intelligence](../cards/00-meta/mcp-com-retailreason-intelligence.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Dated answers for Walmart suppliers, Sam's Club suppliers, Marketplace sellers, and agencies.
+- [Skill of Skills](../cards/00-meta/mcp-io-911fund-skills-directory.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Quality-ranked, cross-platform directory of AI coding skills, plugins and MCP servers.
+- [SuliHuli EV catalog](../cards/00-meta/mcp-com-sulihuli-catalog.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Electric-vehicle specs, prices, rankings and comparisons; every figure with its source and date.
+- [VaneTools AI Directory](../cards/00-meta/mcp-com-vanetools-vanetools-directory.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Search curated AI resources: AI tools, MCP servers, prompts, skills, plugins, learning.
+- [Virohana Business](../cards/00-meta/mcp-com-virohanalife-virohana-business.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Virohana business catalogue, pricing, company info & quote intake. Bearer auth, rate-limited.
+- [WhizzyCommerce](../cards/00-meta/mcp-com-whizzycommerce-whizzycommerce.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Run your online shop from Claude: orders, prices, sales, catalogue and design, confirmed by you.
+- [WP HealthKit](../cards/00-meta/mcp-com-wphealthkit-mcp-server.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Security audits for WordPress plugins and themes — 62 verification layers, fix plans and SBOMs.
+- [x402 Bazaar Listing Monitor](../cards/00-meta/mcp-com-acjlabs-x402-listing-monitor.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Checks x402 Bazaar resource listings against the public discovery catalog and flags drops.
+- [x402 economy tools](../cards/00-meta/mcp-dev-workers-clankerceo-multichain-rpc-x402-tools.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) Measured x402 ecosystem data, facilitator reliability, and live endpoint checks.
+- [X402-Broker Global A2A, MCP & x402 Super-Marketplace](../cards/00-meta/mcp-com-x402broker-x402-broker.md) · `mcp-server` · stub · класс unknown — (заявлено реестром, EN) 1,400+ tool A2A, MCP & x402 clearinghouse with free semantic discovery and paid execution.
+

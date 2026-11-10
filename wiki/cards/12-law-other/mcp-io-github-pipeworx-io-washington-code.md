@@ -1,0 +1,63 @@
+---
+id: "mcp-io-github-pipeworx-io-washington-code"
+title: "Washington Code"
+kind: "mcp-server"
+vendor: "io.github.pipeworx-io"
+cluster: "12-law-other"
+summary: "[заявлено реестром, EN] Washington state law: the Revised Code of Washington (RCW, statutes), the Washington…"
+status: "stub"
+data_class: "unknown"
+price: "unknown"
+auth: "unknown"
+hosting: "unknown"
+languages: []
+source_urls: ["https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pipeworx-io/washington-code"]
+snapshot: "2026-11-10"
+verified_on: null
+updated: "2026-11-10"
+hosted: true
+---
+# Washington Code
+
+## Суть
+
+_Ожидает заполнения (стадия enrich)._
+
+## Для чего
+
+_Ожидает заполнения (стадия enrich)._
+
+## Возможности
+
+_Ожидает заполнения (стадия enrich)._
+
+## Чем выделяется
+
+_Ожидает заполнения (стадия enrich)._
+
+## Ограничения и риски
+
+_Ожидает заполнения (стадия enrich)._
+
+## Когда не подходит
+
+_Ожидает заполнения (стадия enrich)._
+
+## Альтернативы
+
+_Ожидает заполнения (стадия enrich)._
+
+## Источники
+
+- Реестр MCP, запись `io.github.pipeworx-io/washington-code`, версия 0.2.1: https://registry.modelcontextprotocol.io/v0/servers?search=io.github.pipeworx-io/washington-code
+- Снимок `raw://mcp-registry/2026-11-10/servers.ndjson.gz`
+- Опубликовано в реестре: 2026-11-06
+- Репозиторий, как заявлено в реестре: https://github.com/pipeworx-io/mcp-washington-code
+
+## Заявлено автором
+
+> Washington state law: the Revised Code of Washington (RCW, statutes), the Washington…
+
+## Точки подключения (как заявлено)
+
+- streamable-http: `gateway.pipeworx.io`
