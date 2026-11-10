@@ -40,3 +40,11 @@
   ]
 }
 ````
+
+## [3] список инструментов сессии: строка сервера eu-ai-act-mcp и префикс инструментов
+- Снимок: 2026-11-10
+- Фрагмент:
+
+````text
+[eu-ai-act-mcp] инструменты (префикс mcp__plugin_eu-ai-governance_eu-ai-act__): euaiact_annex_iv_checklist, euaiact_answer_question, euaiact_assess_art6_3_exception, euaiact_assess_system, euaiact_calculate_penalty, euaiact_check_deadlines, euaiact_check_gpai_systemic_risk, euaiact_classify_system, euaiact_get_article, euaiact_get_obligations
+````
