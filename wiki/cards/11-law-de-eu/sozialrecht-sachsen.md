@@ -13,7 +13,7 @@ auth: "unknown"
 hosting: "unknown"
 languages: ["de"]
 jurisdiction: "DE"
-source_urls: ["https://github.com/svend4/sozialrecht-sachsen", "raw://session/2026-11-10/inventory.json"]
+source_urls: ["raw://session/2026-11-10/inventory.json", "raw://evidence/sozialrecht-sachsen.md"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -31,6 +31,7 @@ tags: ["Саксония", "Sachsen", "SGB IX", "SGB XII", "персональн
 - Подготовка к процессам по социальным делам в Саксонии: Bescheid, Widerspruch, Klage, персональный бюджет [1][2].
 - Расчёт сроков с учётом саксонских праздников [2].
 - Проверка норм и решений перед отправкой [2].
+- Группа инвентаря: процессы по делу [1].
 - нет данных о целевой аудитории инструмента.
 
 ## Возможности
@@ -40,6 +41,14 @@ tags: ["Саксония", "Sachsen", "SGB IX", "SGB XII", "персональн
 - Калькулятор расходов модели работодателя (Arbeitgebermodell) [2].
 - Zitate-Gate: каждая норма и решение проверяются через коннекторы nu:legal и Zitierfest перед отправкой [2].
 - Источники для проверок берутся из подключённых коннекторов, а не из памяти модели [2].
+- Перечень входящих скиллов [1]; имена взяты из списка скиллов сессии, в снимке [1] их нет, там перечислены темы:
+  - bescheid-analyse — анализ Bescheid [1];
+  - fristen — сроки [1];
+  - widerspruch — Widerspruch [1];
+  - klage — Klage [1];
+  - persoenliches-budget — персональный бюджет [1];
+  - zitate-gate — проверка цитат [1];
+  - sozialrecht-manager — назначение в выдержке [1] не описано: нет данных.
 
 ## Чем выделяется
 - Заявляет, что источники берутся из коннекторов, а не из памяти модели [2].
@@ -62,8 +71,11 @@ tags: ["Саксония", "Sachsen", "SGB IX", "SGB XII", "персональн
 
 ## Источники
 1. Инвентарь сессии: запись позиции (ListConnectors, ListSkills, системные уведомления), снимок 2026-11-10, сверка не проводилась — raw://session/2026-11-10/inventory.json
-2. Манифест плагина (начало файла), снимок 2026-11-10, сверка не проводилась — https://github.com/svend4/sozialrecht-sachsen
+2. Манифест плагина (начало файла), снимок 2026-11-10, сверка не проводилась — raw://evidence/sozialrecht-sachsen.md
 
 ## Заявлено автором
+Описание из манифеста [2]:
 > Манифест: «Sozialrechtliche Praxis in Sachsen (SGB IX/XII, Persönliches Budget, Eingliederungshilfe, Hilfe zur Pflege)»
+
+Поле platform_description записи инвентаря [1], дословно:
 > 7 скиллов по социальному праву Саксонии: анализ Bescheid, сроки, Widerspruch, Klage, персональный бюджет, проверка цитат

@@ -50,7 +50,7 @@ tags: ["судебная практика США", "законы США", "docke
 
 ## Альтернативы
 - [[descrybe-legal-engine]] — структурированное первичное право США; по описанию каталога.
-- [[courtlistener]] — записи судов США; по описанию каталога.
+- [[courtlistener]] — записи судов; по описанию каталога.
 - [[mcp-io-github-pipeworx-io-pacer]] — поиск дел и сторон в федеральных судах США через PACER; по описанию реестра.
 
 ## Источники
@@ -59,4 +59,7 @@ tags: ["судебная практика США", "законы США", "docke
 Сверка по первоисточнику не проводилась.
 
 ## Заявлено автором
+
+Поле platform_description записи инвентаря [1]:
+
 > Research US case law, statutes, and regulations, plus live dockets from federal and state courts.

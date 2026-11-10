@@ -11,7 +11,7 @@ price: "unknown"
 auth: "unknown"
 hosting: "unknown"
 languages: ["en"]
-source_urls: ["raw://session/2026-11-10/inventory.json"]
+source_urls: ["raw://session/2026-11-10/inventory.json", "raw://session/2026-11-10/tools-by-server.txt", "raw://session/2026-11-10/evidence/mcp-instructions.txt"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -31,6 +31,7 @@ curator_hint: "test"
 - Загрузка, создание, изменение и копирование файлов [1][2].
 - Работа с общими дисками и правами доступа [2].
 - По системным инструкциям, сервер предназначен для разработчиков LLM-приложений поверх Drive [3].
+- Группа инвентаря: «облачные диски» [1].
 
 ## Возможности
 - Поиск и просмотр: `search_files`, `list_recent_files`, `get_file_metadata` [2].
@@ -57,7 +58,7 @@ curator_hint: "test"
 ## Альтернативы
 - [[google-docs]] — чтение и изменение конкретных документов Google Docs.
 - [[google-sheets]] — чтение и изменение таблиц Google Sheets.
-- [[microsoft-365]] — файлы SharePoint и OneDrive; в этой сессии не подключён.
+- [[microsoft-365]] — файлы SharePoint и OneDrive; подробности в карточке microsoft-365.
 
 ## Источники
 1. Инвентарь сессии: запись позиции (ListConnectors), снимок 2026-11-10 — raw://session/2026-11-10/inventory.json

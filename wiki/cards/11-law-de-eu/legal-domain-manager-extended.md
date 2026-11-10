@@ -13,7 +13,7 @@ auth: "unknown"
 hosting: "unknown"
 languages: ["de", "en"]
 jurisdiction: "DE"
-source_urls: ["raw://session/2026-11-10/inventory.json"]
+source_urls: ["raw://session/2026-11-10/inventory.json", "raw://evidence/legal-domain-manager-extended.md"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -26,12 +26,14 @@ tags: ["справка", "Eilantrag", "PKH", "Wiedereinsetzung", "Berufung", "Re
 - Расширенная документация к legal-domain-manager: примеры рабочих процессов, управление состоянием, интеграция с Projects, устранение неполадок и сложные сценарии [2].
 - Только справочный скилл: для работы нужен активный legal-domain-manager (Core) [2].
 - В сессии скилл в состоянии enabled [1].
+- Юрисдикция DE выведена по немецким процедурным терминам в выдержке: Eilantrag, PKH, Wiedereinsetzung, Akteneinsicht [2]; текст скилла на английском [2].
 
 ## Для чего
 - Обучение: примеры рабочих процессов и лучшие практики [2].
 - Разбор сложных случаев: краевые ситуации, управление несколькими делами, сложные сроки [2].
 - Процедуры Eilantrag, PKH, Wiedereinsetzung, Akteneinsicht, Berufung и Revision [2].
 - Для команд: обучение и контроль качества работы [2].
+- Группа инвентаря: «процессы по делу» [1].
 
 ## Возможности
 - Пример полного цикла ответа на Bescheid (Example 1: Complete Bescheid Response Workflow) [2].
@@ -64,3 +66,5 @@ tags: ["справка", "Eilantrag", "PKH", "Wiedereinsetzung", "Berufung", "Re
 
 ## Заявлено автором
 > Расширенная документация к legal-domain-manager: примеры, Eilantrag, PKH, Wiedereinsetzung, Berufung
+
+Поле platform_description записи инвентаря [1].

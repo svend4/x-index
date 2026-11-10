@@ -5,7 +5,7 @@ kind: "plugin"
 vendor: "уточнить"
 cluster: "03-docs-knowledge"
 group: "заметки и wiki"
-summary: "Локальный плагин, который строит Obsidian-вики из исходного кода и файлов raw/ через скиллы vault и vault-update и агенты file-analyzer и page-writer."
+summary: "Плагин, который строит Obsidian-вики из исходного кода и файлов raw/ через скиллы vault и vault-update и агенты file-analyzer и page-writer."
 status: "draft"
 data_class: "B"
 price: "unknown"
@@ -29,6 +29,7 @@ tags: ["Obsidian", "вики", "wiki", "vault-anything", "vault-update", "llm-co
 - Создание Obsidian-вики из исходного кода проекта [1][2].
 - Создание вики из статических документов в каталоге raw/ [1].
 - нет данных о целевой аудитории и типичных сценариях сверх описания.
+- Группа инвентаря: «заметки и wiki» [1].
 
 ## Возможности
 - Скиллы vault и vault-update [1].
@@ -40,7 +41,8 @@ tags: ["Obsidian", "вики", "wiki", "vault-anything", "vault-update", "llm-co
 - Мнение: открытая лицензия MIT [2] позволяет проверить код плагина до подключения.
 
 ## Ограничения и риски
-- Агенты file-analyzer и page-writer обрабатывают исходный код и файлы raw/ [1]; класс данных B.
+- Агенты file-analyzer и page-writer работают с исходным кодом и файлами raw/ [1].
+- Класс данных B выведен по [1]: агенты обрабатывают содержимое файлов; куда оно передаётся, в выдержках нет данных [1].
 - Выдержки не описывают, какие файлы попадают в пакеты для агентов [1].
 - В инвентаре поставщик не определён, в манифесте указан автор [1][2].
 - Версия манифеста 0.1.0 [2]; зрелость и история изменений по выдержкам не оценены.
@@ -59,4 +61,9 @@ tags: ["Obsidian", "вики", "wiki", "vault-anything", "vault-update", "llm-co
 2. манифест плагина (начало файла) — https://github.com/burakolgun/vault-anything
 
 ## Заявлено автором
+> Скиллы vault и vault-update: генерация Obsidian-вики из исходного кода и файлов raw/; агенты file-analyzer и page-writer
+
+Поле platform_description записи инвентаря [1].
+
+Описание в манифесте [2]:
 > Generate Karpathy-style Obsidian LLM wikis from source code and static documents

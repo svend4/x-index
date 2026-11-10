@@ -26,7 +26,7 @@ tags: ["Claude Code", "встроенные скиллы", "скиллы", "code
 - Состав пакета: `update-config`, `keybindings-help`, `code-review`, `simplify`, `fewer-permission-prompts`, `loop`, `claude-api`, `workflow-authoring`, `run`, `plugin-authoring`, `init`, `security-review` [1].
 
 ## Для чего
-- Работа с кодом и агентами: так группа записи инвентаря называет набор [1].
+- Группа записи инвентаря: «IDE и агенты для кода» [1].
 - нет данных о задачах каждого скилла: в выдержках только имена [1].
 
 ## Возможности
@@ -56,3 +56,5 @@ tags: ["Claude Code", "встроенные скиллы", "скиллы", "code
 
 ## Заявлено автором
 > 12 скиллов: update-config, keybindings-help, code-review, simplify, fewer-permission-prompts, loop, claude-api, workflow-authoring, run, plugin-authoring, init, security-review
+
+Пометка: поле platform_description инвентаря [1], заявление записи; не проверено по первоисточнику.

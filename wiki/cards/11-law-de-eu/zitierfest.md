@@ -14,7 +14,7 @@ hosting: "unknown"
 hosted: true
 languages: ["de"]
 jurisdiction: "DE"
-source_urls: ["raw://session/2026-11-10/inventory.json"]
+source_urls: ["raw://session/2026-11-10/inventory.json", "raw://session/2026-11-10/tools-by-server.txt", "raw://session/2026-11-10/evidence/mcp-instructions.txt"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -27,12 +27,13 @@ curator_hint: "test"
 ## Суть
 - Коннектор Zitierfest отдаёт официальный текст немецких норм и решений с Fundstelle и датой состояния редакции [3].
 - Есть проверка цитат и расчёт гебюр по RVG, GKG, FamGKG, GNotKG и JVEG [2][3].
-- В сессии коннектор подключён [1].
+- В сессии коннектор подключён [1]; hosted: true выведено по [2]: инструменты MCP-сервера (префикс mcp__Zitierfest__).
 
 ## Для чего
 - Проверка цитаты (инструмент `zitate_pruefen`) [2].
 - Получение текста нормы или решения с Fundstelle для ссылки [3].
 - Расчёт гебюр и судебных расходов по тарифам (`gebuehr_berechnen`, `gebuehren_verzeichnis`) [2][3].
+- Группа инвентаря: «проверка цитат» [1].
 - нет данных о целевой аудитории инструмента.
 
 ## Возможности
@@ -42,7 +43,7 @@ curator_hint: "test"
 - Гебюры по RVG, GKG, FamGKG, GNotKG и JVEG [3].
 
 ## Чем выделяется
-- Мнение: инструмент проверки цитат встречается редко: он отвечает на вопрос, правильно ли процитировано, а не на вопрос, что говорит норма.
+- Мнение: проверка цитат удобна, когда нужно сверить цитату с официальным текстом нормы или решения с Fundstelle [3].
 - Охват решений начинается с 1954 года для EuGH и с 2000 года для BGH и GmS-OGB [3].
 
 ## Ограничения и риски
@@ -67,3 +68,5 @@ curator_hint: "test"
 ## Заявлено автором
 > В каталоге описание отсутствует.
 > Инструкции сервера: «Zitierfest liefert den amtlichen Wortlaut deutscher Normen und Entscheidungen mit Fundstelle und Stand der Fassung.»
+
+Пометка: вторая строка — инструкции MCP-сервера [3], не проверены по первоисточнику; поле platform_description инвентаря [1] пустое.

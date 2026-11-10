@@ -11,9 +11,8 @@ data_class: "unknown"
 price: "unknown"
 auth: "unknown"
 hosting: "unknown"
-hosted: false
 languages: ["ru"]
-source_urls: ["raw://session/2026-11-10/inventory.json"]
+source_urls: ["raw://session/2026-11-10/inventory.json", "raw://evidence/audit-question-bank.md"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -61,3 +60,5 @@ tags: ["аудит", "банк вопросов", "чек-лист", "уровн
 
 ## Заявлено автором
 > Банк вопросов для аудита существующего материала по уровням и вариантам работы V1–V5
+
+Пометка: поле platform_description инвентаря [1]; описание из реестра, не сверено по первоисточнику.

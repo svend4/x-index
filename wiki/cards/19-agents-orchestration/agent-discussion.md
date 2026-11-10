@@ -11,7 +11,7 @@ price: "unknown"
 auth: "unknown"
 hosting: "unknown"
 languages: ["en"]
-source_urls: ["raw://session/2026-11-10/inventory.json", "https://github.com/cyrusxyl/agent-discussion"]
+source_urls: ["raw://session/2026-11-10/inventory.json", "raw://evidence/agent-discussion.md"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -29,6 +29,7 @@ tags: ["дебаты агентов", "multi-agent debate", "консенсус"
 - Обсуждение одного вопроса несколькими агентами с итогом по консенсусу [2].
 - Сопоставление позиций агентов разных платформ [2].
 - Для тех, кто хочет провести дебаты между агентами без ручной координации [2].
+- Группа инвентаря: дебаты и ревью агентов [1].
 
 ## Возможности
 - Общий файловый протокол для обмена ходами между агентами [2].
@@ -37,7 +38,7 @@ tags: ["дебаты агентов", "multi-agent debate", "консенсус"
 
 ## Чем выделяется
 - Заявлено автором: агенты действуют автономно, включая представление, очерёдность ходов и консенсус [2].
-- Мнение: общий файл как протокол не требует общего API между платформами, поэтому подключать разные агенты проще.
+- Мнение: обмен через общий файл [2] может упростить подключение разных агентов; требуется ли общий API, в выдержках не указано.
 
 ## Ограничения и риски
 - Класс C основан на обмене ходами через общий файл [2].
@@ -56,8 +57,13 @@ tags: ["дебаты агентов", "multi-agent debate", "консенсус"
 
 ## Источники
 1. Инвентарь сессии: запись позиции (список скиллов сессии), снимок 2026-11-10 — raw://session/2026-11-10/inventory.json
-2. Манифест плагина (начало файла), снимок 2026-11-10 — https://github.com/cyrusxyl/agent-discussion (адрес homepage из манифеста).
+2. Манифест плагина (начало файла), снимок 2026-11-10, сверка не проводилась — raw://evidence/agent-discussion.md
+
 Сверка с первоисточником не проводилась (verified_on: null).
 
 ## Заявлено автором
-> «Coordinate multi-agent debates across different AI platforms (Claude Code, Antigravity, Copilot, Gemini CLI, etc.) using a shared file protocol.» [2]
+Поле platform_description записи инвентаря [1], дословно (перечень состава, а не описание продукта):
+> 1 скилл: agent-discussion
+
+Описание из манифеста [2]:
+> Coordinate multi-agent debates across different AI platforms (Claude Code, Antigravity, Copilot, Gemini CLI, etc.) using a shared file protocol.

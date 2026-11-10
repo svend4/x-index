@@ -9,10 +9,10 @@ summary: "Плагин Samautomation версии 1.0.2 с одним скилл
 status: "draft"
 data_class: "unknown"
 price: "unknown"
-auth: "none"
+auth: "unknown"
 hosting: "unknown"
 languages: []
-source_urls: ["https://samautomation.work", "raw://session/2026-11-10/inventory.json"]
+source_urls: ["https://samautomation.work", "raw://session/2026-11-10/inventory.json", "raw://evidence/samautomation-workflows.md"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -34,8 +34,8 @@ tags: ["n8n", "workflow", "JSON", "n8n-workflow-check", "автоматизац�
 
 - Скилл n8n-workflow-check в составе плагина [1].
 - Проверочный скрипт работает только на чтение и не активирует workflow, по заявлению автора [2].
-- Ручная тестовая фикстура, протестированная на n8n 2.23.4 [2].
-нет данных: подробный перечень действий скилла в выдержках не приведён [1][2].
+- Ручная тестовая фикстура, протестированная на n8n 2.23.4, по заявлению автора [2].
+- нет данных: подробный перечень действий скилла в выдержках не приведён [1][2].
 
 ## Чем выделяется
 
@@ -46,24 +46,29 @@ tags: ["n8n", "workflow", "JSON", "n8n-workflow-check", "автоматизац�
 
 - По заявлению автора, проверочный скрипт не подключается к учётной записи, не делает сетевых запросов и не активирует workflow [2].
 - Заявление относится к проверочному скрипту; о том, какие файлы меняет сборка и ремонт JSON, в описании ничего не сказано [2].
+- Когда нужны сценарии Make или Zapier, а не n8n: скилл рассчитан на JSON n8n [1][2].
 - Лицензия MIT, как указано в манифесте [2].
-нет данных: класс данных, цена, поддержка и зрелость проекта в выдержках не указаны.
+- нет данных: класс данных, цена, способ подключения плагина в целом, поддержка и зрелость проекта в выдержках не указаны.
 
 ## Когда не подходит
 
-- Когда нужны сценарии Make или Zapier, а не n8n: скилл рассчитан на JSON n8n [1][2].
 - Мнение: если workflow нужно запускать и проверять в живой системе, проверочный скрипт этого не делает; по заявлению он не активирует workflow [2].
 
 ## Альтернативы
 
-- [[workflow-automation]] — общий скилл оркестрации задач (цепочки, условия, обработка ошибок), не привязанный к n8n.
-- [[make-com]] — коннектор сценариев Make из той же группы; другая платформа.
-- [[zapier]] — коннектор Zapier из той же группы; другая платформа.
+- [[workflow-automation]] — скилл оркестрации задач (цепочки, условия, обработка ошибок) по описанию его карточки.
+- [[make-com]] — коннектор сценариев Make; другая платформа.
+- [[zapier]] — коннектор Zapier; другая платформа.
 
 ## Источники
+
 1. инвентарь сессии: запись позиции (ListConnectors, ListSkills, системные уведомления) — raw://session/2026-11-10/inventory.json
-2. манифест плагина (начало файла), адрес автора из манифеста — https://samautomation.work
+2. манифест плагина (начало файла), снимок 2026-11-10 — raw://evidence/samautomation-workflows.md; адрес автора из манифеста — https://samautomation.work
 
 ## Заявлено автором
 
+> 1 скилл: n8n-workflow-check
+>
 > Build or repair importable n8n workflow JSON, check its structure and test valid, duplicate and invalid events in isolation. Includes a read-only checker and a manual fixture tested on n8n 2.23.4. No account connection, network requests or activation by the bundled checker.
+
+Пометка: первая строка — поле platform_description инвентаря [1], перечень скиллов, а не описание автора; вторая — описание из манифеста [2], заявление автора, не проверенный факт.

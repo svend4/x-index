@@ -28,6 +28,7 @@ tags: ["handoff", "передача работы", "план", "проверка
 ## Для чего
 - По описанию автора: передача работы между контекстами чатов и проверка кода в новом контексте [2].
 - Адресат по описанию: кодирующие агенты [2].
+- Группа инвентаря: handoff и чекпоинты [1].
 - нет данных о том, для каких команд и сценариев плагин предназначен сверх этого описания.
 
 ## Возможности
@@ -63,4 +64,11 @@ tags: ["handoff", "передача работы", "план", "проверка
 2. манифест плагина (начало файла), снимок 2026-11-10 — https://github.com/WillowRyu/agent-handoff
 
 ## Заявлено автором
+
+Поле platform_description записи инвентаря [1] (перечень скиллов из списка скиллов сессии):
+
+> 4 скилла: plan, execute, verify, setup-handoff
+
+Описание в манифесте плагина [2]:
+
 > Strict 3-stage handoff workflow (plan → execute → verify) for coding agents. Disk-backed state enables fresh-context code review and multi-stage verification across chat contexts. Supports multi-phase plans and parallel subagent execution.

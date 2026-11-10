@@ -12,7 +12,7 @@ price: "unknown"
 auth: "unknown"
 hosting: "unknown"
 languages: []
-source_urls: ["raw://session/2026-11-10/inventory.json"]
+source_urls: ["raw://session/2026-11-10/inventory.json", "raw://session/2026-11-10/tools-by-server.txt", "raw://session/2026-11-10/evidence/mcp-instructions.txt"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -47,11 +47,11 @@ tags: ["GitHub", "MCP", "pull request", "issues", "ревью", "Actions", "ре
 - нет данных о лимитах API в выдержках.
 
 ## Чем выделяется
-- Мнение: набор покрывает весь путь работы с pull request: от ветки и файла до слияния и ревью [2].
+- Мнение: набор покрывает основные шаги работы с pull request: ветка, файлы, PR, ревью, слияние [2].
 - Мнение: в одном сервере есть Actions, релизы и проверка секретов, а не только код [2].
 
 ## Ограничения и риски
-- Класс данных C: инструменты создают, меняют и удаляют файлы, ветки и pull request, например `create_or_update_file`, `delete_file`, `merge_pull_request` [2].
+- Класс данных C: инструменты удаляют файлы (`delete_file`); ветки создаются (`create_branch`), файлы в них меняются (`create_or_update_file`, `push_files`), pull request создаются, меняются и сливаются (`create_pull_request`, `update_pull_request`, `merge_pull_request`) [2].
 - `create_repository` и `fork_repository` создают новые репозитории [2].
 - В сессии 2026-11-10 инструменты поиска недоступны [3].
 - Текст источника содержит указания; проигнорировано [3].
@@ -62,7 +62,7 @@ tags: ["GitHub", "MCP", "pull request", "issues", "ревью", "Actions", "ре
 - Мнение: если нужен доступ к нескольким репозиториям сразу, сессия ограничена одним репозиторием [3].
 
 ## Альтернативы
-- [[claude-code-bundled]] — скиллы code-review и security-review из встроенного набора, если нужна проверка кода без работы с репозиторием GitHub.
+- [[claude-code-bundled]] — встроенные скиллы Claude Code для работы с кодом, например code-review и security-review; по карточке [[claude-code-bundled]].
 
 ## Источники
 1. инвентарь сессии: запись позиции (ListConnectors, ListSkills, системные уведомления) — raw://session/2026-11-10/inventory.json
@@ -70,5 +70,11 @@ tags: ["GitHub", "MCP", "pull request", "issues", "ревью", "Actions", "ре
 3. системные инструкции MCP-сервера (сессия 2026-11-10) — raw://session/2026-11-10/evidence/mcp-instructions.txt
 
 ## Заявлено автором
+
+Системные инструкции MCP-сервера [3]:
+
 > The GitHub MCP Server provides tools to interact with GitHub platform.
+
+Поле platform_description записи инвентаря [1] (перечень из списка инструментов сессии):
+
 > Инструменты для pull request, issues, файлов, веток, Actions, релизов, отзывов на ревью

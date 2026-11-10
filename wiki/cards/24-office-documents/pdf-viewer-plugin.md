@@ -11,7 +11,7 @@ price: "unknown"
 auth: "unknown"
 hosting: "unknown"
 languages: ["en"]
-source_urls: ["raw://session/2026-11-10/inventory.json"]
+source_urls: ["raw://session/2026-11-10/inventory.json", "raw://session/2026-11-10/tools-by-server.txt", "raw://session/2026-11-10/session-notices.txt", "raw://evidence/pdf-viewer-plugin.md"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -30,9 +30,10 @@ tags: ["PDF viewer", "просмотр PDF", "разметка PDF", "подпи
 - Разметка договоров, заполнение форм с визуальной обратной связью, отметки согласования и подпись [4].
 - Скачивание размеченной копии документа [4].
 - Для кого: для тех, кто просматривает, размечает и подписывает PDF в интерактивном окне [4].
+- Группа инвентаря: PDF [1].
 
 ## Возможности
-- Показ PDF в интерактивном окне: инструмент `display_pdf` [1][2].
+- Инструмент `display_pdf`; по названию: показ PDF [1][2]. Интерактивное окно описано в манифесте плагина [4].
 - Инструмент `list_pdfs`; по названию он перечисляет PDF, но описание его действий в выдержках отсутствует [1][2].
 - Инструмент `interact`; назначение по выдержкам не описано [1][2].
 - Скиллы `open`, `annotate`, `fill-form`, `sign` и `view-pdf` [1].
@@ -64,5 +65,8 @@ tags: ["PDF viewer", "просмотр PDF", "разметка PDF", "подпи
 4. манифест плагина (начало файла) — raw://evidence/pdf-viewer-plugin.md (снимок 2026-11-10, сверка не проводилась)
 
 ## Заявлено автором
+Описание из манифеста [4]:
 > View, annotate, and sign PDFs in a live interactive viewer. Mark up contracts, fill forms with visual feedback, stamp approvals, and place signatures — then download the annotated copy.
+
+Поле platform_description записи инвентаря [1], дословно:
 > Инструменты display_pdf, interact, list_pdfs; скиллы pdf-viewer: open, annotate, fill-form, sign, view-pdf

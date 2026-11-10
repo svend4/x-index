@@ -12,7 +12,7 @@ price: "unknown"
 auth: "unknown"
 hosting: "unknown"
 languages: []
-source_urls: ["raw://session/2026-11-10/inventory.json"]
+source_urls: ["raw://session/2026-11-10/inventory.json", "raw://session/2026-11-10/session-notices.txt"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
@@ -48,11 +48,11 @@ tags: ["Amplitude EU", "Amplitude", "EU", "продуктовая аналити
 
 ## Альтернативы
 - [[amplitude]] — другой сервер Amplitude без обозначения EU в названии.
-- [[bigquery]] — хранилище данных, если аналитика хранится в BigQuery; в сессии 2026-11-10 не подключился.
+- [[bigquery]] — хранилище данных, если аналитика хранится в BigQuery.
 
 ## Источники
 1. инвентарь сессии: запись позиции (ListConnectors, ListSkills, системные уведомления) — raw://session/2026-11-10/inventory.json
 2. системное уведомление о статусе сервера — raw://session/2026-11-10/session-notices.txt
 
 ## Заявлено автором
-> В каталоге описание отсутствует.
+Нет данных: описание в реестре пусто [1].
