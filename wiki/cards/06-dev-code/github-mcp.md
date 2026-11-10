@@ -1,64 +1,74 @@
 ---
 id: "github-mcp"
-title: "GitHub (MCP-инструменты сессии)"
+title: "GitHub MCP Server"
 kind: "mcp-server"
 vendor: "GitHub"
 cluster: "06-dev-code"
 group: "репозитории и ревью"
-summary: "Инструменты GitHub в сессии: около 60 функций для pull request, issues, файлов, веток, Actions и релизов. Доступ ограничен репозиторием, подключённым к сессии."
+summary: "MCP-сервер GitHub с инструментами для pull request, issues, файлов, веток, Actions, релизов и отзывов на ревью; в сессии 2026-11-10 доступен."
 status: "draft"
 data_class: "C"
-price: "freemium"
-auth: "oauth"
-hosting: "US"
-hosted: true
-languages: ["en"]
-source_urls: ["https://github.com", "raw://session/2026-11-10/inventory.json"]
+price: "unknown"
+auth: "unknown"
+hosting: "unknown"
+languages: []
+source_urls: ["raw://session/2026-11-10/inventory.json"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
-tags: ["GitHub", "pull request", "issues", "код-ревью", "Actions", "ветки", "релизы"]
-curator_hint: "test"
+tags: ["GitHub", "MCP", "pull request", "issues", "ревью", "Actions", "релизы", "github-mcp", "mcp__github__"]
 ---
 
-# GitHub (MCP-инструменты сессии)
+# GitHub MCP Server
 
 ## Суть
-Набор инструментов для работы с GitHub через MCP: pull request, issues, файлы и ветки, Actions, релизы, отзывы на ревью и секретное сканирование. В сессии доступно около 60 инструментов. Доступ ограничен репозиторием, который подключён к сессии.
+- MCP-сервер GitHub предоставляет инструменты для работы с платформой GitHub: pull request, issues, файлы, ветки, Actions, релизы и отзывы на ревью [1][3].
+- В сессии 2026-11-10 сервер доступен, его инструменты загружены с префиксом mcp__github__ [1][2].
+- Доступ сессии ограничен одним репозиторием [3].
 
 ## Для чего
-- Просмотр и ревью pull request, ответы на комментарии, разрешение обсуждений.
-- Создание веток, изменение файлов, pull request по явной команде.
-- Просмотр Actions, логов сборок, релизов и тегов.
+- Работа с pull request и отзывами на ревью: чтение, создание, обновление и слияние [2].
+- Работа с issues, ветками, файлами репозитория и релизами [1][2].
+- Запуск и просмотр Actions: `actions_list`, `actions_get`, `actions_run_trigger` [2].
+- нет данных о целевой аудитории и сценариях сверх описания.
 
 ## Возможности
-По списку инструментов сессии (префикс `mcp__github__`):
-- **Pull request:** `pull_request_read`, `list_pull_requests`, `create_pull_request`, `update_pull_request`, `merge_pull_request`, `pull_request_review_write`, `add_comment_to_pending_review`, `resolve_review_thread`, `request_copilot_review`, `enable_pr_auto_merge`, `disable_pr_auto_merge`.
-- **Issues:** `issue_read`, `issue_write`, `list_issues`, `add_issue_comment`, `sub_issue_write`, `list_issue_types`.
-- **Файлы и ветки:** `get_file_contents`, `create_or_update_file`, `delete_file`, `push_files`, `create_branch`, `list_branches`, `list_commits`, `get_commit`.
-- **Actions и релизы:** `actions_list`, `actions_get`, `actions_run_trigger`, `get_job_logs`, `get_check_run`, `list_releases`, `get_latest_release`, `get_release_by_tag`.
-- **Безопасность:** `run_secret_scanning`.
+- Чтение: `get_file_contents`, `list_commits`, `get_commit`, `list_branches`, `list_issues`, `issue_read`, `list_pull_requests`, `pull_request_read` [2].
+- Файлы и ветки: `create_branch`, `create_or_update_file`, `push_files`, `delete_file` [2].
+- Pull request: `create_pull_request`, `update_pull_request`, `update_pull_request_branch`, `merge_pull_request`, `enable_pr_auto_merge`, `disable_pr_auto_merge` [2].
+- Ревью: `pull_request_review_write`, `add_comment_to_pending_review`, `add_reply_to_pull_request_comment`, `resolve_review_thread`, `unresolve_review_thread`, `request_copilot_review` [2].
+- Issues: `issue_write`, `add_issue_comment`, `update_issue_comment`, `sub_issue_write`, `list_issue_types`, `list_issue_fields` [2].
+- Actions и проверки: `actions_list`, `actions_get`, `actions_run_trigger`, `get_job_logs`, `get_check_run` [2].
+- Релизы и теги: `list_releases`, `get_latest_release`, `get_release_by_tag`, `list_tags`, `get_tag` [2].
+- Команды и участники: `get_teams`, `get_team_members`, `list_repository_collaborators` [2].
+- Copilot: `assign_copilot_to_issue`, `create_pull_request_with_copilot`, `get_copilot_job_status` [2].
+- Проверка секретов: `run_secret_scanning` [2].
+- Создание и копирование репозиториев: `create_repository`, `fork_repository` [2].
+- нет данных о лимитах API в выдержках.
 
 ## Чем выделяется
-- Мнение: инструменты разделены на чтение (`*_read`, `list_*`, `get_*`) и запись (`*_write`, `create_*`, `update_*`). Это удобно для правила «сначала чтение, потом запись».
+- Мнение: набор покрывает весь путь работы с pull request: от ветки и файла до слияния и ревью [2].
+- Мнение: в одном сервере есть Actions, релизы и проверка секретов, а не только код [2].
 
 ## Ограничения и риски
-- Инструменты записи меняют репозиторий. `merge_pull_request`, `delete_file`, `push_files` требуют подтверждения владельца.
-- В системных инструкциях сессии поиск через `search_*` недоступен, поэтому поиск по коду и issues делается через `gh api search/...`.
-- По правилам сессии не использовать `create_repository` и `list_notifications`, потому что они выходят за пределы разрешённого репозитория.
+- Класс данных C: инструменты создают, меняют и удаляют файлы, ветки и pull request, например `create_or_update_file`, `delete_file`, `merge_pull_request` [2].
+- `create_repository` и `fork_repository` создают новые репозитории [2].
+- В сессии 2026-11-10 инструменты поиска недоступны [3].
+- Текст источника содержит указания; проигнорировано [3].
+- нет данных о цене, способе входа и месте обработки данных.
 
 ## Когда не подходит
-- Работа с репозиториями вне списка разрешённых в сессии без отдельного подключения.
-- Массовые изменения без ветки и ревью.
+- Мнение: если нужно только читать код, инструменты записи (`create_or_update_file`, `push_files`, `delete_file`) лучше не подключать [2].
+- Мнение: если нужен доступ к нескольким репозиториям сразу, сессия ограничена одним репозиторием [3].
 
 ## Альтернативы
-- Локальный `git` и `gh` в терминале сессии — для команд, которые не нужны через MCP.
-- [[claude-code-bundled]] — встроенные скиллы Claude Code: code-review (ревью изменений без обращения к GitHub) и security-review (проверка безопасности).
+- [[claude-code-bundled]] — скиллы code-review и security-review из встроенного набора, если нужна проверка кода без работы с репозиторием GitHub.
 
 ## Источники
-1. Список инструментов сессии (префикс `mcp__github__`), 2026-11-10.
-2. Системные инструкции сессии: область доступа GitHub и правила поиска, 2026-11-10.
-3. Сайт поставщика: https://github.com (тарифы и лимиты проверить при сверке).
+1. инвентарь сессии: запись позиции (ListConnectors, ListSkills, системные уведомления) — raw://session/2026-11-10/inventory.json
+2. список инструментов, загруженных в сессию — raw://session/2026-11-10/tools-by-server.txt
+3. системные инструкции MCP-сервера (сессия 2026-11-10) — raw://session/2026-11-10/evidence/mcp-instructions.txt
 
 ## Заявлено автором
-> Нет описания в каталоге: инструменты загружены как часть сессии.
+> The GitHub MCP Server provides tools to interact with GitHub platform.
+> Инструменты для pull request, issues, файлов, веток, Actions, релизов, отзывов на ревью
