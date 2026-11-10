@@ -11,7 +11,7 @@ data_class: "unknown"
 price: "unknown"
 auth: "unknown"
 hosting: "unknown"
-languages: ["en"]
+languages: []
 source_urls: ["raw://session/2026-11-10/inventory.json", "raw://evidence/morning.md"]
 snapshot: "2026-11-10"
 verified_on: null

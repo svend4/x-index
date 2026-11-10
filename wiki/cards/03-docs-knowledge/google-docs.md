@@ -11,7 +11,7 @@ data_class: "C"
 price: "unknown"
 auth: "unknown"
 hosting: "unknown"
-languages: ["en"]
+languages: []
 source_urls: ["raw://session/2026-11-10/inventory.json", "raw://session/2026-11-10/tools-by-server.txt", "raw://session/2026-11-10/evidence/mcp-instructions.txt"]
 snapshot: "2026-11-10"
 verified_on: null
@@ -26,8 +26,8 @@ tags: ["Google Docs", "документы", "редактирование", "к�
 Поставщик заявляет редактирование, комментирование и сводки документов [1].
 
 ## Для чего
-- Чтение документа Google Docs через `read_doc` [2].
-- Изменение документа через `update_doc` [2].
+- По имени инструмента `read_doc`: чтение документа Google Docs [2].
+- По имени инструмента `update_doc`: изменение документа [2].
 - Редактирование, комментирование и сводки документов, как заявляет поставщик [1].
 
 ## Возможности
@@ -51,9 +51,9 @@ tags: ["Google Docs", "документы", "редактирование", "к�
 - Мнение: для правок с точным форматированием стоит проверить поведение `update_doc` на тестовом документе до работы с важным файлом.
 
 ## Альтернативы
-- [[google-workspace]] — скилл с правилами создания и изменения файлов Google Docs, Sheets, Slides и Drive.
-- [[docs]] — документы, которые создаёт Claude; экспорт в Google Docs описан в карточке docs.
-- [[google-drive]] — поиск и доступ к файлам Google Drive.
+- [[google-workspace]] — скилл для файлов Google; функции см. в карточке google-workspace.
+- [[docs]] — документы, которые создаёт Claude; функции см. в карточке docs.
+- [[google-drive]] — файлы Google Drive; функции см. в карточке google-drive.
 
 ## Источники
 1. инвентарь сессии: запись позиции (ListConnectors, ListSkills, системные уведомления), снимок 2026-11-10 — raw://session/2026-11-10/inventory.json

@@ -10,7 +10,7 @@ data_class: "unknown"
 price: "unknown"
 auth: "unknown"
 hosting: "unknown"
-languages: ["en"]
+languages: []
 source_urls: ["raw://session/2026-11-10/inventory.json", "raw://evidence/nonprofit-grant-operations.md", "https://github.com/revuitysystems/revuity-nonprofit-grant-operations", "https://revuitysystems.com"]
 snapshot: "2026-11-10"
 verified_on: null
@@ -27,9 +27,9 @@ tags: ["грантовые операции", "некоммерческие ор
 - Версия плагина 1.1.0 по манифесту [2]; плагин включён в сессии [1].
 
 ## Для чего
-- Приём и квалификация возможностей, работа с заявками [2].
-- Учёт присуждённых грантов, отчётность и продления [2].
-- Закрытие гранта [2].
+- Заявляет поставщик: приём и квалификация возможностей, работа с заявками [2].
+- Заявляет поставщик: учёт присуждённых грантов, отчётность и продления [2].
+- Заявляет поставщик: закрытие гранта [2].
 - Для кого: для некоммерческих организаций, которые ведут гранты [1][2].
 
 ## Возможности
@@ -58,7 +58,7 @@ tags: ["грантовые операции", "некоммерческие ор
 
 ## Источники
 1. инвентарь сессии: запись позиции (ListConnectors, ListSkills, системные уведомления) — raw://session/2026-11-10/inventory.json (снимок 2026-11-10, сверка не проводилась)
-2. манифест плагина (начало файла) — raw://evidence/nonprofit-grant-operations.md (снимок 2026-11-10, сверка не проводилась)
+2. манифест плагина (начало файла): поля repository и homepage — https://github.com/revuitysystems/revuity-nonprofit-grant-operations, https://revuitysystems.com — raw://evidence/nonprofit-grant-operations.md (снимок 2026-11-10, сверка не проводилась)
 
 ## Заявлено автором
 Манифест плагина [2], поле description (описание поставщика, не сверено):

@@ -11,7 +11,7 @@ data_class: "unknown"
 price: "unknown"
 auth: "unknown"
 hosting: "unknown"
-languages: ["de", "en"]
+languages: []
 jurisdiction: "DE"
 source_urls: ["raw://session/2026-11-10/inventory.json", "raw://evidence/legal-domain-manager-extended.md"]
 snapshot: "2026-11-10"
@@ -57,8 +57,8 @@ tags: ["справка", "Eilantrag", "PKH", "Wiedereinsetzung", "Berufung", "Re
 
 ## Альтернативы
 - [[legal-domain-manager]] — ядро, без которого справка не работает.
-- [[german-legal-deadline-calculator]] — расчёт сроков без описания процессов.
-- [[sozialrecht-sachsen]] — отдельный плагин с процедурами Widerspruch и Klage для Саксонии.
+- [[german-legal-deadline-calculator]] — см. карточку.
+- [[sozialrecht-sachsen]] — см. карточку.
 
 ## Источники
 1. Инвентарь сессии: запись позиции (ListConnectors, ListSkills, системные уведомления), снимок 2026-11-10, сверка не проводилась — raw://session/2026-11-10/inventory.json

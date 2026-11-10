@@ -11,14 +11,13 @@ data_class: "B"
 price: "unknown"
 auth: "account"
 hosting: "unknown"
-languages: ["de"]
+languages: []
 jurisdiction: "DE"
 source_urls: ["raw://session/2026-11-10/inventory.json", "raw://session/2026-11-10/tools-by-server.txt", "raw://session/2026-11-10/evidence/mcp-instructions.txt"]
 snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
 tags: ["XRechnung", "ZUGFeRD", "Factur-X", "электронный счёт", "KoSIT", "Leitweg-ID", "EN 16931"]
-curator_hint: "test"
 ---
 # NormAPI – German e-invoices (XRechnung, ZUGFeRD) (коннектор)
 
@@ -37,7 +36,7 @@ curator_hint: "test"
 - `parse_invoice` читает полученный счёт в данные, перечисляет нераспознанные значения в `notMapped` и не требует учётной записи [3].
 - `generate_invoice` создаёт счёт, который проходит проверку до возврата; требует учётной записи NormAPI и расходует месячный лимит [3].
 - `explain_rule` объясняет код правила, например BR-DE-15, который пользователь уже имеет [3].
-- Профиль выбирается по получателю: xrechnung по умолчанию для госзаказчика, en16931 для бизнеса без Leitweg-ID, контактного лица и электронных адресов [3].
+- По инструкциям сервера, профиль выбирается по получателю: xrechnung по умолчанию для госзаказчика, en16931 для бизнеса без Leitweg-ID, контактного лица и электронных адресов [3].
 - Поддерживаются XRechnung в UBL или CII и ZUGFeRD/Factur-X PDF [3].
 - Если в аккаунте загружен фирменный бланк, PDF в формате ZUGFeRD печатается на нём автоматически [3].
 
@@ -58,10 +57,10 @@ curator_hint: "test"
 - Мнение: счета для получателей вне Германии выходят за описание коннектора, которое говорит о немецких счетах [1][3].
 
 ## Альтернативы
-- [[mcp-dev-invowerk-xrechnung-e-invoice-validator]] — проверка счетов ZUGFeRD, Factur-X, XRechnung и Peppol BIS; по описанию реестра бесплатный веб-инструмент, API и MCP.
-- [[mcp-de-zugferd-validator-validator]] — проверка ZUGFeRD, Factur-X и XRechnung по EN 16931 с предложениями исправлений; по описанию реестра.
-- [[mcp-com-einvoicechecker-einvoice]] — проверка, разбор и вывод счетов XRechnung, ZUGFeRD, Factur-X, Peppol BIS 3.0 и KSeF; по описанию реестра.
-- [[mcp-com-invoicexml-invoicexml]] — создание, проверка, конвертация и извлечение счетов UBL, Factur-X, ZUGFeRD и XRechnung; по описанию реестра.
+- [[mcp-dev-invowerk-xrechnung-e-invoice-validator]] — см. карточку; для сравнения опорой служат проверка по официальному набору правил KoSIT и указание версии набора в каждом результате [3].
+- [[mcp-de-zugferd-validator-validator]] — см. карточку; для сравнения опорой служат проверка по официальному набору правил KoSIT и указание версии набора в каждом результате [3].
+- [[mcp-com-einvoicechecker-einvoice]] — см. карточку; для сравнения опорой служат проверка по официальному набору правил KoSIT и указание версии набора в каждом результате [3].
+- [[mcp-com-invoicexml-invoicexml]] — см. карточку; для сравнения опорой служат проверка по официальному набору правил KoSIT и указание версии набора в каждом результате [3].
 
 ## Источники
 1. Инвентарь сессии: запись позиции (ListConnectors, ListSkills, системные уведомления), снимок 2026-11-10 — raw://session/2026-11-10/inventory.json

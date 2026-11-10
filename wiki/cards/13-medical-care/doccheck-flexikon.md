@@ -17,7 +17,6 @@ snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
 tags: ["медицина", "справочник", "база знаний", "Flexikon", "DocCheck", "медицинский контент"]
-curator_hint: "test"
 ---
 # DocCheck Flexikon (коннектор)
 
@@ -48,8 +47,8 @@ curator_hint: "test"
 - Мнение: данные пациентов в запросы передавать не следует, пока не выяснено, как обрабатываются запросы.
 
 ## Альтернативы
-- [[icd-10-codes]] — коды МКБ-10 из той же группы каталога.
-- [[mcp-io-github-pipeworx-io-pubmed]] — биомедицинская литература через NCBI E-utilities; по описанию реестра.
+- [[icd-10-codes]] — см. карточку; для сравнения опорой служат группа «справочники и кодификаторы» [1] и инструменты search_medical_knowledge_base и get_medical_content [2].
+- [[mcp-io-github-pipeworx-io-pubmed]] — см. карточку; для сравнения опорой служат группа «справочники и кодификаторы» [1] и инструменты search_medical_knowledge_base и get_medical_content [2].
 
 ## Источники
 1. Инвентарь сессии: запись позиции (ListConnectors, ListSkills, системные уведомления), снимок 2026-11-10 — raw://session/2026-11-10/inventory.json

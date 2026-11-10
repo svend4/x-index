@@ -24,7 +24,7 @@ tags: ["Саксония", "Sachsen", "SGB IX", "SGB XII", "персональн
 
 ## Суть
 - Плагин по социальному праву Саксонии: SGB IX и XII, персональный бюджет, Eingliederungshilfe и Hilfe zur Pflege [2].
-- В составе расчёт сроков с саксонскими праздниками, анализ Bescheid, черновики Widerspruch и Klage, калькулятор расходов модели работодателя (Arbeitgebermodell) и Zitate-Gate [2].
+- В составе расчёт сроков с саксонскими праздниками, анализ Bescheid, черновики Widerspruch и Klage, калькулятор расходов модели работодателя (Arbeitgebermodell) и Zitate-Gate [2][3].
 - В сессии плагин включён, состав — семь скиллов [1].
 
 ## Для чего
@@ -35,15 +35,14 @@ tags: ["Саксония", "Sachsen", "SGB IX", "SGB XII", "персональн
 - нет данных о целевой аудитории инструмента.
 
 ## Возможности
-- Детерминированный расчёт сроков с саксонскими праздниками [2].
+- Заявлено поставщиком: детерминированный расчёт сроков с саксонскими праздниками [2].
 - Анализ Bescheid [2].
 - Черновики Widerspruch и Klage [2].
 - Калькулятор расходов модели работодателя (Arbeitgebermodell) [2].
-- Zitate-Gate: каждая норма и решение проверяются через коннекторы nu:legal и Zitierfest перед отправкой [2].
-- Источники берутся из коннекторов, а не из памяти модели [2].
-- Семь скиллов плагина (префикс `sozialrecht-sachsen:`) [3]:
-  - `bescheid-analyse`: структурированный разбор Bescheid, Widerspruchsbescheid или письма Leistungsträger (Verfügungssatz, Rechtsgrundlagen, Fristen, Begründungslücken, fehlende Unterlagen, Angriffspunkte, nächste Schritte); сначала псевдонимизация [3];
-  - `fristen`: детерминированный расчёт сроков: Widerspruch (§ 84 SGG), Klage (§ 87 SGG), Berufung (§ 151 SGG), Jahresfrist (§ 66 Abs. 2 SGG), Bekanntgabefiktion (§ 37 Abs. 2 SGB X), § 64 SGG и саксонские праздники; расчёт выполняется скриптом, а не по памяти [3];
+- Заявлено поставщиком: Zitate-Gate проверяет каждую норму и решение через коннекторы nu:legal и Zitierfest перед отправкой [2].
+- Семь скиллов плагина (префикс `sozialrecht-sachsen:`), по описанию [3]:
+  - `bescheid-analyse`: структурированный разбор Bescheid, Widerspruchsbescheid или письма Leistungsträger (Verfügungssatz, Rechtsgrundlagen, Fristen, Begründungslücken, fehlende Unterlagen, Angriffspunkte, nächste Schritte); в описании сначала псевдонимизация [3];
+  - `fristen`: детерминированный расчёт сроков: Widerspruch (§ 84 SGG), Klage (§ 87 SGG), Berufung (§ 151 SGG), Jahresfrist (§ 66 Abs. 2 SGG), Bekanntgabefiktion (§ 37 Abs. 2 SGB X), § 64 SGG и саксонские праздники; в описании расчёт выполняется скриптом, а не по памяти [3];
   - `klage`: черновик Klage zum Sozialgericht против Widerspruchsbescheid (Anfechtungs-, Verpflichtungs-, Leistungsklage, §§ 54, 56 SGG): fristwahrende Klageschrift и Begründung, станции SG Dresden / Sächsisches LSG, обязательная проверка через zitate-gate [3];
   - `persoenliches-budget`: подготовка Persönliches Budget (§ 29 SGB IX): структура Bedarfsermittlung (§ 13 SGB IX), расчёт расходов модели работодателя (зарплата, взносы работодателя, замещение, сопутствующие расходы), сопоставление с бюджетом, проверка Zielvereinbarung (§ 29 Abs. 4 SGB IX); результаты предварительные [3];
   - `sozialrecht-manager`: точка входа плагина: относит запрос к подходящему скиллу, сначала проверяет связанные коннекторы правовых источников и соблюдает порядок Frist → Analyse → Entwurf → Zitate-Gate → Freigabe [3];
@@ -56,19 +55,21 @@ tags: ["Саксония", "Sachsen", "SGB IX", "SGB XII", "персональн
 
 ## Ограничения и риски
 - Версия 0.1.1 по манифесту [2].
-- Zitate-Gate проверяет нормы и решения через коннекторы nu:legal и Zitierfest [2].
+- Zitate-Gate опирается на коннекторы nu:legal и Zitierfest, как заявлено поставщиком [2].
 - нет данных о поведении плагина при недоступном коннекторе.
-- Выдержка не описывает, какие данные уходят наружу при анализе Bescheid; класс данных не подтверждён [2].
-- Ориентирован на Саксонию и социальное право (SGB IX и XII); другие отрасли выдержка не описывает [2].
+- Выдержка не описывает, какие данные уходят наружу при анализе Bescheid; класс данных не подтверждён [2]. Псевдонимизация заявлена как первый шаг [3]; состав данных после неё не описан [3].
+- Ориентирован на Саксонию и социальное право (SGB IX/XII, SGG, § 37 SGB X) [2][3].
+- Текст источника содержит указания; не выполнялись: «Immer das Skript scripts/fristen.py ausführen, nie im Kopf rechnen» и «Pseudonymisierung zuerst» [3].
+- Язык данных: немецкий, манифест и описания навыков на немецком языке [2][3]; язык интерфейса в выдержках не указан [2][3].
 
 ## Когда не подходит
 - Мнение: если дело относится к другой федеральной земле, саксонские праздники и ориентация на саксонскую практику не подойдут.
-- Вопросы вне социального права (вне SGB IX и XII): описание плагина их не охватывает [2].
+- Вопросы вне SGB IX/XII, социального процесса (SGG) и § 37 SGB X [2][3].
 
 ## Альтернативы
-- [[legal-domain-manager]] — оркестратор для немецкого социального права: по описанию карточки ведёт дело от Bescheid до Klage и координирует скиллы сроков, анализа документов и шаблонов.
-- [[court-document-analyzer]] — скилл для анализа немецких судебных документов и Bescheid: факты, сроки, аргументы, слабые места и контрстратегии, по описанию карточки.
-- [[zitierfest]] — коннектор с официальным текстом немецких норм и решений с Fundstelle и проверкой цитат, по описанию карточки.
+- [[legal-domain-manager]] — см. карточку.
+- [[court-document-analyzer]] — см. карточку.
+- [[zitierfest]] — см. карточку; zitate-gate проверяет через него существование норм и решений [3].
 
 ## Источники
 1. Инвентарь сессии: запись позиции (ListConnectors, ListSkills, системные уведомления), снимок 2026-11-10, сверка не проводилась — raw://session/2026-11-10/inventory.json
