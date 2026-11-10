@@ -1250,7 +1250,11 @@ def eval_cmd(args: argparse.Namespace) -> int:
     out.with_suffix(".json").write_text(json.dumps({"summary": summary, "runs": runs}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     for mode, m in summary.items():
         print(f"{mode}: hit@{args.k}={m['hit@k']:.2f} recall@{args.k}={m['recall@k']:.2f} MRR={m['MRR']:.2f} запрещённые_в_топ3={m['запрещённые в топ-3']:.2f}")
-    print(f"отчёт: {out.relative_to(ROOT).as_posix()}")
+    try:
+        shown = out.relative_to(ROOT).as_posix()
+    except ValueError:
+        shown = str(out)
+    print(f"отчёт: {shown}")
     return 0
 
 
