@@ -1,0 +1,6640 @@
+{
+ "summary": {
+  "and": {
+   "вопросов": 93,
+   "hit@k": 0.10752688172043011,
+   "recall@k": 0.07885304659498207,
+   "MRR": 0.10215053763440861,
+   "запрещённые в топ-3": 0.0
+  },
+  "or": {
+   "вопросов": 93,
+   "hit@k": 0.7956989247311828,
+   "recall@k": 0.7204301075268817,
+   "MRR": 0.6610513739545997,
+   "запрещённые в топ-3": 0.1827956989247312
+  },
+  "fallback": {
+   "вопросов": 93,
+   "hit@k": 0.7956989247311828,
+   "recall@k": 0.7204301075268817,
+   "MRR": 0.6592592592592592,
+   "запрещённые в топ-3": 0.1827956989247312
+  }
+ },
+ "runs": {
+  "and": [
+   {
+    "qid": "Q001",
+    "domain": "право-фрг-социальное",
+    "q": "разобрать Bescheid, найти слабые места",
+    "expect": [
+     "court-document-analyzer",
+     "sozialrecht-sachsen"
+    ],
+    "avoid": [],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q002",
+    "domain": "право-фрг-социальное",
+    "q": "Fristen для Widerspruch против Bescheid: как посчитать с учётом выходных?",
+    "expect": [
+     "german-legal-deadline-calculator",
+     "sozialrecht-sachsen"
+    ],
+    "avoid": [
+     "mcp-io-arxo-de-bgb"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q003",
+    "domain": "право-фрг-социальное",
+    "q": "шаблон Klage для Sozialgericht",
+    "expect": [
+     "german-legal-template-generator",
+     "sozialrecht-sachsen"
+    ],
+    "avoid": [],
+    "ranked": [
+     "legal-domain-manager",
+     "german-legal-template-generator",
+     "sozialrecht-sachsen"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q004",
+    "domain": "право-фрг-социальное",
+    "q": "employer model: сколько стоят часы Assistenz с persönlichem Budget?",
+    "expect": [
+     "sozialrecht-sachsen"
+    ],
+    "avoid": [
+     "german-legal-template-generator"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q005",
+    "domain": "право-фрг-социальное",
+    "q": "Hilfe zur Pflege: отказ в Bescheid, как возразить?",
+    "expect": [
+     "legal-domain-manager",
+     "sozialrecht-sachsen"
+    ],
+    "avoid": [
+     "mcp-io-github-helferundprofi-helfer-und-profi"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q006",
+    "domain": "право-фрг-социальное",
+    "q": "How do I file an urgent Eilantrag at the Sozialgericht?",
+    "expect": [
+     "legal-domain-manager-extended"
+    ],
+    "avoid": [
+     "legal-domain-manager"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q007",
+    "domain": "право-фрг-социальное",
+    "q": "PKH Prozesskostenhilfe для иска",
+    "expect": [
+     "legal-domain-manager-extended"
+    ],
+    "avoid": [
+     "courtroom5"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q008",
+    "domain": "право-фрг-социальное",
+    "q": "§ 84 SGG Wortlaut nachschlagen",
+    "expect": [
+     "lulius",
+     "mcp-io-github-pipeworx-io-de-gesetze",
+     "nu-legal"
+    ],
+    "avoid": [],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q009",
+    "domain": "право-фрг-социальное",
+    "q": "текст закона земли Sachsen (Landesrecht)",
+    "expect": [
+     "mcp-eu-nulegal-recht",
+     "nu-legal"
+    ],
+    "avoid": [
+     "lulius",
+     "mcp-io-github-pipeworx-io-de-gesetze"
+    ],
+    "ranked": [
+     "nu-legal"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q010",
+    "domain": "право-фрг-социальное",
+    "q": "проверить citations в Widerspruch перед отправкой",
+    "expect": [
+     "sozialrecht-sachsen",
+     "zitierfest"
+    ],
+    "avoid": [
+     "verification-foundation"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q011",
+    "domain": "право-фрг-социальное",
+    "q": "Какие Urteile Bundessozialgerichts есть по persönlicher Assistenz?",
+    "expect": [
+     "lulius",
+     "nu-legal",
+     "zitierfest"
+    ],
+    "avoid": [
+     "courtlistener"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q012",
+    "domain": "право-фрг-социальное",
+    "q": "ICF-коды функционирования для Teilhabe",
+    "expect": [
+     "mcp-io-github-stayce-icf-mcp"
+    ],
+    "avoid": [
+     "mcp-io-github-stayce-icd-mcp"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q013",
+    "domain": "право-фрг-еэс",
+    "q": "Verjährung, limitation period, BGB § 195",
+    "expect": [
+     "german-legal-deadline-calculator",
+     "mcp-io-arxo-de-bgb"
+    ],
+    "avoid": [],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q014",
+    "domain": "право-фрг-еэс",
+    "q": "Как найти федеральный закон по официальной аббревиатуре вроде SGB IX — есть ли поиск по Kürzel?",
+    "expect": [
+     "mcp-io-github-pipeworx-io-de-gesetze",
+     "zitierfest"
+    ],
+    "avoid": [
+     "mcp-io-github-johnjackhouzi-droit-francais"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q015",
+    "domain": "право-фрг-еэс",
+    "q": "BGH-Urteil по Aktenzeichen или ECLI",
+    "expect": [
+     "lulius",
+     "nu-legal",
+     "zitierfest"
+    ],
+    "avoid": [
+     "mcp-io-github-adakov589-judikatura-mcp"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q016",
+    "domain": "право-фрг-еэс",
+    "q": "Где искать решения EuGH по Vorabentscheidungsersuchen, а не только тексты регламентов?",
+    "expect": [
+     "mcp-io-github-cyanheads-eur-lex-mcp-server",
+     "mcp-io-github-lex-api-lexapi-mcp"
+    ],
+    "avoid": [
+     "mcp-io-github-mister-franklin-wetwetwet-legislation"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q017",
+    "domain": "право-фрг-еэс",
+    "q": "Нужна Fundstelle BGBl. для федерального закона ФРГ: где её взять вместе с датой редакции?",
+    "expect": [
+     "zitierfest"
+    ],
+    "avoid": [
+     "mcp-io-github-cyanheads-ris-austria-mcp-server"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q018",
+    "domain": "право-фрг-еэс",
+    "q": "RVG GKG Gebühren Streitwert",
+    "expect": [
+     "lulius",
+     "zitierfest"
+    ],
+    "avoid": [
+     "mcp-de-nebenkostenpro-nebenkosten"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q019",
+    "domain": "право-фрг-еэс",
+    "q": "Где в Vergütungsverzeichnis RVG найти нужную Nummer Verfahrensgebühr?",
+    "expect": [
+     "zitierfest"
+    ],
+    "avoid": [],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q020",
+    "domain": "право-фрг-еэс",
+    "q": "Klagefrist: Fristberechnung с Feiertagen",
+    "expect": [
+     "german-legal-deadline-calculator",
+     "lulius"
+    ],
+    "avoid": [
+     "mcp-com-lintelly-hr-deutschland"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q021",
+    "domain": "право-фрг-еэс",
+    "q": "Какая редакция § 558 BGB действовала на 1 января 2019 и что в ней менялось?",
+    "expect": [
+     "nu-legal",
+     "zitierfest"
+    ],
+    "avoid": [
+     "mcp-io-github-sfhajji-lex"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q022",
+    "domain": "право-фрг-еэс",
+    "q": "EU regulation, Fassung am Stichtag",
+    "expect": [
+     "mcp-io-github-lex-api-lexapi-mcp",
+     "mcp-io-github-sfhajji-lex"
+    ],
+    "avoid": [],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q023",
+    "domain": "счета-бухгалтерия",
+    "q": "XRechnung kostenlos validieren ohne Konto",
+    "expect": [
+     "mcp-dev-invowerk-xrechnung-e-invoice-validator",
+     "normapi-einvoices"
+    ],
+    "avoid": [
+     "mcp-app-wishpool-italy-invoice-mcp",
+     "mcp-io-github-popapidev-pop-mcp"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q024",
+    "domain": "счета-бухгалтерия",
+    "q": "Mit welchem Tool kann ich eine XRechnung im UBL-Format erzeugen?",
+    "expect": [
+     "mcp-com-invoicexml-invoicexml",
+     "mcp-dev-invoicehub-invoicehub",
+     "normapi-einvoices"
+    ],
+    "avoid": [
+     "mcp-app-wishpool-romania-invoice-mcp",
+     "mcp-app-wishpool-serbia-invoice-mcp"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q025",
+    "domain": "счета-бухгалтерия",
+    "q": "ZUGFeRD PDF erzeugen",
+    "expect": [
+     "mcp-com-invoicexml-invoicexml",
+     "mcp-io-github-causa-prima-ai-scribo",
+     "normapi-einvoices"
+    ],
+    "avoid": [
+     "mcp-dev-pressmark-pressmark",
+     "mcp-io-github-invoicepdfs-mcp"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q026",
+    "domain": "счета-бухгалтерия",
+    "q": "Wie prüfe ich eine E-Rechnung gegen EN 16931?",
+    "expect": [
+     "mcp-de-zugferd-validator-validator",
+     "mcp-io-github-invoicepdfs-mcp"
+    ],
+    "avoid": [
+     "mcp-es-beel-mcp",
+     "mcp-io-github-arceedev-verifactu-mcp"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q027",
+    "domain": "счета-бухгалтерия",
+    "q": "KoSIT-Regeln Rechnung prüfen",
+    "expect": [
+     "normapi-einvoices"
+    ],
+    "avoid": [
+     "mcp-app-wishpool-greece-invoice-mcp",
+     "mcp-io-github-brunenjere-facturas-arca-json"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q028",
+    "domain": "счета-бухгалтерия",
+    "q": "Which MCP server sends a Peppol BIS 3.0 invoice to a Belgian company?",
+    "expect": [
+     "mcp-app-wishpool-belgium-invoice-mcp"
+    ],
+    "avoid": [
+     "mcp-app-wishpool-denmark-invoice-mcp",
+     "mcp-app-wishpool-netherlands-invoice-mcp"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q029",
+    "domain": "счета-бухгалтерия",
+    "q": "Wie lese ich Lieferantenrechnungen aus PDF-Dateien für die Buchhaltung aus?",
+    "expect": [
+     "mcp-io-github-antondrakon-duebuddy-invoices",
+     "mcp-io-github-fashionmascherine-svg-document-to-json-mcp"
+    ],
+    "avoid": [
+     "mcp-io-github-ahutto87-parsel",
+     "mcp-io-github-brunenjere-facturas-arca-json"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q030",
+    "domain": "счета-бухгалтерия",
+    "q": "Bankauszug in Buchungssätze umwandeln",
+    "expect": [
+     "mcp-io-github-arceedev-contabridge-mcp"
+    ],
+    "avoid": [
+     "mcp-ai-saifs-payment-reconciliation",
+     "mcp-io-github-arceedev-norma43-mcp"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q031",
+    "domain": "счета-бухгалтерия",
+    "q": "Welche Software taugt für Buchhaltung und Steuern in europäischen Kleinunternehmen?",
+    "expect": [
+     "mcp-finance-norman-mcp-server"
+    ],
+    "avoid": [
+     "mcp-ai-deepledger-mcp",
+     "mcp-com-accountingqb-accountingqb"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q032",
+    "domain": "счета-бухгалтерия",
+    "q": "Verzugszinsen Mahnung offene Rechnungen",
+    "expect": [
+     "mcp-com-pagofix-pagofix"
+    ],
+    "avoid": [
+     "mcp-dev-cotlet-invoice2go",
+     "mcp-io-github-bpays-benji-pays"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q033",
+    "domain": "счета-бухгалтерия",
+    "q": "Rechnungen und Beiträge eines e.V. verwalten",
+    "expect": [
+     "mcp-io-github-ki-klub-werder-e-v-openverein"
+    ],
+    "avoid": [
+     "mcp-co-solidinvoice-mcp",
+     "mcp-io-github-golegally-accounting-mcp"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q034",
+    "domain": "счета-бухгалтерия",
+    "q": "XRechnung als JSON auslesen",
+    "expect": [
+     "mcp-io-github-peculiar-systems-invoicein"
+    ],
+    "avoid": [
+     "mcp-io-github-alex-dev-web-c-de-document-to-json-mcp",
+     "mcp-io-github-brunenjere-facturas-arca-json"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q035",
+    "domain": "документы-таблицы",
+    "q": "Word-Dokument Änderungen nachverfolgen",
+    "expect": [
+     "docx"
+    ],
+    "avoid": [
+     "google-docs"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q036",
+    "domain": "документы-таблицы",
+    "q": "Как поправить формулы в Excel-таблице?",
+    "expect": [
+     "xlsx"
+    ],
+    "avoid": [
+     "google-sheets"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q037",
+    "domain": "документы-таблицы",
+    "q": "PowerPoint Folien mit Sprechernotizen erstellen",
+    "expect": [
+     "pptx"
+    ],
+    "avoid": [
+     "google-slides"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q038",
+    "domain": "документы-таблицы",
+    "q": "Google Slides thumbnails and pages",
+    "expect": [
+     "google-slides"
+    ],
+    "avoid": [
+     "canva"
+    ],
+    "ranked": [
+     "google-slides"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q039",
+    "domain": "документы-таблицы",
+    "q": "Google Sheets Zeilen anhängen",
+    "expect": [
+     "google-sheets"
+    ],
+    "avoid": [
+     "xlsx"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q040",
+    "domain": "документы-таблицы",
+    "q": "Notion Datenbank Einträge anlegen",
+    "expect": [
+     "notion"
+    ],
+    "avoid": [
+     "google-sheets"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q041",
+    "domain": "документы-таблицы",
+    "q": "OCR für gescannte PDF-Verträge",
+    "expect": [
+     "pdf",
+     "text-extraction-engine"
+    ],
+    "avoid": [
+     "pdf-viewer-plugin"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q042",
+    "domain": "документы-таблицы",
+    "q": "Можно ли заполнить PDF-форму и поставить подпись?",
+    "expect": [
+     "pdf",
+     "pdf-viewer-plugin"
+    ],
+    "avoid": [
+     "text-extraction-engine"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q043",
+    "domain": "документы-таблицы",
+    "q": "Google Docs Dokument bearbeiten",
+    "expect": [
+     "google-docs",
+     "google-workspace"
+    ],
+    "avoid": [
+     "claude-docs-mcp"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q044",
+    "domain": "документы-таблицы",
+    "q": "Как вести совместную работу над спецификацией с комментариями?",
+    "expect": [
+     "doc-coauthoring",
+     "docs"
+    ],
+    "avoid": [
+     "microsoft-365"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q045",
+    "domain": "документы-таблицы",
+    "q": "SharePoint OneDrive Office files access",
+    "expect": [
+     "microsoft-365"
+    ],
+    "avoid": [
+     "google-drive"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q046",
+    "domain": "документы-таблицы",
+    "q": "Can Claude make a Canva presentation from a template?",
+    "expect": [
+     "canva"
+    ],
+    "avoid": [
+     "pptx"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q047",
+    "domain": "почта-календарь-встречи",
+    "q": "Gmail: что уже подключено",
+    "expect": [
+     "gmail"
+    ],
+    "avoid": [
+     "mcp-ai-atmark-atmark"
+    ],
+    "ranked": [
+     "morning"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q048",
+    "domain": "почта-календарь-встречи",
+    "q": "Как искать письма сразу в Gmail, Outlook и iCloud?",
+    "expect": [
+     "mcp-co-lumman-mail",
+     "mcp-com-mcpemails-emails"
+    ],
+    "avoid": [
+     "gmail"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q049",
+    "domain": "почта-календарь-встречи",
+    "q": "агентский ящик, не личный Gmail",
+    "expect": [
+     "mcp-ai-artil-artil",
+     "mcp-ai-atmark-atmark",
+     "mcp-com-cooperemail-cooper-email"
+    ],
+    "avoid": [
+     "gmail"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q050",
+    "domain": "почта-календарь-встречи",
+    "q": "Какой инструмент делает E-Mail-Entwürfe с подтверждением владельца?",
+    "expect": [
+     "mcp-com-cooperemail-cooper-email",
+     "mcp-com-lockally-email"
+    ],
+    "avoid": [
+     "mcp-dev-emailmd-emailmd",
+     "mcp-dev-mailkite-mail-send"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q051",
+    "domain": "почта-календарь-встречи",
+    "q": "Google Kalender Termine und Einladungen",
+    "expect": [
+     "google-calendar",
+     "mcp-co-lumman-calendar"
+    ],
+    "avoid": [
+     "morning"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q052",
+    "domain": "почта-календарь-встречи",
+    "q": "Как собрать календари Outlook, iCloud и CalDAV в одном месте?",
+    "expect": [
+     "mcp-co-lumman-calendar"
+    ],
+    "avoid": [
+     "google-calendar"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q053",
+    "domain": "почта-календарь-встречи",
+    "q": "overlapping recurring meetings, skip weekends",
+    "expect": [
+     "mcp-com-moltlinestudio-timeops"
+    ],
+    "avoid": [
+     "mcp-io-github-donniertf-hub-ca-business-calendar-mcp"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q054",
+    "domain": "почта-календарь-встречи",
+    "q": "Транскрипты Granola доступны без платного тарифа?",
+    "expect": [
+     "granola"
+    ],
+    "avoid": [
+     "mcp-io-github-vomo-ai-vomo"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q055",
+    "domain": "почта-календарь-встречи",
+    "q": "Besprechungsprotokoll mit Aufgaben und Tickets",
+    "expect": [
+     "granola",
+     "mcp-ai-note1-mcp",
+     "mcp-io-github-vomo-ai-vomo"
+    ],
+    "avoid": [
+     "mcp-io-github-catalyst-labs-dev-city-council-meeting-transcripts",
+     "mcp-io-github-catalyst-labs-dev-local-government-decision-lookup"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q056",
+    "domain": "почта-календарь-встречи",
+    "q": "утренний бриф на день",
+    "expect": [
+     "morning"
+    ],
+    "avoid": [
+     "enterprise-search"
+    ],
+    "ranked": [
+     "morning",
+     "google-calendar"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q057",
+    "domain": "почта-календарь-встречи",
+    "q": "Как поставить напоминание, которое придёт на почту или в календарь?",
+    "expect": [
+     "mcp-com-pingfyr-pingfyr",
+     "mcp-io-github-noriget-agentcron"
+    ],
+    "avoid": [
+     "mcp-com-pushizo-mcp"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q058",
+    "domain": "почта-календарь-встречи",
+    "q": "task tracker Linear or Asana",
+    "expect": [
+     "asana",
+     "linear"
+    ],
+    "avoid": [
+     "mcp-io-doriku-task-manager",
+     "mcp-io-github-f-tiger-bpj-ai-tools"
+    ],
+    "ranked": [
+     "asana"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q059",
+    "domain": "автоматизация",
+    "q": "make.com сценарии запуск отладка",
+    "expect": [
+     "make-com"
+    ],
+    "avoid": [
+     "zapier"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q060",
+    "domain": "автоматизация",
+    "q": "Сколько приложений доступно в Zapier через MCP?",
+    "expect": [
+     "mcp-com-zapier-mcp"
+    ],
+    "avoid": [
+     "mcp-com-ifttt-mcp"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q061",
+    "domain": "автоматизация",
+    "q": "IFTTT Applets über MCP bauen",
+    "expect": [
+     "ifttt",
+     "mcp-com-ifttt-mcp"
+    ],
+    "avoid": [
+     "mcp-com-zapier-mcp"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q062",
+    "domain": "автоматизация",
+    "q": "Какой сервис с открытым кодом можно использовать вместо Zapier?",
+    "expect": [
+     "mcp-io-github-blinkboxhq-blinkbox"
+    ],
+    "avoid": [
+     "mcp-com-zapier-mcp",
+     "zapier"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q063",
+    "domain": "автоматизация",
+    "q": "n8n workflow validation without execution",
+    "expect": [
+     "mcp-co-com-elyraon-workflow-rescue",
+     "mcp-io-github-hacrootechnologies-gydmation",
+     "samautomation-workflows"
+    ],
+    "avoid": [
+     "mcp-com-aiagentcycle-aiagentcycle"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q064",
+    "domain": "автоматизация",
+    "q": "Как отладить вебхуки на localhost и повторить запросы?",
+    "expect": [
+     "mcp-io-github-pipehero-pipehero"
+    ],
+    "avoid": [
+     "mcp-ai-wakeshift-webhooks"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q065",
+    "domain": "автоматизация",
+    "q": "вебхук-триггер, который будит AI-агента",
+    "expect": [
+     "mcp-ai-wakeshift-webhooks"
+    ],
+    "avoid": [
+     "mcp-io-github-pipehero-pipehero"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q066",
+    "domain": "автоматизация",
+    "q": "Wie leite ich Webhook-Payload-Typen aus echtem Traffic ab?",
+    "expect": [
+     "mcp-com-webhook-studio-webhooks"
+    ],
+    "avoid": [
+     "mcp-io-github-kroqdotdev-webhooks-cc"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q067",
+    "domain": "автоматизация",
+    "q": "workflow orchestration with error handling",
+    "expect": [
+     "workflow-automation"
+    ],
+    "avoid": [
+     "mcp-dev-cloudgate-workflow",
+     "mcp-io-github-jonnyton-workflow-universe-server"
+    ],
+    "ranked": [
+     "workflow-automation"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q068",
+    "domain": "автоматизация",
+    "q": "Verfahrensanweisung in Flussdiagramm umwandeln",
+    "expect": [
+     "mcp-io-github-eyeinthesky6-unseen-workflow-compiler"
+    ],
+    "avoid": [
+     "mcp-io-github-flowzap-xyz-flowzap"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q069",
+    "domain": "автоматизация",
+    "q": "Какой инструмент без программирования соединяет приложения и запускает сценарии по событиям?",
+    "expect": [
+     "ifttt",
+     "make-com",
+     "zapier"
+    ],
+    "avoid": [
+     "workflow-automation"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q070",
+    "domain": "автоматизация",
+    "q": "отложенные HTTP-запросы агента и wake-up",
+    "expect": [
+     "mcp-io-agentlater-agentlater"
+    ],
+    "avoid": [
+     "mcp-com-pingfyr-pingfyr"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q071",
+    "domain": "память-знания",
+    "q": "handoff-сводка сессии для нового чата",
+    "expect": [
+     "context-handoff"
+    ],
+    "avoid": [
+     "agent-handoff"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q072",
+    "domain": "память-знания",
+    "q": "Как перенести затяжной проект в другой диалог и не потерять нить?",
+    "expect": [
+     "chat-migration-assistant",
+     "chat-migration-pro"
+    ],
+    "avoid": [
+     "import-memory"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q073",
+    "domain": "память-знания",
+    "q": "checkpoint проверить через Git",
+    "expect": [
+     "chat-migration-pro"
+    ],
+    "avoid": [
+     "chat-migration-assistant"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q074",
+    "domain": "память-знания",
+    "q": "Как перенести Gedächtnis, которое другой ИИ-ассистент накопил обо мне, в Claude?",
+    "expect": [
+     "import-memory"
+    ],
+    "avoid": [
+     "chat-migration-assistant"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q075",
+    "domain": "память-знания",
+    "q": "Obsidian: сироты и битые ссылки",
+    "expect": [
+     "obsidian-notes"
+    ],
+    "avoid": [
+     "mcp-co-journalit-journalit"
+    ],
+    "ranked": [
+     "obsidian-notes"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q076",
+    "domain": "память-знания",
+    "q": "Можно ли собрать базу знаний в формате Obsidian прямо из исходников и документации?",
+    "expect": [
+     "vault-anything"
+    ],
+    "avoid": [
+     "obsidian-notes"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q077",
+    "domain": "память-знания",
+    "q": "self-hosted Team-Wiki, которую пишет ИИ",
+    "expect": [
+     "mcp-dev-stuga-stuga"
+    ],
+    "avoid": [
+     "mcp-com-getagentwiki-agent-wiki"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q078",
+    "domain": "память-знания",
+    "q": "поиск по внутренним знаниям компании",
+    "expect": [
+     "enterprise-search",
+     "mcp-com-knowalabs-knowa"
+    ],
+    "avoid": [
+     "mcp-com-reportgem-global-research"
+    ],
+    "ranked": [
+     "enterprise-search",
+     "guru"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q079",
+    "domain": "память-знания",
+    "q": "заметки и закладки в чате",
+    "expect": [
+     "mcp-app-sensefold-sensefold",
+     "mcp-cn-moonlybox-moonlink",
+     "mcp-com-hjarni-hjarni"
+    ],
+    "avoid": [
+     "mcp-app-flowershow-flowershow"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q080",
+    "domain": "память-знания",
+    "q": "Как сделать, чтобы каждая новая сессия Claude не начиналась с нуля?",
+    "expect": [
+     "mcp-com-deerdawn-deerdawn",
+     "memory-toolkit"
+    ],
+    "avoid": [
+     "mcp-app-twiceshy-twiceshy"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q081",
+    "domain": "память-знания",
+    "q": "Übergabe zwischen mehreren Agenten",
+    "expect": [
+     "mcp-com-llm-bus-llm-bus",
+     "mcp-io-github-josephibra-handoff-mcp-server"
+    ],
+    "avoid": [
+     "context-handoff"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q082",
+    "domain": "память-знания",
+    "q": "Notion-Seiten finden und lesen",
+    "expect": [
+     "notion"
+    ],
+    "avoid": [
+     "google-docs"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q083",
+    "domain": "комплаенс-медицина-данные",
+    "q": "классификация риска по AI Act",
+    "expect": [
+     "eu-ai-governance",
+     "mcp-eu-regulatoryai-sovereign-ai-act-mcp",
+     "mcp-io-github-sercanmetalore-ai-act-compliance-mcp"
+    ],
+    "avoid": [
+     "mcp-io-github-kajaril-sovereignty-scan-mcp"
+    ],
+    "ranked": [
+     "eu-ai-governance",
+     "eu-ai-act-mcp",
+     "data-protection"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.3333333333333333,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q084",
+    "domain": "комплаенс-медицина-данные",
+    "q": "Какие сроки AI Act уже действуют сейчас и где за ними следить?",
+    "expect": [
+     "mcp-com-aiactradar-ai-act-radar",
+     "mcp-com-lunarasociety-intelligence"
+    ],
+    "avoid": [
+     "mcp-com-doubleaigents-www-dsar"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q085",
+    "domain": "комплаенс-медицина-данные",
+    "q": "сканер AI Act и GDPR",
+    "expect": [
+     "mcp-io-github-ark-forge-mcp-eu-ai-act"
+    ],
+    "avoid": [
+     "mcp-io-github-br0ski777-gdpr-scanner",
+     "mcp-io-github-kajaril-sovereignty-scan-mcp"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q086",
+    "domain": "комплаенс-медицина-данные",
+    "q": "Wann brauche ich eine DPIA (DSFA) für ein KI-Projekt?",
+    "expect": [
+     "data-protection",
+     "eu-ai-governance",
+     "mcp-de-fraghugo-frag-hugo"
+    ],
+    "avoid": [
+     "mcp-io-github-ojaskord-data-compliance-mcp"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q087",
+    "domain": "комплаенс-медицина-данные",
+    "q": "RoPA nach Art. 30 DSGVO aufsetzen",
+    "expect": [
+     "data-protection",
+     "mcp-de-fraghugo-frag-hugo"
+    ],
+    "avoid": [
+     "mcp-com-dpolens-dpolens"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q088",
+    "domain": "комплаенс-медицина-данные",
+    "q": "GDPR DSAR response deadline",
+    "expect": [
+     "data-protection",
+     "mcp-com-doubleaigents-www-dsar"
+    ],
+    "avoid": [
+     "mcp-com-moltlinestudio-regclock"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q089",
+    "domain": "комплаенс-медицина-данные",
+    "q": "немецкая медицинская энциклопедия для врачей",
+    "expect": [
+     "doccheck-flexikon"
+    ],
+    "avoid": [
+     "mcp-io-github-pipeworx-io-pubmed"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q090",
+    "domain": "комплаенс-медицина-данные",
+    "q": "Коды МКБ-10 по версии ВОЗ",
+    "expect": [
+     "icd-10-codes",
+     "mcp-io-github-stayce-icd-mcp"
+    ],
+    "avoid": [
+     "mcp-io-accurecord-icd10-coding",
+     "mcp-io-github-cyanheads-medical-codes-mcp-server"
+    ],
+    "ranked": [
+     "icd-10-codes"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q091",
+    "domain": "комплаенс-медицина-данные",
+    "q": "Welche Evidenz braucht ein KI-Medizinprodukt bei der FDA?",
+    "expect": [
+     "mcp-com-healthai-radar"
+    ],
+    "avoid": [
+     "mcp-io-github-donniertf-hub-ca-medical-devices-mcp",
+     "mcp-io-github-martc03-public-health"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q092",
+    "domain": "комплаенс-медицина-данные",
+    "q": "Как вытащить данные из BigQuery для аналитики?",
+    "expect": [
+     "bigquery"
+    ],
+    "avoid": [
+     "definite",
+     "hex"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q093",
+    "domain": "комплаенс-медицина-данные",
+    "q": "Есть ли веб-аналитика без cookies и баннера?",
+    "expect": [
+     "mcp-com-statable-analytics",
+     "mcp-io-github-djedi-slimlytics",
+     "mcp-io-github-meetclawdius-measure-events"
+    ],
+    "avoid": [
+     "amplitude",
+     "mcp-com-dmarkoff-mcp"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   }
+  ],
+  "or": [
+   {
+    "qid": "Q001",
+    "domain": "право-фрг-социальное",
+    "q": "разобрать Bescheid, найти слабые места",
+    "expect": [
+     "court-document-analyzer",
+     "sozialrecht-sachsen"
+    ],
+    "avoid": [],
+    "ranked": [
+     "court-document-analyzer",
+     "legal-domain-manager",
+     "sozialrecht-sachsen",
+     "legal-domain-manager-extended",
+     "doc-coauthoring",
+     "lawve-ai",
+     "amplitude-eu",
+     "smart-backup-assistant",
+     "notion",
+     "verification-foundation"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q002",
+    "domain": "право-фрг-социальное",
+    "q": "Fristen для Widerspruch против Bescheid: как посчитать с учётом выходных?",
+    "expect": [
+     "german-legal-deadline-calculator",
+     "sozialrecht-sachsen"
+    ],
+    "avoid": [
+     "mcp-io-arxo-de-bgb"
+    ],
+    "ranked": [
+     "sozialrecht-sachsen",
+     "german-legal-deadline-calculator",
+     "court-document-analyzer",
+     "legal-domain-manager",
+     "german-legal-template-generator",
+     "legal-domain-manager-extended",
+     "lulius",
+     "make-com",
+     "samautomation-workflows",
+     "agent-discussion"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q003",
+    "domain": "право-фрг-социальное",
+    "q": "шаблон Klage для Sozialgericht",
+    "expect": [
+     "german-legal-template-generator",
+     "sozialrecht-sachsen"
+    ],
+    "avoid": [],
+    "ranked": [
+     "legal-domain-manager",
+     "german-legal-template-generator",
+     "court-document-analyzer",
+     "sozialrecht-sachsen",
+     "batch-file-renamer",
+     "workflow-automation",
+     "pptx",
+     "documentation-generator",
+     "multi-skill-system-builder",
+     "docx"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q004",
+    "domain": "право-фрг-социальное",
+    "q": "employer model: сколько стоят часы Assistenz с persönlichem Budget?",
+    "expect": [
+     "sozialrecht-sachsen"
+    ],
+    "avoid": [
+     "german-legal-template-generator"
+    ],
+    "ranked": [
+     "german-legal-template-generator",
+     "sozialrecht-sachsen",
+     "mcp-com-agentpmt-agentpmt",
+     "mcp-eu-comunicate-publishing",
+     "mcp-io-github-meet-cedric-cedric",
+     "mcp-io-github-rupesh7128-cofounderbase",
+     "mcp-io-github-open-agreements-open-agreements",
+     "mcp-com-lintelly-hr-deutschland",
+     "mcp-io-github-singleflo-odoo-assistant",
+     "mcp-io-github-catalyst-labs-dev-podcast-transcript-api"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "german-legal-template-generator"
+    ]
+   },
+   {
+    "qid": "Q005",
+    "domain": "право-фрг-социальное",
+    "q": "Hilfe zur Pflege: отказ в Bescheid, как возразить?",
+    "expect": [
+     "legal-domain-manager",
+     "sozialrecht-sachsen"
+    ],
+    "avoid": [
+     "mcp-io-github-helferundprofi-helfer-und-profi"
+    ],
+    "ranked": [
+     "sozialrecht-sachsen",
+     "court-document-analyzer",
+     "legal-domain-manager",
+     "doc-coauthoring",
+     "legal-domain-manager-extended",
+     "german-legal-template-generator",
+     "german-legal-deadline-calculator"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q006",
+    "domain": "право-фрг-социальное",
+    "q": "How do I file an urgent Eilantrag at the Sozialgericht?",
+    "expect": [
+     "legal-domain-manager-extended"
+    ],
+    "avoid": [
+     "legal-domain-manager"
+    ],
+    "ranked": [
+     "legal-domain-manager",
+     "legal-domain-manager-extended",
+     "german-legal-template-generator",
+     "court-document-analyzer",
+     "mcp-com-filetypeconverters-converter",
+     "mcp-io-doriku-task-manager",
+     "mcp-io-github-open-agreements-open-agreements",
+     "mcp-io-github-assinafy-mcp-server",
+     "mcp-dev-parsehub-parsehub",
+     "mcp-com-microsoft-workiq-m365copilot"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "legal-domain-manager"
+    ]
+   },
+   {
+    "qid": "Q007",
+    "domain": "право-фрг-социальное",
+    "q": "PKH Prozesskostenhilfe для иска",
+    "expect": [
+     "legal-domain-manager-extended"
+    ],
+    "avoid": [
+     "courtroom5"
+    ],
+    "ranked": [
+     "legal-domain-manager-extended",
+     "legal-domain-manager"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q008",
+    "domain": "право-фрг-социальное",
+    "q": "§ 84 SGG Wortlaut nachschlagen",
+    "expect": [
+     "lulius",
+     "mcp-io-github-pipeworx-io-de-gesetze",
+     "nu-legal"
+    ],
+    "avoid": [],
+    "ranked": [
+     "german-legal-deadline-calculator",
+     "sozialrecht-sachsen",
+     "mcp-dev-infranode-infranode",
+     "legal-domain-manager",
+     "zitierfest"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q009",
+    "domain": "право-фрг-социальное",
+    "q": "текст закона земли Sachsen (Landesrecht)",
+    "expect": [
+     "mcp-eu-nulegal-recht",
+     "nu-legal"
+    ],
+    "avoid": [
+     "lulius",
+     "mcp-io-github-pipeworx-io-de-gesetze"
+    ],
+    "ranked": [
+     "nu-legal",
+     "sozialrecht-sachsen",
+     "zitierfest",
+     "german-legal-deadline-calculator",
+     "descrybe-legal-engine",
+     "midpage-legal-research",
+     "legal-data-hunter",
+     "harvey",
+     "text-extraction-engine",
+     "pdf"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q010",
+    "domain": "право-фрг-социальное",
+    "q": "проверить citations в Widerspruch перед отправкой",
+    "expect": [
+     "sozialrecht-sachsen",
+     "zitierfest"
+    ],
+    "avoid": [
+     "verification-foundation"
+    ],
+    "ranked": [
+     "sozialrecht-sachsen",
+     "german-legal-template-generator",
+     "gmail",
+     "court-document-analyzer",
+     "german-legal-deadline-calculator",
+     "legal-domain-manager",
+     "internal-comms",
+     "verification-foundation",
+     "mcp-com-citationsafe-verifier",
+     "memory-toolkit"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q011",
+    "domain": "право-фрг-социальное",
+    "q": "Какие Urteile Bundessozialgerichts есть по persönlicher Assistenz?",
+    "expect": [
+     "lulius",
+     "nu-legal",
+     "zitierfest"
+    ],
+    "avoid": [
+     "courtlistener"
+    ],
+    "ranked": [
+     "court-document-analyzer",
+     "legal-domain-manager",
+     "german-legal-template-generator",
+     "sozialrecht-sachsen",
+     "zitierfest",
+     "german-legal-deadline-calculator"
+    ],
+    "hit": true,
+    "rr": 0.2,
+    "recall": 0.3333333333333333,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q012",
+    "domain": "право-фрг-социальное",
+    "q": "ICF-коды функционирования для Teilhabe",
+    "expect": [
+     "mcp-io-github-stayce-icf-mcp"
+    ],
+    "avoid": [
+     "mcp-io-github-stayce-icd-mcp"
+    ],
+    "ranked": [
+     "mcp-io-github-stayce-icf-mcp",
+     "icd-10-codes",
+     "german-legal-template-generator"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q013",
+    "domain": "право-фрг-еэс",
+    "q": "Verjährung, limitation period, BGB § 195",
+    "expect": [
+     "german-legal-deadline-calculator",
+     "mcp-io-arxo-de-bgb"
+    ],
+    "avoid": [],
+    "ranked": [
+     "mcp-io-arxo-de-bgb",
+     "german-legal-deadline-calculator",
+     "mcp-com-perisclaw-whatsapp",
+     "mcp-io-github-auto1225-quotebill",
+     "german-legal-template-generator",
+     "mcp-dev-quellenkontor-hr-daten",
+     "mcp-com-lintelly-hr-deutschland",
+     "ecosystem-curator",
+     "zitierfest"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q014",
+    "domain": "право-фрг-еэс",
+    "q": "Как найти федеральный закон по официальной аббревиатуре вроде SGB IX — есть ли поиск по Kürzel?",
+    "expect": [
+     "mcp-io-github-pipeworx-io-de-gesetze",
+     "zitierfest"
+    ],
+    "avoid": [
+     "mcp-io-github-johnjackhouzi-droit-francais"
+    ],
+    "ranked": [
+     "midpage-legal-research",
+     "sozialrecht-sachsen",
+     "german-legal-template-generator",
+     "nu-legal",
+     "harvey",
+     "lulius",
+     "courtlistener",
+     "legal-data-hunter",
+     "german-legal-deadline-calculator",
+     "descrybe-legal-engine"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q015",
+    "domain": "право-фрг-еэс",
+    "q": "BGH-Urteil по Aktenzeichen или ECLI",
+    "expect": [
+     "lulius",
+     "nu-legal",
+     "zitierfest"
+    ],
+    "avoid": [
+     "mcp-io-github-adakov589-judikatura-mcp"
+    ],
+    "ranked": [
+     "legal-domain-manager",
+     "mcp-io-github-smrht-ai-rechtshulp",
+     "zitierfest",
+     "court-document-analyzer",
+     "lulius",
+     "verification-foundation",
+     "german-legal-deadline-calculator"
+    ],
+    "hit": true,
+    "rr": 0.3333333333333333,
+    "recall": 0.6666666666666666,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q016",
+    "domain": "право-фрг-еэс",
+    "q": "Где искать решения EuGH по Vorabentscheidungsersuchen, а не только тексты регламентов?",
+    "expect": [
+     "mcp-io-github-cyanheads-eur-lex-mcp-server",
+     "mcp-io-github-lex-api-lexapi-mcp"
+    ],
+    "avoid": [
+     "mcp-io-github-mister-franklin-wetwetwet-legislation"
+    ],
+    "ranked": [
+     "zitierfest",
+     "lulius",
+     "nu-legal",
+     "ecosystem-curator",
+     "eu-ai-act-mcp",
+     "verification-foundation",
+     "courtlistener",
+     "harvey",
+     "court-document-analyzer",
+     "obsidian-notes"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q017",
+    "domain": "право-фрг-еэс",
+    "q": "Нужна Fundstelle BGBl. для федерального закона ФРГ: где её взять вместе с датой редакции?",
+    "expect": [
+     "zitierfest"
+    ],
+    "avoid": [
+     "mcp-io-github-cyanheads-ris-austria-mcp-server"
+    ],
+    "ranked": [
+     "nu-legal",
+     "zitierfest",
+     "lulius",
+     "midpage-legal-research",
+     "descrybe-legal-engine",
+     "courtlistener",
+     "harvey",
+     "legal-data-hunter",
+     "batch-file-renamer",
+     "legal-domain-manager-extended"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q018",
+    "domain": "право-фрг-еэс",
+    "q": "RVG GKG Gebühren Streitwert",
+    "expect": [
+     "lulius",
+     "zitierfest"
+    ],
+    "avoid": [
+     "mcp-de-nebenkostenpro-nebenkosten"
+    ],
+    "ranked": [
+     "zitierfest",
+     "lulius"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q019",
+    "domain": "право-фрг-еэс",
+    "q": "Где в Vergütungsverzeichnis RVG найти нужную Nummer Verfahrensgebühr?",
+    "expect": [
+     "zitierfest"
+    ],
+    "avoid": [],
+    "ranked": [
+     "zitierfest",
+     "lulius",
+     "lawve-ai",
+     "productivity",
+     "doc-coauthoring",
+     "verification-foundation",
+     "harvey",
+     "built-in-browser",
+     "computer-use",
+     "obsidian-notes"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q020",
+    "domain": "право-фрг-еэс",
+    "q": "Klagefrist: Fristberechnung с Feiertagen",
+    "expect": [
+     "german-legal-deadline-calculator",
+     "lulius"
+    ],
+    "avoid": [
+     "mcp-com-lintelly-hr-deutschland"
+    ],
+    "ranked": [
+     "german-legal-deadline-calculator"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q021",
+    "domain": "право-фрг-еэс",
+    "q": "Какая редакция § 558 BGB действовала на 1 января 2019 и что в ней менялось?",
+    "expect": [
+     "nu-legal",
+     "zitierfest"
+    ],
+    "avoid": [
+     "mcp-io-github-sfhajji-lex"
+    ],
+    "ranked": [
+     "mcp-io-arxo-de-bgb",
+     "nu-legal",
+     "german-legal-deadline-calculator",
+     "hex",
+     "ifttt",
+     "definite",
+     "german-legal-template-generator",
+     "descrybe-legal-engine",
+     "zapier-2",
+     "legal-domain-manager-extended"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q022",
+    "domain": "право-фрг-еэс",
+    "q": "EU regulation, Fassung am Stichtag",
+    "expect": [
+     "mcp-io-github-lex-api-lexapi-mcp",
+     "mcp-io-github-sfhajji-lex"
+    ],
+    "avoid": [],
+    "ranked": [
+     "mcp-eu-ansvar-eu-regulations",
+     "mcp-eu-ansvar-gateway",
+     "amplitude-eu",
+     "mcp-io-github-evidinvest-aether-developer",
+     "zitierfest",
+     "mcp-io-github-mcp-dir-sancoes-ue-mcp",
+     "mcp-io-github-mcp-dir-fincen-mcp",
+     "mcp-io-github-juliusgerman-entyrix-mcp",
+     "amplitude",
+     "mcp-io-github-liamohtee-agentcn"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q023",
+    "domain": "счета-бухгалтерия",
+    "q": "XRechnung kostenlos validieren ohne Konto",
+    "expect": [
+     "mcp-dev-invowerk-xrechnung-e-invoice-validator",
+     "normapi-einvoices"
+    ],
+    "avoid": [
+     "mcp-app-wishpool-italy-invoice-mcp",
+     "mcp-io-github-popapidev-pop-mcp"
+    ],
+    "ranked": [
+     "mcp-de-zugferd-validator-validator",
+     "mcp-dev-invowerk-xrechnung-e-invoice-validator",
+     "normapi-einvoices",
+     "mcp-com-invoicexml-invoicexml",
+     "mcp-dev-invoicehub-invoicehub",
+     "mcp-com-einvoicechecker-einvoice",
+     "mcp-io-github-peculiar-systems-invoicein",
+     "mcp-io-github-causa-prima-ai-scribo"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q024",
+    "domain": "счета-бухгалтерия",
+    "q": "Mit welchem Tool kann ich eine XRechnung im UBL-Format erzeugen?",
+    "expect": [
+     "mcp-com-invoicexml-invoicexml",
+     "mcp-dev-invoicehub-invoicehub",
+     "normapi-einvoices"
+    ],
+    "avoid": [
+     "mcp-app-wishpool-romania-invoice-mcp",
+     "mcp-app-wishpool-serbia-invoice-mcp"
+    ],
+    "ranked": [
+     "mcp-com-invoicexml-invoicexml",
+     "mcp-dev-invoicehub-invoicehub",
+     "normapi-einvoices",
+     "mcp-dev-invowerk-xrechnung-e-invoice-validator",
+     "mcp-com-filetypeconverters-converter",
+     "mcp-com-xenition-api-xenition",
+     "mcp-io-github-pipeworx-io-fda-inspections",
+     "mcp-co-lovie-company-formation",
+     "mcp-io-github-ichkifokkus-fast-data",
+     "mcp-com-mandateoffice-mandate"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q025",
+    "domain": "счета-бухгалтерия",
+    "q": "ZUGFeRD PDF erzeugen",
+    "expect": [
+     "mcp-com-invoicexml-invoicexml",
+     "mcp-io-github-causa-prima-ai-scribo",
+     "normapi-einvoices"
+    ],
+    "avoid": [
+     "mcp-dev-pressmark-pressmark",
+     "mcp-io-github-invoicepdfs-mcp"
+    ],
+    "ranked": [
+     "mcp-io-github-popapidev-pop-mcp",
+     "mcp-io-github-causa-prima-ai-scribo",
+     "normapi-einvoices",
+     "mcp-de-zugferd-validator-validator",
+     "mcp-com-invoicexml-invoicexml",
+     "mcp-com-einvoicechecker-einvoice",
+     "mcp-dev-invowerk-xrechnung-e-invoice-validator",
+     "mcp-dev-pdfops-pdfops-mcp",
+     "mcp-io-github-pdf4me-pdf4me-mcp",
+     "pdf"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q026",
+    "domain": "счета-бухгалтерия",
+    "q": "Wie prüfe ich eine E-Rechnung gegen EN 16931?",
+    "expect": [
+     "mcp-de-zugferd-validator-validator",
+     "mcp-io-github-invoicepdfs-mcp"
+    ],
+    "avoid": [
+     "mcp-es-beel-mcp",
+     "mcp-io-github-arceedev-verifactu-mcp"
+    ],
+    "ranked": [
+     "mcp-de-zugferd-validator-validator",
+     "mcp-io-github-ichkifokkus-fast-data",
+     "legal-domain-manager-extended",
+     "mcp-io-github-gege-mn-ray-mcp",
+     "mcp-com-agenttoolworks-invoiceforge",
+     "mcp-dev-invoicehub-invoicehub",
+     "mcp-io-github-invoicepdfs-mcp",
+     "mcp-io-github-causa-prima-ai-scribo",
+     "audit-question-bank",
+     "german-legal-deadline-calculator"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q027",
+    "domain": "счета-бухгалтерия",
+    "q": "KoSIT-Regeln Rechnung prüfen",
+    "expect": [
+     "normapi-einvoices"
+    ],
+    "avoid": [
+     "mcp-app-wishpool-greece-invoice-mcp",
+     "mcp-io-github-brunenjere-facturas-arca-json"
+    ],
+    "ranked": [
+     "mcp-de-zugferd-validator-validator",
+     "normapi-einvoices",
+     "audit-question-bank",
+     "batch-file-renamer",
+     "zitierfest"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q028",
+    "domain": "счета-бухгалтерия",
+    "q": "Which MCP server sends a Peppol BIS 3.0 invoice to a Belgian company?",
+    "expect": [
+     "mcp-app-wishpool-belgium-invoice-mcp"
+    ],
+    "avoid": [
+     "mcp-app-wishpool-denmark-invoice-mcp",
+     "mcp-app-wishpool-netherlands-invoice-mcp"
+    ],
+    "ranked": [
+     "mcp-app-wishpool-belgium-invoice-mcp",
+     "mcp-app-wishpool-luxembourg-invoice-mcp",
+     "mcp-app-wishpool-netherlands-invoice-mcp",
+     "mcp-app-wishpool-sweden-invoice-mcp",
+     "mcp-app-wishpool-norway-invoice-mcp",
+     "mcp-app-wishpool-finland-invoice-mcp",
+     "mcp-com-agenttoolworks-invoiceforge",
+     "mcp-com-einvoicechecker-einvoice",
+     "mcp-dev-invowerk-xrechnung-e-invoice-validator",
+     "mcp-io-github-causa-prima-ai-scribo"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "mcp-app-wishpool-netherlands-invoice-mcp"
+    ]
+   },
+   {
+    "qid": "Q029",
+    "domain": "счета-бухгалтерия",
+    "q": "Wie lese ich Lieferantenrechnungen aus PDF-Dateien für die Buchhaltung aus?",
+    "expect": [
+     "mcp-io-github-antondrakon-duebuddy-invoices",
+     "mcp-io-github-fashionmascherine-svg-document-to-json-mcp"
+    ],
+    "avoid": [
+     "mcp-io-github-ahutto87-parsel",
+     "mcp-io-github-brunenjere-facturas-arca-json"
+    ],
+    "ranked": [
+     "mcp-io-github-pipeworx-io-ip-australia",
+     "mcp-io-github-mastalier1997-austria-property",
+     "mcp-io-github-cyanheads-ris-austria-mcp-server",
+     "mcp-io-github-mcp-dir-sancoes-australia-mcp",
+     "mcp-au-com-aiframework-australian-ai-governance-framework",
+     "mcp-de-ausschreibungsagenten-tender-search",
+     "mcp-com-assetfy-mcp",
+     "mcp-io-github-jkbngb-handelsregister",
+     "mcp-com-erppartnerfinder-partner-finder",
+     "mcp-com-lowtoxgear-storefront"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q030",
+    "domain": "счета-бухгалтерия",
+    "q": "Bankauszug in Buchungssätze umwandeln",
+    "expect": [
+     "mcp-io-github-arceedev-contabridge-mcp"
+    ],
+    "avoid": [
+     "mcp-ai-saifs-payment-reconciliation",
+     "mcp-io-github-arceedev-norma43-mcp"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q031",
+    "domain": "счета-бухгалтерия",
+    "q": "Welche Software taugt für Buchhaltung und Steuern in europäischen Kleinunternehmen?",
+    "expect": [
+     "mcp-finance-norman-mcp-server"
+    ],
+    "avoid": [
+     "mcp-ai-deepledger-mcp",
+     "mcp-com-accountingqb-accountingqb"
+    ],
+    "ranked": [
+     "mcp-com-shaftware-componecat",
+     "mcp-co-chinaready-search",
+     "mcp-io-github-cognitive-emergence-prooftask",
+     "mcp-io-github-mcp-dir-astrea-mcp",
+     "mcp-com-thedailyworkflow-thedailyworkflow-mcp",
+     "mcp-com-mapiron-maps",
+     "mcp-dev-kognite-memory",
+     "mcp-com-pinsharing-maps",
+     "eu-ai-governance"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q032",
+    "domain": "счета-бухгалтерия",
+    "q": "Verzugszinsen Mahnung offene Rechnungen",
+    "expect": [
+     "mcp-com-pagofix-pagofix"
+    ],
+    "avoid": [
+     "mcp-dev-cotlet-invoice2go",
+     "mcp-io-github-bpays-benji-pays"
+    ],
+    "ranked": [
+     "mcp-de-zugferd-validator-validator",
+     "mcp-app-apiguru-amazon-data",
+     "mcp-io-github-diogoup26-mcp-x402",
+     "mcp-com-compsapi-ebay-sold-listings",
+     "german-legal-deadline-calculator"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q033",
+    "domain": "счета-бухгалтерия",
+    "q": "Rechnungen und Beiträge eines e.V. verwalten",
+    "expect": [
+     "mcp-io-github-ki-klub-werder-e-v-openverein"
+    ],
+    "avoid": [
+     "mcp-co-solidinvoice-mcp",
+     "mcp-io-github-golegally-accounting-mcp"
+    ],
+    "ranked": [
+     "mcp-de-zugferd-validator-validator",
+     "german-legal-deadline-calculator"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q034",
+    "domain": "счета-бухгалтерия",
+    "q": "XRechnung als JSON auslesen",
+    "expect": [
+     "mcp-io-github-peculiar-systems-invoicein"
+    ],
+    "avoid": [
+     "mcp-io-github-alex-dev-web-c-de-document-to-json-mcp",
+     "mcp-io-github-brunenjere-facturas-arca-json"
+    ],
+    "ranked": [
+     "mcp-io-github-peculiar-systems-invoicein",
+     "normapi-einvoices",
+     "mcp-dev-invowerk-xrechnung-e-invoice-validator",
+     "mcp-com-invoicexml-invoicexml",
+     "mcp-de-zugferd-validator-validator",
+     "mcp-dev-invoicehub-invoicehub",
+     "mcp-com-einvoicechecker-einvoice",
+     "mcp-io-github-causa-prima-ai-scribo",
+     "mcp-io-github-alex-dev-web-c-de-document-to-json-mcp",
+     "mcp-dev-agentdiet-json-repair"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q035",
+    "domain": "документы-таблицы",
+    "q": "Word-Dokument Änderungen nachverfolgen",
+    "expect": [
+     "docx"
+    ],
+    "avoid": [
+     "google-docs"
+    ],
+    "ranked": [
+     "docx",
+     "docs",
+     "mcp-io-github-latimer-woods-tech-wordis-bond",
+     "mcp-com-asrmemory-asr",
+     "mcp-com-wphealthkit-mcp-server",
+     "mcp-io-github-mistakili-toolora-mcp",
+     "mcp-dev-parsehub-parsehub",
+     "mcp-ai-umowy-polskie-prawo",
+     "mcp-com-speaktoyourdatabase-odoo-mcp",
+     "mcp-io-github-fernandoguiraud16-coder-audio-video-transcriber"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q036",
+    "domain": "документы-таблицы",
+    "q": "Как поправить формулы в Excel-таблице?",
+    "expect": [
+     "xlsx"
+    ],
+    "avoid": [
+     "google-sheets"
+    ],
+    "ranked": [
+     "xlsx",
+     "google-sheets",
+     "text-extraction-engine",
+     "docx",
+     "mcp-ai-saifs-payment-reconciliation",
+     "mcp-io-github-paul-salviani-trust-switchboard",
+     "mcp-io-github-mistakili-toolora-mcp",
+     "mcp-io-github-mrmaciej1-justfill-pdf-forms",
+     "mcp-com-a2awire-benchmark-transcript-audit-2026-09-19-4f00a8c9",
+     "google-workspace"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "google-sheets"
+    ]
+   },
+   {
+    "qid": "Q037",
+    "domain": "документы-таблицы",
+    "q": "PowerPoint Folien mit Sprechernotizen erstellen",
+    "expect": [
+     "pptx"
+    ],
+    "avoid": [
+     "google-slides"
+    ],
+    "ranked": [
+     "mcp-io-github-apaleo-mcp-server",
+     "mcp-io-github-cnucho-methodiq-tools",
+     "pptx",
+     "text-extraction-engine",
+     "google-workspace"
+    ],
+    "hit": true,
+    "rr": 0.3333333333333333,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q038",
+    "domain": "документы-таблицы",
+    "q": "Google Slides thumbnails and pages",
+    "expect": [
+     "google-slides"
+    ],
+    "avoid": [
+     "canva"
+    ],
+    "ranked": [
+     "google-slides",
+     "google-workspace",
+     "canva",
+     "mcp-com-autocontentapi-platform",
+     "notion",
+     "pptx",
+     "mcp-app-openkrill-page-fetch",
+     "mcp-dev-tanod-html-to-markdown",
+     "mcp-com-dondego-wikidata-google-knowledge-mcp",
+     "mcp-eu-nordicmcp-google-mail"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "canva"
+    ]
+   },
+   {
+    "qid": "Q039",
+    "domain": "документы-таблицы",
+    "q": "Google Sheets Zeilen anhängen",
+    "expect": [
+     "google-sheets"
+    ],
+    "avoid": [
+     "xlsx"
+    ],
+    "ranked": [
+     "google-sheets",
+     "mcp-ai-fgac-fgac",
+     "google-workspace",
+     "bigquery",
+     "google-drive",
+     "xlsx",
+     "mcp-ai-switchbooks-switchbooks",
+     "mcp-io-github-getsquish-squish",
+     "mcp-com-dondego-wikidata-google-knowledge-mcp",
+     "mcp-eu-nordicmcp-google-mail"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q040",
+    "domain": "документы-таблицы",
+    "q": "Notion Datenbank Einträge anlegen",
+    "expect": [
+     "notion"
+    ],
+    "avoid": [
+     "google-sheets"
+    ],
+    "ranked": [
+     "notion",
+     "mcp-com-insightfulpipe-notion",
+     "mcp-io-github-gege-mn-ray-mcp",
+     "mcp-com-turbonotify-turbo-notify",
+     "mcp-io-github-ptrinh-final-notice",
+     "mcp-io-github-noriget-agentping",
+     "mcp-io-github-applehorsefrog-vergabe-api",
+     "mcp-com-lycatra-lycatra",
+     "mcp-com-suprsend-mcp",
+     "mcp-ai-dreamlit-mcp"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q041",
+    "domain": "документы-таблицы",
+    "q": "OCR für gescannte PDF-Verträge",
+    "expect": [
+     "pdf",
+     "text-extraction-engine"
+    ],
+    "avoid": [
+     "pdf-viewer-plugin"
+    ],
+    "ranked": [
+     "mcp-io-github-skavio-eu-processing",
+     "mcp-io-github-pdf4me-pdf4me-mcp",
+     "pdf",
+     "text-extraction-engine",
+     "mcp-io-github-fashionmascherine-svg-document-to-json-mcp",
+     "mcp-com-corenexis-api",
+     "mcp-io-github-mistakili-toolora-mcp",
+     "mcp-io-github-andriyvk-apify-document-tools",
+     "mcp-io-github-denyskot1986-finekot-api-mcp",
+     "mcp-app-contendeo-contendeo"
+    ],
+    "hit": true,
+    "rr": 0.3333333333333333,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q042",
+    "domain": "документы-таблицы",
+    "q": "Можно ли заполнить PDF-форму и поставить подпись?",
+    "expect": [
+     "pdf",
+     "pdf-viewer-plugin"
+    ],
+    "avoid": [
+     "text-extraction-engine"
+    ],
+    "ranked": [
+     "pdf-viewer-plugin",
+     "pdf",
+     "docs",
+     "text-extraction-engine",
+     "chrome-browser",
+     "google-sheets",
+     "docx",
+     "normapi-einvoices",
+     "xlsx",
+     "data-protection"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q043",
+    "domain": "документы-таблицы",
+    "q": "Google Docs Dokument bearbeiten",
+    "expect": [
+     "google-docs",
+     "google-workspace"
+    ],
+    "avoid": [
+     "claude-docs-mcp"
+    ],
+    "ranked": [
+     "google-docs",
+     "docs",
+     "claude-docs-mcp",
+     "doc-coauthoring",
+     "docx",
+     "mcp-ai-fgac-fgac",
+     "google-workspace",
+     "google-drive",
+     "microsoft-365",
+     "documentation-generator"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "claude-docs-mcp"
+    ]
+   },
+   {
+    "qid": "Q044",
+    "domain": "документы-таблицы",
+    "q": "Как вести совместную работу над спецификацией с комментариями?",
+    "expect": [
+     "doc-coauthoring",
+     "docs"
+    ],
+    "avoid": [
+     "microsoft-365"
+    ],
+    "ranked": [
+     "doc-coauthoring",
+     "docs",
+     "documentation-generator",
+     "shopify",
+     "nonprofit-grant-operations",
+     "agent-handoff",
+     "nu-legal",
+     "notion",
+     "chat-migration-assistant",
+     "claude-docs-mcp"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q045",
+    "domain": "документы-таблицы",
+    "q": "SharePoint OneDrive Office files access",
+    "expect": [
+     "microsoft-365"
+    ],
+    "avoid": [
+     "google-drive"
+    ],
+    "ranked": [
+     "microsoft-365",
+     "google-drive",
+     "mcp-com-filetypeconverters-converter",
+     "mcp-com-a2awire-benchmark-access-change-request-recertify-2026-09-15-b578285f",
+     "mcp-io-github-wcag-compliance-mcp",
+     "mcp-io-github-ranuk12-ada-audits",
+     "mcp-io-github-groundlogic-ai-source-accessibility-ai",
+     "mcp-io-cypress-mcp-cypress-cloud",
+     "batch-file-renamer",
+     "mcp-ai-fgac-fgac"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "google-drive"
+    ]
+   },
+   {
+    "qid": "Q046",
+    "domain": "документы-таблицы",
+    "q": "Can Claude make a Canva presentation from a template?",
+    "expect": [
+     "canva"
+    ],
+    "avoid": [
+     "pptx"
+    ],
+    "ranked": [
+     "canva",
+     "google-slides",
+     "mcp-ai-gemus-gemus",
+     "mcp-dev-workers-cybermax-tools-cybermax-billsprig",
+     "mcp-ai-starsinger-starsinger-mcp",
+     "make-com",
+     "mcp-io-github-prometheus-maker-audio-video-transcriber",
+     "mcp-com-accountingqb-accountingqb",
+     "mcp-com-dpolens-dpolens",
+     "mcp-io-github-cnucho-methodiq-tools"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q047",
+    "domain": "почта-календарь-встречи",
+    "q": "Gmail: что уже подключено",
+    "expect": [
+     "gmail"
+    ],
+    "avoid": [
+     "mcp-ai-atmark-atmark"
+    ],
+    "ranked": [
+     "mcp-ai-fgac-fgac",
+     "gmail",
+     "mcp-ai-mailmcp-mailmcp",
+     "mcp-co-lumman-mail",
+     "mcp-com-mcpemails-emails",
+     "mcp-io-github-peter-fusek-oncofiles",
+     "mcp-io-github-totesmagotes-mcp-server-auth",
+     "mcp-ai-atmark-atmark",
+     "mcp-eu-nordicmcp-google-mail",
+     "mcp-co-prosignature-email-signatures"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q048",
+    "domain": "почта-календарь-встречи",
+    "q": "Как искать письма сразу в Gmail, Outlook и iCloud?",
+    "expect": [
+     "mcp-co-lumman-mail",
+     "mcp-com-mcpemails-emails"
+    ],
+    "avoid": [
+     "gmail"
+    ],
+    "ranked": [
+     "mcp-co-lumman-mail",
+     "mcp-co-lumman-calendar",
+     "mcp-ai-mailmcp-mailmcp",
+     "mcp-com-mcpemails-emails",
+     "mcp-co-prosignature-email-signatures",
+     "mcp-app-openkrill-mailcheck",
+     "gmail",
+     "microsoft-365",
+     "mcp-ai-fgac-fgac",
+     "morning"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q049",
+    "domain": "почта-календарь-встречи",
+    "q": "агентский ящик, не личный Gmail",
+    "expect": [
+     "mcp-ai-artil-artil",
+     "mcp-ai-atmark-atmark",
+     "mcp-com-cooperemail-cooper-email"
+    ],
+    "avoid": [
+     "gmail"
+    ],
+    "ranked": [
+     "legalzoom",
+     "mcp-ai-fgac-fgac",
+     "gmail",
+     "mcp-ai-mailmcp-mailmcp",
+     "mcp-co-lumman-mail",
+     "mcp-com-mcpemails-emails",
+     "mcp-io-github-peter-fusek-oncofiles",
+     "mcp-io-github-totesmagotes-mcp-server-auth",
+     "mcp-ai-atmark-atmark",
+     "mcp-eu-nordicmcp-google-mail"
+    ],
+    "hit": true,
+    "rr": 0.1111111111111111,
+    "recall": 0.3333333333333333,
+    "avoid_in_top3": [
+     "gmail"
+    ]
+   },
+   {
+    "qid": "Q050",
+    "domain": "почта-календарь-встречи",
+    "q": "Какой инструмент делает E-Mail-Entwürfe с подтверждением владельца?",
+    "expect": [
+     "mcp-com-cooperemail-cooper-email",
+     "mcp-com-lockally-email"
+    ],
+    "avoid": [
+     "mcp-dev-emailmd-emailmd",
+     "mcp-dev-mailkite-mail-send"
+    ],
+    "ranked": [
+     "ecosystem-curator",
+     "google-calendar",
+     "midpage-legal-research",
+     "google-drive",
+     "google-slides",
+     "granola",
+     "gmail",
+     "google-docs",
+     "import-memory",
+     "descrybe-legal-engine"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q051",
+    "domain": "почта-календарь-встречи",
+    "q": "Google Kalender Termine und Einladungen",
+    "expect": [
+     "google-calendar",
+     "mcp-co-lumman-calendar"
+    ],
+    "avoid": [
+     "morning"
+    ],
+    "ranked": [
+     "google-calendar",
+     "mcp-io-github-sidneybissoli-medical-terminologies-mcp",
+     "mcp-com-claidex-failure-intelligence",
+     "google-workspace",
+     "mcp-com-dondego-wikidata-google-knowledge-mcp",
+     "mcp-eu-nordicmcp-google-mail",
+     "google-docs",
+     "mcp-io-github-steadyapi-scrapers",
+     "google-sheets",
+     "mcp-ai-fgac-fgac"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q052",
+    "domain": "почта-календарь-встречи",
+    "q": "Как собрать календари Outlook, iCloud и CalDAV в одном месте?",
+    "expect": [
+     "mcp-co-lumman-calendar"
+    ],
+    "avoid": [
+     "google-calendar"
+    ],
+    "ranked": [
+     "mcp-co-lumman-calendar",
+     "mcp-co-lumman-mail",
+     "productivity",
+     "notion",
+     "microsoft-365",
+     "google-calendar",
+     "legal-domain-manager-extended",
+     "mcp-ai-mailmcp-mailmcp",
+     "mcp-com-mcpemails-emails",
+     "mcp-co-prosignature-email-signatures"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q053",
+    "domain": "почта-календарь-встречи",
+    "q": "overlapping recurring meetings, skip weekends",
+    "expect": [
+     "mcp-com-moltlinestudio-timeops"
+    ],
+    "avoid": [
+     "mcp-io-github-donniertf-hub-ca-business-calendar-mcp"
+    ],
+    "ranked": [
+     "mcp-com-operatornest-tools",
+     "mcp-com-skipshit-mcp",
+     "mcp-com-autocontentapi-platform",
+     "mcp-io-github-noriget-agentcron",
+     "mcp-ai-contentsweep-supplier-feeds",
+     "mcp-io-github-catalyst-labs-dev-city-council-meeting-transcripts",
+     "mcp-com-recordmeeting-recordmeeting",
+     "mcp-com-dayschedule-mcp",
+     "mcp-ai-note1-mcp",
+     "mcp-com-liliphant-mcp-mcp"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q054",
+    "domain": "почта-календарь-встречи",
+    "q": "Транскрипты Granola доступны без платного тарифа?",
+    "expect": [
+     "granola"
+    ],
+    "avoid": [
+     "mcp-io-github-vomo-ai-vomo"
+    ],
+    "ranked": [
+     "granola",
+     "google-drive",
+     "computer-use",
+     "productivity",
+     "chrome-browser",
+     "make-com",
+     "smart-backup-assistant",
+     "session-audit-waves",
+     "tinyfish",
+     "guru"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q055",
+    "domain": "почта-календарь-встречи",
+    "q": "Besprechungsprotokoll mit Aufgaben und Tickets",
+    "expect": [
+     "granola",
+     "mcp-ai-note1-mcp",
+     "mcp-io-github-vomo-ai-vomo"
+    ],
+    "avoid": [
+     "mcp-io-github-catalyst-labs-dev-city-council-meeting-transcripts",
+     "mcp-io-github-catalyst-labs-dev-local-government-decision-lookup"
+    ],
+    "ranked": [
+     "mcp-ai-note1-mcp",
+     "mcp-ai-backengine-backengine-mcp",
+     "mcp-com-nextoolsolutions-glpi",
+     "german-legal-deadline-calculator"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.3333333333333333,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q056",
+    "domain": "почта-календарь-встречи",
+    "q": "утренний бриф на день",
+    "expect": [
+     "morning"
+    ],
+    "avoid": [
+     "enterprise-search"
+    ],
+    "ranked": [
+     "morning",
+     "google-calendar",
+     "productivity",
+     "german-legal-deadline-calculator",
+     "legal-domain-manager",
+     "nu-legal"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q057",
+    "domain": "почта-календарь-встречи",
+    "q": "Как поставить напоминание, которое придёт на почту или в календарь?",
+    "expect": [
+     "mcp-com-pingfyr-pingfyr",
+     "mcp-io-github-noriget-agentcron"
+    ],
+    "avoid": [
+     "mcp-com-pushizo-mcp"
+    ],
+    "ranked": [
+     "morning",
+     "productivity",
+     "notion",
+     "google-calendar",
+     "gmail",
+     "enterprise-search",
+     "microsoft-365",
+     "internal-comms",
+     "slack",
+     "lawve-ai"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q058",
+    "domain": "почта-календарь-встречи",
+    "q": "task tracker Linear or Asana",
+    "expect": [
+     "asana",
+     "linear"
+    ],
+    "avoid": [
+     "mcp-io-doriku-task-manager",
+     "mcp-io-github-f-tiger-bpj-ai-tools"
+    ],
+    "ranked": [
+     "asana",
+     "linear",
+     "productivity",
+     "mcp-ai-anomalyarmor-armor-mcp",
+     "mcp-com-ibluetext-ibluetext",
+     "mcp-io-github-lahutchins91-invoice",
+     "mcp-com-a2awire-benchmark-invoice-total-extraction-koda-24cece89",
+     "atlassian",
+     "mcp-com-a2awire-data-medical-research-trial-results-tracker",
+     "mcp-app-wishpool-germany-logistics-mcp"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q059",
+    "domain": "автоматизация",
+    "q": "make.com сценарии запуск отладка",
+    "expect": [
+     "make-com"
+    ],
+    "avoid": [
+     "zapier"
+    ],
+    "ranked": [
+     "make-com",
+     "zapier",
+     "zapier-2",
+     "samautomation-workflows",
+     "ifttt",
+     "plaid-developer-tools",
+     "workflow-automation",
+     "mcp-dev-workers-cybermax-tools-cybermax-billsprig",
+     "chrome-browser",
+     "mcp-io-agentlater-agentlater"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "zapier"
+    ]
+   },
+   {
+    "qid": "Q060",
+    "domain": "автоматизация",
+    "q": "Сколько приложений доступно в Zapier через MCP?",
+    "expect": [
+     "mcp-com-zapier-mcp"
+    ],
+    "avoid": [
+     "mcp-com-ifttt-mcp"
+    ],
+    "ranked": [
+     "zapier-2",
+     "ifttt",
+     "computer-use",
+     "zapier",
+     "built-in-browser",
+     "workflow-automation",
+     "google-workspace",
+     "mcp-com-zapier-mcp",
+     "google-drive",
+     "chrome-browser"
+    ],
+    "hit": true,
+    "rr": 0.125,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q061",
+    "domain": "автоматизация",
+    "q": "IFTTT Applets über MCP bauen",
+    "expect": [
+     "ifttt",
+     "mcp-com-ifttt-mcp"
+    ],
+    "avoid": [
+     "mcp-com-zapier-mcp"
+    ],
+    "ranked": [
+     "mcp-com-ifttt-mcp",
+     "ifttt",
+     "mcp-com-apple-rag-mcp-server",
+     "mcp-ai-sosumi-sosumi",
+     "mcp-io-github-applehorsefrog-vergabe-api",
+     "mcp-io-github-lmslay-tubetext-social-video-transcripts",
+     "zapier",
+     "make-com",
+     "german-legal-deadline-calculator",
+     "mcp-io-github-mcpservings-paper-mcp"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q062",
+    "domain": "автоматизация",
+    "q": "Какой сервис с открытым кодом можно использовать вместо Zapier?",
+    "expect": [
+     "mcp-io-github-blinkboxhq-blinkbox"
+    ],
+    "avoid": [
+     "mcp-com-zapier-mcp",
+     "zapier"
+    ],
+    "ranked": [
+     "icd-10-codes",
+     "clickup",
+     "linear",
+     "monday",
+     "guru",
+     "atlassian-plugin",
+     "hex",
+     "amplitude",
+     "amplitude-eu",
+     "legal-data-hunter"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q063",
+    "domain": "автоматизация",
+    "q": "n8n workflow validation without execution",
+    "expect": [
+     "mcp-co-com-elyraon-workflow-rescue",
+     "mcp-io-github-hacrootechnologies-gydmation",
+     "samautomation-workflows"
+    ],
+    "avoid": [
+     "mcp-com-aiagentcycle-aiagentcycle"
+    ],
+    "ranked": [
+     "mcp-co-com-elyraon-workflow-rescue",
+     "workflow-automation",
+     "samautomation-workflows",
+     "mcp-io-github-cnucho-researchpilot",
+     "mcp-io-github-kubeshop-testkube-mcp",
+     "make-com",
+     "mcp-io-github-hacrootechnologies-gydmation",
+     "mcp-io-github-cognitive-emergence-prooftask",
+     "mcp-io-github-blinkboxhq-blinkbox",
+     "mcp-io-github-chinlee2200-dotcom-bridgecore"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q064",
+    "domain": "автоматизация",
+    "q": "Как отладить вебхуки на localhost и повторить запросы?",
+    "expect": [
+     "mcp-io-github-pipehero-pipehero"
+    ],
+    "avoid": [
+     "mcp-ai-wakeshift-webhooks"
+    ],
+    "ranked": [
+     "mcp-io-github-pipehero-pipehero",
+     "ifttt",
+     "make-com",
+     "harvey",
+     "session-audit-waves",
+     "data-protection",
+     "skill-creator",
+     "morning",
+     "pdf",
+     "verification-foundation"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q065",
+    "domain": "автоматизация",
+    "q": "вебхук-триггер, который будит AI-агента",
+    "expect": [
+     "mcp-ai-wakeshift-webhooks"
+    ],
+    "avoid": [
+     "mcp-io-github-pipehero-pipehero"
+    ],
+    "ranked": [
+     "ifttt",
+     "vault-anything",
+     "agent-discussion",
+     "agent-handoff",
+     "multi-chat-orchestrator",
+     "make-com",
+     "computer-use",
+     "obsidian-notes",
+     "tinyfish",
+     "docs"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q066",
+    "domain": "автоматизация",
+    "q": "Wie leite ich Webhook-Payload-Typen aus echtem Traffic ab?",
+    "expect": [
+     "mcp-com-webhook-studio-webhooks"
+    ],
+    "avoid": [
+     "mcp-io-github-kroqdotdev-webhooks-cc"
+    ],
+    "ranked": [
+     "mcp-com-webhook-studio-webhooks",
+     "german-legal-deadline-calculator",
+     "mcp-dev-agentdiet-prompt-guard",
+     "mcp-io-github-ichkifokkus-fast-data",
+     "legal-domain-manager-extended",
+     "mcp-com-statable-analytics",
+     "mcp-ai-turingtap-turingtap",
+     "mcp-de-viafrei-mcp",
+     "mcp-io-github-pipeworx-io-ip-australia",
+     "mcp-io-github-mastalier1997-austria-property"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q067",
+    "domain": "автоматизация",
+    "q": "workflow orchestration with error handling",
+    "expect": [
+     "workflow-automation"
+    ],
+    "avoid": [
+     "mcp-dev-cloudgate-workflow",
+     "mcp-io-github-jonnyton-workflow-universe-server"
+    ],
+    "ranked": [
+     "workflow-automation",
+     "mcp-co-com-elyraon-workflow-rescue",
+     "mcp-com-agentpmt-agentpmt",
+     "mcp-app-paichart-mcp-hub",
+     "mcp-dev-urlpipe-mcp",
+     "mcp-io-github-mcdca-usertapes-mcp",
+     "mcp-com-agentfirststack-replay",
+     "mcp-dev-cloudgate-workflow",
+     "mcp-io-github-jonnyton-workflow-universe-server",
+     "samautomation-workflows"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q068",
+    "domain": "автоматизация",
+    "q": "Verfahrensanweisung in Flussdiagramm umwandeln",
+    "expect": [
+     "mcp-io-github-eyeinthesky6-unseen-workflow-compiler"
+    ],
+    "avoid": [
+     "mcp-io-github-flowzap-xyz-flowzap"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q069",
+    "domain": "автоматизация",
+    "q": "Какой инструмент без программирования соединяет приложения и запускает сценарии по событиям?",
+    "expect": [
+     "ifttt",
+     "make-com",
+     "zapier"
+    ],
+    "avoid": [
+     "workflow-automation"
+    ],
+    "ranked": [
+     "make-com",
+     "zapier-2",
+     "ifttt",
+     "google-calendar",
+     "deep-research",
+     "samautomation-workflows",
+     "computer-use",
+     "google-workspace",
+     "morning",
+     "chrome-browser"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.6666666666666666,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q070",
+    "domain": "автоматизация",
+    "q": "отложенные HTTP-запросы агента и wake-up",
+    "expect": [
+     "mcp-io-agentlater-agentlater"
+    ],
+    "avoid": [
+     "mcp-com-pingfyr-pingfyr"
+    ],
+    "ranked": [
+     "mcp-ai-ciphyr-agentmart-agentmart",
+     "mcp-dev-pendnt-pendnt",
+     "mcp-io-agentlater-agentlater",
+     "vault-anything",
+     "mcp-ai-wakeshift-webhooks",
+     "mcp-ai-wakeshift-slackline",
+     "session-audit-waves",
+     "claude-code-bundled",
+     "agent-discussion",
+     "tinyfish"
+    ],
+    "hit": true,
+    "rr": 0.3333333333333333,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q071",
+    "domain": "память-знания",
+    "q": "handoff-сводка сессии для нового чата",
+    "expect": [
+     "context-handoff"
+    ],
+    "avoid": [
+     "agent-handoff"
+    ],
+    "ranked": [
+     "context-handoff",
+     "chat-migration-assistant",
+     "agent-handoff",
+     "chat-migration-pro",
+     "memory-toolkit",
+     "multi-chat-orchestrator",
+     "google-docs",
+     "granola",
+     "session-status-sweep",
+     "session-audit-waves"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "agent-handoff"
+    ]
+   },
+   {
+    "qid": "Q072",
+    "domain": "память-знания",
+    "q": "Как перенести затяжной проект в другой диалог и не потерять нить?",
+    "expect": [
+     "chat-migration-assistant",
+     "chat-migration-pro"
+    ],
+    "avoid": [
+     "import-memory"
+    ],
+    "ranked": [
+     "import-memory",
+     "chat-migration-assistant",
+     "context-handoff",
+     "memory-toolkit",
+     "zapier-2",
+     "takeout-drive-cleanup",
+     "web-artifacts-builder",
+     "documentation-generator",
+     "chat-migration-pro",
+     "smart-backup-assistant"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "import-memory"
+    ]
+   },
+   {
+    "qid": "Q073",
+    "domain": "память-знания",
+    "q": "checkpoint проверить через Git",
+    "expect": [
+     "chat-migration-pro"
+    ],
+    "avoid": [
+     "chat-migration-assistant"
+    ],
+    "ranked": [
+     "chat-migration-pro",
+     "chat-migration-assistant",
+     "mcp-dev-sprites-mcp",
+     "icd-10-codes",
+     "vault-anything",
+     "memory-toolkit",
+     "xlsx",
+     "computer-use",
+     "context-handoff",
+     "docx"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "chat-migration-assistant"
+    ]
+   },
+   {
+    "qid": "Q074",
+    "domain": "память-знания",
+    "q": "Как перенести Gedächtnis, которое другой ИИ-ассистент накопил обо мне, в Claude?",
+    "expect": [
+     "import-memory"
+    ],
+    "avoid": [
+     "chat-migration-assistant"
+    ],
+    "ranked": [
+     "import-memory",
+     "context-handoff",
+     "memory-toolkit",
+     "amplitude-eu",
+     "verification-foundation",
+     "agent-discussion",
+     "chat-migration-assistant",
+     "amplitude",
+     "chrome-browser",
+     "computer-use"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q075",
+    "domain": "память-знания",
+    "q": "Obsidian: сироты и битые ссылки",
+    "expect": [
+     "obsidian-notes"
+    ],
+    "avoid": [
+     "mcp-co-journalit-journalit"
+    ],
+    "ranked": [
+     "obsidian-notes",
+     "vault-anything",
+     "mcp-co-journalit-journalit",
+     "audit-question-bank",
+     "nu-legal",
+     "german-legal-template-generator",
+     "memory-toolkit",
+     "batch-file-renamer",
+     "verification-foundation",
+     "documentation-generator"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "mcp-co-journalit-journalit"
+    ]
+   },
+   {
+    "qid": "Q076",
+    "domain": "память-знания",
+    "q": "Можно ли собрать базу знаний в формате Obsidian прямо из исходников и документации?",
+    "expect": [
+     "vault-anything"
+    ],
+    "avoid": [
+     "obsidian-notes"
+    ],
+    "ranked": [
+     "obsidian-notes",
+     "doccheck-flexikon",
+     "vault-anything",
+     "guru",
+     "documentation-generator",
+     "enterprise-search",
+     "courtroom5",
+     "multi-skill-system-builder",
+     "session-audit-waves",
+     "deep-research"
+    ],
+    "hit": true,
+    "rr": 0.3333333333333333,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "obsidian-notes"
+    ]
+   },
+   {
+    "qid": "Q077",
+    "domain": "память-знания",
+    "q": "self-hosted Team-Wiki, которую пишет ИИ",
+    "expect": [
+     "mcp-dev-stuga-stuga"
+    ],
+    "avoid": [
+     "mcp-com-getagentwiki-agent-wiki"
+    ],
+    "ranked": [
+     "mcp-dev-stuga-stuga",
+     "mcp-com-getagentwiki-agent-wiki",
+     "obsidian-notes",
+     "documentation-generator",
+     "mcp-io-github-olegnickeshin-telegram-business-mcp",
+     "mcp-app-anakior-atlas-mind",
+     "mcp-dev-clusteragent-cluster-mcp",
+     "mcp-in-theboringpeople-mnema",
+     "mcp-dev-thebridge-bridge",
+     "verification-foundation"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "mcp-com-getagentwiki-agent-wiki"
+    ]
+   },
+   {
+    "qid": "Q078",
+    "domain": "память-знания",
+    "q": "поиск по внутренним знаниям компании",
+    "expect": [
+     "enterprise-search",
+     "mcp-com-knowalabs-knowa"
+    ],
+    "avoid": [
+     "mcp-com-reportgem-global-research"
+    ],
+    "ranked": [
+     "enterprise-search",
+     "guru",
+     "internal-comms",
+     "doccheck-flexikon",
+     "deep-research",
+     "ecosystem-curator",
+     "icd-10-codes",
+     "duplicate-hunter",
+     "canva",
+     "legal-data-hunter"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q079",
+    "domain": "память-знания",
+    "q": "заметки и закладки в чате",
+    "expect": [
+     "mcp-app-sensefold-sensefold",
+     "mcp-cn-moonlybox-moonlink",
+     "mcp-com-hjarni-hjarni"
+    ],
+    "avoid": [
+     "mcp-app-flowershow-flowershow"
+    ],
+    "ranked": [
+     "notion",
+     "granola",
+     "memory-toolkit",
+     "docs",
+     "pptx",
+     "doc-coauthoring",
+     "obsidian-notes",
+     "chat-migration-assistant",
+     "morning",
+     "google-slides"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q080",
+    "domain": "память-знания",
+    "q": "Как сделать, чтобы каждая новая сессия Claude не начиналась с нуля?",
+    "expect": [
+     "mcp-com-deerdawn-deerdawn",
+     "memory-toolkit"
+    ],
+    "avoid": [
+     "mcp-app-twiceshy-twiceshy"
+    ],
+    "ranked": [
+     "claude-code-bundled",
+     "context-handoff",
+     "claude-docs-mcp",
+     "session-status-sweep",
+     "chrome-browser",
+     "takeout-drive-cleanup",
+     "pdf",
+     "ecosystem-curator",
+     "doc-coauthoring",
+     "normapi-einvoices"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q081",
+    "domain": "память-знания",
+    "q": "Übergabe zwischen mehreren Agenten",
+    "expect": [
+     "mcp-com-llm-bus-llm-bus",
+     "mcp-io-github-josephibra-handoff-mcp-server"
+    ],
+    "avoid": [
+     "context-handoff"
+    ],
+    "ranked": [
+     "mcp-com-a2awire-agent-inbox",
+     "mcp-com-agentpmt-agentpmt",
+     "mcp-com-clauxel-agentmemorymcp-agentmemorymcp-mcp",
+     "mcp-com-agentemaillist-ai-free-transactional-email-smtp-relay",
+     "mcp-dev-agenttool-agenttool",
+     "mcp-io-agentlater-agentlater",
+     "mcp-com-brelsfordsoftware-agent-bounty-jobs",
+     "mcp-ai-ciphyr-agentmart-agentmart",
+     "mcp-dev-agent-module-mcp",
+     "mcp-io-github-jakubtrousil-agentsjunction"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q082",
+    "domain": "память-знания",
+    "q": "Notion-Seiten finden und lesen",
+    "expect": [
+     "notion"
+    ],
+    "avoid": [
+     "google-docs"
+    ],
+    "ranked": [
+     "notion",
+     "mcp-com-insightfulpipe-notion",
+     "mcp-com-superagnt-email-finder",
+     "mcp-com-findleademails-mcp",
+     "mcp-io-github-gege-mn-ray-mcp",
+     "mcp-com-findabis-findabis",
+     "mcp-com-mcpbundles-uk-court-finder",
+     "mcp-com-turbonotify-turbo-notify",
+     "mcp-io-github-ptrinh-final-notice",
+     "mcp-io-github-hkchao-findtime-mcp-server"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q083",
+    "domain": "комплаенс-медицина-данные",
+    "q": "классификация риска по AI Act",
+    "expect": [
+     "eu-ai-governance",
+     "mcp-eu-regulatoryai-sovereign-ai-act-mcp",
+     "mcp-io-github-sercanmetalore-ai-act-compliance-mcp"
+    ],
+    "avoid": [
+     "mcp-io-github-kajaril-sovereignty-scan-mcp"
+    ],
+    "ranked": [
+     "eu-ai-governance",
+     "eu-ai-act-mcp",
+     "data-protection",
+     "mcp-eu-regulatoryai-sovereign-ai-act-mcp",
+     "mcp-com-aiactradar-ai-act-radar",
+     "mcp-io-github-ark-forge-mcp-eu-ai-act",
+     "mcp-io-github-sercanmetalore-ai-act-compliance-mcp",
+     "mcp-ai-cotal-cotal",
+     "mcp-io-github-larshiensch99-warden",
+     "mcp-ai-harny-context"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q084",
+    "domain": "комплаенс-медицина-данные",
+    "q": "Какие сроки AI Act уже действуют сейчас и где за ними следить?",
+    "expect": [
+     "mcp-com-aiactradar-ai-act-radar",
+     "mcp-com-lunarasociety-intelligence"
+    ],
+    "avoid": [
+     "mcp-com-doubleaigents-www-dsar"
+    ],
+    "ranked": [
+     "eu-ai-act-mcp",
+     "data-protection",
+     "lulius",
+     "german-legal-deadline-calculator",
+     "legal-domain-manager",
+     "atlassian-2",
+     "court-document-analyzer",
+     "chrome-browser",
+     "built-in-browser",
+     "agent-discussion"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q085",
+    "domain": "комплаенс-медицина-данные",
+    "q": "сканер AI Act и GDPR",
+    "expect": [
+     "mcp-io-github-ark-forge-mcp-eu-ai-act"
+    ],
+    "avoid": [
+     "mcp-io-github-br0ski777-gdpr-scanner",
+     "mcp-io-github-kajaril-sovereignty-scan-mcp"
+    ],
+    "ranked": [
+     "mcp-io-github-ark-forge-mcp-eu-ai-act",
+     "mcp-eu-ansvar-eu-regulations",
+     "mcp-io-github-mydatapass-mydatapass",
+     "data-protection",
+     "text-extraction-engine",
+     "mcp-io-github-br0ski777-gdpr-scanner",
+     "eu-ai-governance",
+     "mcp-com-rulemesh-compliance",
+     "mcp-com-doubleaigents-www-dsar",
+     "mcp-io-github-siteverdict-siteverdict"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q086",
+    "domain": "комплаенс-медицина-данные",
+    "q": "Wann brauche ich eine DPIA (DSFA) für ein KI-Projekt?",
+    "expect": [
+     "data-protection",
+     "eu-ai-governance",
+     "mcp-de-fraghugo-frag-hugo"
+    ],
+    "avoid": [
+     "mcp-io-github-ojaskord-data-compliance-mcp"
+    ],
+    "ranked": [
+     "mcp-de-fraghugo-frag-hugo",
+     "eu-ai-governance",
+     "data-protection",
+     "mcp-io-github-ichkifokkus-fast-data",
+     "mcp-io-github-cartonpliant-fr-legal-kit",
+     "mcp-app-openkrill-transcript-kit",
+     "mcp-com-clipcliper-clipcliper",
+     "mcp-com-getspm-spm",
+     "mcp-ai-fairmind-project-context",
+     "mcp-io-github-auto1225-quotebill"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q087",
+    "domain": "комплаенс-медицина-данные",
+    "q": "RoPA nach Art. 30 DSGVO aufsetzen",
+    "expect": [
+     "data-protection",
+     "mcp-de-fraghugo-frag-hugo"
+    ],
+    "avoid": [
+     "mcp-com-dpolens-dpolens"
+    ],
+    "ranked": [
+     "data-protection",
+     "mcp-io-github-lildaddyo-braintube-mcp",
+     "mcp-com-artifactshare-artifactshare",
+     "mcp-io-github-pipeworx-io-ema-article57",
+     "mcp-ai-artil-artil",
+     "mcp-com-a2awire-data-pubmed-biomedical-paper-research-article",
+     "mcp-io-github-pipeworx-io-nl-wetten",
+     "mcp-io-github-mister-franklin-wetwetwet-legislation",
+     "mcp-io-github-bosco-labs-eur-lex-uk-dutch-law",
+     "web-artifacts-builder"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q088",
+    "domain": "комплаенс-медицина-данные",
+    "q": "GDPR DSAR response deadline",
+    "expect": [
+     "data-protection",
+     "mcp-com-doubleaigents-www-dsar"
+    ],
+    "avoid": [
+     "mcp-com-moltlinestudio-regclock"
+    ],
+    "ranked": [
+     "mcp-com-doubleaigents-www-dsar",
+     "mcp-com-moltlinestudio-regclock",
+     "data-protection",
+     "mcp-dev-agentdiet-prompt-guard",
+     "mcp-io-github-br0ski777-gdpr-scanner",
+     "mcp-com-rulemesh-compliance",
+     "mcp-dev-hatchloop-compliance-check",
+     "mcp-io-github-mydatapass-mydatapass",
+     "mcp-com-dpolens-dpolens",
+     "mcp-eu-ansvar-eu-regulations"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "mcp-com-moltlinestudio-regclock"
+    ]
+   },
+   {
+    "qid": "Q089",
+    "domain": "комплаенс-медицина-данные",
+    "q": "немецкая медицинская энциклопедия для врачей",
+    "expect": [
+     "doccheck-flexikon"
+    ],
+    "avoid": [
+     "mcp-io-github-pipeworx-io-pubmed"
+    ],
+    "ranked": [
+     "doccheck-flexikon",
+     "court-document-analyzer",
+     "legal-domain-manager",
+     "german-legal-template-generator",
+     "zitierfest",
+     "normapi-einvoices",
+     "nu-legal",
+     "icd-10-codes",
+     "verification-foundation",
+     "german-legal-deadline-calculator"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q090",
+    "domain": "комплаенс-медицина-данные",
+    "q": "Коды МКБ-10 по версии ВОЗ",
+    "expect": [
+     "icd-10-codes",
+     "mcp-io-github-stayce-icd-mcp"
+    ],
+    "avoid": [
+     "mcp-io-accurecord-icd10-coding",
+     "mcp-io-github-cyanheads-medical-codes-mcp-server"
+    ],
+    "ranked": [
+     "icd-10-codes",
+     "nonprofit-grant-operations",
+     "mcp-io-github-gsms-b-indian-legal-mcp",
+     "mcp-com-pipecorn-mcp",
+     "data",
+     "mcp-io-github-hacrootechnologies-gydmation",
+     "mcp-com-transcribevideototext-transcribe",
+     "mcp-com-osir-domain-registrar",
+     "mcp-app-sallim-korea-realty",
+     "mcp-io-github-echomindr-echomindr"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q091",
+    "domain": "комплаенс-медицина-данные",
+    "q": "Welche Evidenz braucht ein KI-Medizinprodukt bei der FDA?",
+    "expect": [
+     "mcp-com-healthai-radar"
+    ],
+    "avoid": [
+     "mcp-io-github-donniertf-hub-ca-medical-devices-mcp",
+     "mcp-io-github-martc03-public-health"
+    ],
+    "ranked": [
+     "mcp-com-healthai-radar",
+     "mcp-io-github-pipeworx-io-symmap",
+     "mcp-io-github-pipeworx-io-fda-inspections",
+     "mcp-io-github-jesleytassili-glitch-healthcare-fda-clinical-mcp",
+     "mcp-io-github-sercanmetalore-clinical-fda-mcp",
+     "mcp-io-github-foundrynet-compliance-mcp",
+     "mcp-io-github-pipeworx-io-biotech-news",
+     "mcp-io-github-martc03-public-health",
+     "mcp-io-github-lexthirteen-ai-orinyx-mcp",
+     "mcp-io-github-hifarrer-cure-cancer-with-ai"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q092",
+    "domain": "комплаенс-медицина-данные",
+    "q": "Как вытащить данные из BigQuery для аналитики?",
+    "expect": [
+     "bigquery"
+    ],
+    "avoid": [
+     "definite",
+     "hex"
+    ],
+    "ranked": [
+     "amplitude",
+     "amplitude-eu",
+     "definite",
+     "bigquery",
+     "data",
+     "hex",
+     "google-sheets",
+     "shopify",
+     "make-com",
+     "plaid-developer-tools"
+    ],
+    "hit": true,
+    "rr": 0.25,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "definite"
+    ]
+   },
+   {
+    "qid": "Q093",
+    "domain": "комплаенс-медицина-данные",
+    "q": "Есть ли веб-аналитика без cookies и баннера?",
+    "expect": [
+     "mcp-com-statable-analytics",
+     "mcp-io-github-djedi-slimlytics",
+     "mcp-io-github-meetclawdius-measure-events"
+    ],
+    "avoid": [
+     "amplitude",
+     "mcp-com-dmarkoff-mcp"
+    ],
+    "ranked": [
+     "deep-research",
+     "ifttt",
+     "hex",
+     "computer-use",
+     "amplitude-eu",
+     "make-com",
+     "courtroom5",
+     "mcp-com-statable-analytics",
+     "mcp-io-github-djedi-slimlytics",
+     "mcp-ai-certscore-mcp-light"
+    ],
+    "hit": true,
+    "rr": 0.125,
+    "recall": 0.6666666666666666,
+    "avoid_in_top3": []
+   }
+  ],
+  "fallback": [
+   {
+    "qid": "Q001",
+    "domain": "право-фрг-социальное",
+    "q": "разобрать Bescheid, найти слабые места",
+    "expect": [
+     "court-document-analyzer",
+     "sozialrecht-sachsen"
+    ],
+    "avoid": [],
+    "ranked": [
+     "court-document-analyzer",
+     "legal-domain-manager",
+     "sozialrecht-sachsen",
+     "legal-domain-manager-extended",
+     "doc-coauthoring",
+     "lawve-ai",
+     "amplitude-eu",
+     "smart-backup-assistant",
+     "notion",
+     "verification-foundation"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q002",
+    "domain": "право-фрг-социальное",
+    "q": "Fristen для Widerspruch против Bescheid: как посчитать с учётом выходных?",
+    "expect": [
+     "german-legal-deadline-calculator",
+     "sozialrecht-sachsen"
+    ],
+    "avoid": [
+     "mcp-io-arxo-de-bgb"
+    ],
+    "ranked": [
+     "sozialrecht-sachsen",
+     "german-legal-deadline-calculator",
+     "court-document-analyzer",
+     "legal-domain-manager",
+     "german-legal-template-generator",
+     "legal-domain-manager-extended",
+     "lulius",
+     "make-com",
+     "samautomation-workflows",
+     "agent-discussion"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q003",
+    "domain": "право-фрг-социальное",
+    "q": "шаблон Klage для Sozialgericht",
+    "expect": [
+     "german-legal-template-generator",
+     "sozialrecht-sachsen"
+    ],
+    "avoid": [],
+    "ranked": [
+     "legal-domain-manager",
+     "german-legal-template-generator",
+     "sozialrecht-sachsen",
+     "court-document-analyzer",
+     "batch-file-renamer",
+     "workflow-automation",
+     "pptx",
+     "documentation-generator",
+     "multi-skill-system-builder",
+     "docx"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q004",
+    "domain": "право-фрг-социальное",
+    "q": "employer model: сколько стоят часы Assistenz с persönlichem Budget?",
+    "expect": [
+     "sozialrecht-sachsen"
+    ],
+    "avoid": [
+     "german-legal-template-generator"
+    ],
+    "ranked": [
+     "german-legal-template-generator",
+     "sozialrecht-sachsen",
+     "mcp-com-agentpmt-agentpmt",
+     "mcp-eu-comunicate-publishing",
+     "mcp-io-github-meet-cedric-cedric",
+     "mcp-io-github-rupesh7128-cofounderbase",
+     "mcp-io-github-open-agreements-open-agreements",
+     "mcp-com-lintelly-hr-deutschland",
+     "mcp-io-github-singleflo-odoo-assistant",
+     "mcp-io-github-catalyst-labs-dev-podcast-transcript-api"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "german-legal-template-generator"
+    ]
+   },
+   {
+    "qid": "Q005",
+    "domain": "право-фрг-социальное",
+    "q": "Hilfe zur Pflege: отказ в Bescheid, как возразить?",
+    "expect": [
+     "legal-domain-manager",
+     "sozialrecht-sachsen"
+    ],
+    "avoid": [
+     "mcp-io-github-helferundprofi-helfer-und-profi"
+    ],
+    "ranked": [
+     "sozialrecht-sachsen",
+     "court-document-analyzer",
+     "legal-domain-manager",
+     "doc-coauthoring",
+     "legal-domain-manager-extended",
+     "german-legal-template-generator",
+     "german-legal-deadline-calculator"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q006",
+    "domain": "право-фрг-социальное",
+    "q": "How do I file an urgent Eilantrag at the Sozialgericht?",
+    "expect": [
+     "legal-domain-manager-extended"
+    ],
+    "avoid": [
+     "legal-domain-manager"
+    ],
+    "ranked": [
+     "legal-domain-manager",
+     "legal-domain-manager-extended",
+     "german-legal-template-generator",
+     "court-document-analyzer",
+     "mcp-com-filetypeconverters-converter",
+     "mcp-io-doriku-task-manager",
+     "mcp-io-github-open-agreements-open-agreements",
+     "mcp-io-github-assinafy-mcp-server",
+     "mcp-dev-parsehub-parsehub",
+     "mcp-com-microsoft-workiq-m365copilot"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "legal-domain-manager"
+    ]
+   },
+   {
+    "qid": "Q007",
+    "domain": "право-фрг-социальное",
+    "q": "PKH Prozesskostenhilfe для иска",
+    "expect": [
+     "legal-domain-manager-extended"
+    ],
+    "avoid": [
+     "courtroom5"
+    ],
+    "ranked": [
+     "legal-domain-manager-extended",
+     "legal-domain-manager"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q008",
+    "domain": "право-фрг-социальное",
+    "q": "§ 84 SGG Wortlaut nachschlagen",
+    "expect": [
+     "lulius",
+     "mcp-io-github-pipeworx-io-de-gesetze",
+     "nu-legal"
+    ],
+    "avoid": [],
+    "ranked": [
+     "german-legal-deadline-calculator",
+     "sozialrecht-sachsen",
+     "mcp-dev-infranode-infranode",
+     "legal-domain-manager",
+     "zitierfest"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q009",
+    "domain": "право-фрг-социальное",
+    "q": "текст закона земли Sachsen (Landesrecht)",
+    "expect": [
+     "mcp-eu-nulegal-recht",
+     "nu-legal"
+    ],
+    "avoid": [
+     "lulius",
+     "mcp-io-github-pipeworx-io-de-gesetze"
+    ],
+    "ranked": [
+     "nu-legal",
+     "sozialrecht-sachsen",
+     "zitierfest",
+     "german-legal-deadline-calculator",
+     "descrybe-legal-engine",
+     "midpage-legal-research",
+     "legal-data-hunter",
+     "harvey",
+     "text-extraction-engine",
+     "pdf"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q010",
+    "domain": "право-фрг-социальное",
+    "q": "проверить citations в Widerspruch перед отправкой",
+    "expect": [
+     "sozialrecht-sachsen",
+     "zitierfest"
+    ],
+    "avoid": [
+     "verification-foundation"
+    ],
+    "ranked": [
+     "sozialrecht-sachsen",
+     "german-legal-template-generator",
+     "gmail",
+     "court-document-analyzer",
+     "german-legal-deadline-calculator",
+     "legal-domain-manager",
+     "internal-comms",
+     "verification-foundation",
+     "mcp-com-citationsafe-verifier",
+     "memory-toolkit"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q011",
+    "domain": "право-фрг-социальное",
+    "q": "Какие Urteile Bundessozialgerichts есть по persönlicher Assistenz?",
+    "expect": [
+     "lulius",
+     "nu-legal",
+     "zitierfest"
+    ],
+    "avoid": [
+     "courtlistener"
+    ],
+    "ranked": [
+     "court-document-analyzer",
+     "legal-domain-manager",
+     "german-legal-template-generator",
+     "sozialrecht-sachsen",
+     "zitierfest",
+     "german-legal-deadline-calculator"
+    ],
+    "hit": true,
+    "rr": 0.2,
+    "recall": 0.3333333333333333,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q012",
+    "domain": "право-фрг-социальное",
+    "q": "ICF-коды функционирования для Teilhabe",
+    "expect": [
+     "mcp-io-github-stayce-icf-mcp"
+    ],
+    "avoid": [
+     "mcp-io-github-stayce-icd-mcp"
+    ],
+    "ranked": [
+     "mcp-io-github-stayce-icf-mcp",
+     "icd-10-codes",
+     "german-legal-template-generator"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q013",
+    "domain": "право-фрг-еэс",
+    "q": "Verjährung, limitation period, BGB § 195",
+    "expect": [
+     "german-legal-deadline-calculator",
+     "mcp-io-arxo-de-bgb"
+    ],
+    "avoid": [],
+    "ranked": [
+     "mcp-io-arxo-de-bgb",
+     "german-legal-deadline-calculator",
+     "mcp-com-perisclaw-whatsapp",
+     "mcp-io-github-auto1225-quotebill",
+     "german-legal-template-generator",
+     "mcp-dev-quellenkontor-hr-daten",
+     "mcp-com-lintelly-hr-deutschland",
+     "ecosystem-curator",
+     "zitierfest"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q014",
+    "domain": "право-фрг-еэс",
+    "q": "Как найти федеральный закон по официальной аббревиатуре вроде SGB IX — есть ли поиск по Kürzel?",
+    "expect": [
+     "mcp-io-github-pipeworx-io-de-gesetze",
+     "zitierfest"
+    ],
+    "avoid": [
+     "mcp-io-github-johnjackhouzi-droit-francais"
+    ],
+    "ranked": [
+     "midpage-legal-research",
+     "sozialrecht-sachsen",
+     "german-legal-template-generator",
+     "nu-legal",
+     "harvey",
+     "lulius",
+     "courtlistener",
+     "legal-data-hunter",
+     "german-legal-deadline-calculator",
+     "descrybe-legal-engine"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q015",
+    "domain": "право-фрг-еэс",
+    "q": "BGH-Urteil по Aktenzeichen или ECLI",
+    "expect": [
+     "lulius",
+     "nu-legal",
+     "zitierfest"
+    ],
+    "avoid": [
+     "mcp-io-github-adakov589-judikatura-mcp"
+    ],
+    "ranked": [
+     "legal-domain-manager",
+     "mcp-io-github-smrht-ai-rechtshulp",
+     "zitierfest",
+     "court-document-analyzer",
+     "lulius",
+     "verification-foundation",
+     "german-legal-deadline-calculator"
+    ],
+    "hit": true,
+    "rr": 0.3333333333333333,
+    "recall": 0.6666666666666666,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q016",
+    "domain": "право-фрг-еэс",
+    "q": "Где искать решения EuGH по Vorabentscheidungsersuchen, а не только тексты регламентов?",
+    "expect": [
+     "mcp-io-github-cyanheads-eur-lex-mcp-server",
+     "mcp-io-github-lex-api-lexapi-mcp"
+    ],
+    "avoid": [
+     "mcp-io-github-mister-franklin-wetwetwet-legislation"
+    ],
+    "ranked": [
+     "zitierfest",
+     "lulius",
+     "nu-legal",
+     "ecosystem-curator",
+     "eu-ai-act-mcp",
+     "verification-foundation",
+     "courtlistener",
+     "harvey",
+     "court-document-analyzer",
+     "obsidian-notes"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q017",
+    "domain": "право-фрг-еэс",
+    "q": "Нужна Fundstelle BGBl. для федерального закона ФРГ: где её взять вместе с датой редакции?",
+    "expect": [
+     "zitierfest"
+    ],
+    "avoid": [
+     "mcp-io-github-cyanheads-ris-austria-mcp-server"
+    ],
+    "ranked": [
+     "nu-legal",
+     "zitierfest",
+     "lulius",
+     "midpage-legal-research",
+     "descrybe-legal-engine",
+     "courtlistener",
+     "harvey",
+     "legal-data-hunter",
+     "batch-file-renamer",
+     "legal-domain-manager-extended"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q018",
+    "domain": "право-фрг-еэс",
+    "q": "RVG GKG Gebühren Streitwert",
+    "expect": [
+     "lulius",
+     "zitierfest"
+    ],
+    "avoid": [
+     "mcp-de-nebenkostenpro-nebenkosten"
+    ],
+    "ranked": [
+     "zitierfest",
+     "lulius"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q019",
+    "domain": "право-фрг-еэс",
+    "q": "Где в Vergütungsverzeichnis RVG найти нужную Nummer Verfahrensgebühr?",
+    "expect": [
+     "zitierfest"
+    ],
+    "avoid": [],
+    "ranked": [
+     "zitierfest",
+     "lulius",
+     "lawve-ai",
+     "productivity",
+     "doc-coauthoring",
+     "verification-foundation",
+     "harvey",
+     "built-in-browser",
+     "computer-use",
+     "obsidian-notes"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q020",
+    "domain": "право-фрг-еэс",
+    "q": "Klagefrist: Fristberechnung с Feiertagen",
+    "expect": [
+     "german-legal-deadline-calculator",
+     "lulius"
+    ],
+    "avoid": [
+     "mcp-com-lintelly-hr-deutschland"
+    ],
+    "ranked": [
+     "german-legal-deadline-calculator"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q021",
+    "domain": "право-фрг-еэс",
+    "q": "Какая редакция § 558 BGB действовала на 1 января 2019 и что в ней менялось?",
+    "expect": [
+     "nu-legal",
+     "zitierfest"
+    ],
+    "avoid": [
+     "mcp-io-github-sfhajji-lex"
+    ],
+    "ranked": [
+     "mcp-io-arxo-de-bgb",
+     "nu-legal",
+     "german-legal-deadline-calculator",
+     "hex",
+     "ifttt",
+     "definite",
+     "german-legal-template-generator",
+     "descrybe-legal-engine",
+     "zapier-2",
+     "legal-domain-manager-extended"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q022",
+    "domain": "право-фрг-еэс",
+    "q": "EU regulation, Fassung am Stichtag",
+    "expect": [
+     "mcp-io-github-lex-api-lexapi-mcp",
+     "mcp-io-github-sfhajji-lex"
+    ],
+    "avoid": [],
+    "ranked": [
+     "mcp-eu-ansvar-eu-regulations",
+     "mcp-eu-ansvar-gateway",
+     "amplitude-eu",
+     "mcp-io-github-evidinvest-aether-developer",
+     "zitierfest",
+     "mcp-io-github-mcp-dir-sancoes-ue-mcp",
+     "mcp-io-github-mcp-dir-fincen-mcp",
+     "mcp-io-github-juliusgerman-entyrix-mcp",
+     "amplitude",
+     "mcp-io-github-liamohtee-agentcn"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q023",
+    "domain": "счета-бухгалтерия",
+    "q": "XRechnung kostenlos validieren ohne Konto",
+    "expect": [
+     "mcp-dev-invowerk-xrechnung-e-invoice-validator",
+     "normapi-einvoices"
+    ],
+    "avoid": [
+     "mcp-app-wishpool-italy-invoice-mcp",
+     "mcp-io-github-popapidev-pop-mcp"
+    ],
+    "ranked": [
+     "mcp-de-zugferd-validator-validator",
+     "mcp-dev-invowerk-xrechnung-e-invoice-validator",
+     "normapi-einvoices",
+     "mcp-com-invoicexml-invoicexml",
+     "mcp-dev-invoicehub-invoicehub",
+     "mcp-com-einvoicechecker-einvoice",
+     "mcp-io-github-peculiar-systems-invoicein",
+     "mcp-io-github-causa-prima-ai-scribo"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q024",
+    "domain": "счета-бухгалтерия",
+    "q": "Mit welchem Tool kann ich eine XRechnung im UBL-Format erzeugen?",
+    "expect": [
+     "mcp-com-invoicexml-invoicexml",
+     "mcp-dev-invoicehub-invoicehub",
+     "normapi-einvoices"
+    ],
+    "avoid": [
+     "mcp-app-wishpool-romania-invoice-mcp",
+     "mcp-app-wishpool-serbia-invoice-mcp"
+    ],
+    "ranked": [
+     "mcp-com-invoicexml-invoicexml",
+     "mcp-dev-invoicehub-invoicehub",
+     "normapi-einvoices",
+     "mcp-dev-invowerk-xrechnung-e-invoice-validator",
+     "mcp-com-filetypeconverters-converter",
+     "mcp-com-xenition-api-xenition",
+     "mcp-io-github-pipeworx-io-fda-inspections",
+     "mcp-co-lovie-company-formation",
+     "mcp-io-github-ichkifokkus-fast-data",
+     "mcp-com-mandateoffice-mandate"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q025",
+    "domain": "счета-бухгалтерия",
+    "q": "ZUGFeRD PDF erzeugen",
+    "expect": [
+     "mcp-com-invoicexml-invoicexml",
+     "mcp-io-github-causa-prima-ai-scribo",
+     "normapi-einvoices"
+    ],
+    "avoid": [
+     "mcp-dev-pressmark-pressmark",
+     "mcp-io-github-invoicepdfs-mcp"
+    ],
+    "ranked": [
+     "mcp-io-github-popapidev-pop-mcp",
+     "mcp-io-github-causa-prima-ai-scribo",
+     "normapi-einvoices",
+     "mcp-de-zugferd-validator-validator",
+     "mcp-com-invoicexml-invoicexml",
+     "mcp-com-einvoicechecker-einvoice",
+     "mcp-dev-invowerk-xrechnung-e-invoice-validator",
+     "mcp-dev-pdfops-pdfops-mcp",
+     "mcp-io-github-pdf4me-pdf4me-mcp",
+     "pdf"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q026",
+    "domain": "счета-бухгалтерия",
+    "q": "Wie prüfe ich eine E-Rechnung gegen EN 16931?",
+    "expect": [
+     "mcp-de-zugferd-validator-validator",
+     "mcp-io-github-invoicepdfs-mcp"
+    ],
+    "avoid": [
+     "mcp-es-beel-mcp",
+     "mcp-io-github-arceedev-verifactu-mcp"
+    ],
+    "ranked": [
+     "mcp-de-zugferd-validator-validator",
+     "mcp-io-github-ichkifokkus-fast-data",
+     "legal-domain-manager-extended",
+     "mcp-io-github-gege-mn-ray-mcp",
+     "mcp-com-agenttoolworks-invoiceforge",
+     "mcp-dev-invoicehub-invoicehub",
+     "mcp-io-github-invoicepdfs-mcp",
+     "mcp-io-github-causa-prima-ai-scribo",
+     "audit-question-bank",
+     "german-legal-deadline-calculator"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q027",
+    "domain": "счета-бухгалтерия",
+    "q": "KoSIT-Regeln Rechnung prüfen",
+    "expect": [
+     "normapi-einvoices"
+    ],
+    "avoid": [
+     "mcp-app-wishpool-greece-invoice-mcp",
+     "mcp-io-github-brunenjere-facturas-arca-json"
+    ],
+    "ranked": [
+     "mcp-de-zugferd-validator-validator",
+     "normapi-einvoices",
+     "audit-question-bank",
+     "batch-file-renamer",
+     "zitierfest"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q028",
+    "domain": "счета-бухгалтерия",
+    "q": "Which MCP server sends a Peppol BIS 3.0 invoice to a Belgian company?",
+    "expect": [
+     "mcp-app-wishpool-belgium-invoice-mcp"
+    ],
+    "avoid": [
+     "mcp-app-wishpool-denmark-invoice-mcp",
+     "mcp-app-wishpool-netherlands-invoice-mcp"
+    ],
+    "ranked": [
+     "mcp-app-wishpool-belgium-invoice-mcp",
+     "mcp-app-wishpool-luxembourg-invoice-mcp",
+     "mcp-app-wishpool-netherlands-invoice-mcp",
+     "mcp-app-wishpool-sweden-invoice-mcp",
+     "mcp-app-wishpool-norway-invoice-mcp",
+     "mcp-app-wishpool-finland-invoice-mcp",
+     "mcp-com-agenttoolworks-invoiceforge",
+     "mcp-com-einvoicechecker-einvoice",
+     "mcp-dev-invowerk-xrechnung-e-invoice-validator",
+     "mcp-io-github-causa-prima-ai-scribo"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "mcp-app-wishpool-netherlands-invoice-mcp"
+    ]
+   },
+   {
+    "qid": "Q029",
+    "domain": "счета-бухгалтерия",
+    "q": "Wie lese ich Lieferantenrechnungen aus PDF-Dateien für die Buchhaltung aus?",
+    "expect": [
+     "mcp-io-github-antondrakon-duebuddy-invoices",
+     "mcp-io-github-fashionmascherine-svg-document-to-json-mcp"
+    ],
+    "avoid": [
+     "mcp-io-github-ahutto87-parsel",
+     "mcp-io-github-brunenjere-facturas-arca-json"
+    ],
+    "ranked": [
+     "mcp-io-github-pipeworx-io-ip-australia",
+     "mcp-io-github-mastalier1997-austria-property",
+     "mcp-io-github-cyanheads-ris-austria-mcp-server",
+     "mcp-io-github-mcp-dir-sancoes-australia-mcp",
+     "mcp-au-com-aiframework-australian-ai-governance-framework",
+     "mcp-de-ausschreibungsagenten-tender-search",
+     "mcp-com-assetfy-mcp",
+     "mcp-io-github-jkbngb-handelsregister",
+     "mcp-com-erppartnerfinder-partner-finder",
+     "mcp-com-lowtoxgear-storefront"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q030",
+    "domain": "счета-бухгалтерия",
+    "q": "Bankauszug in Buchungssätze umwandeln",
+    "expect": [
+     "mcp-io-github-arceedev-contabridge-mcp"
+    ],
+    "avoid": [
+     "mcp-ai-saifs-payment-reconciliation",
+     "mcp-io-github-arceedev-norma43-mcp"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q031",
+    "domain": "счета-бухгалтерия",
+    "q": "Welche Software taugt für Buchhaltung und Steuern in europäischen Kleinunternehmen?",
+    "expect": [
+     "mcp-finance-norman-mcp-server"
+    ],
+    "avoid": [
+     "mcp-ai-deepledger-mcp",
+     "mcp-com-accountingqb-accountingqb"
+    ],
+    "ranked": [
+     "mcp-com-shaftware-componecat",
+     "mcp-co-chinaready-search",
+     "mcp-io-github-cognitive-emergence-prooftask",
+     "mcp-io-github-mcp-dir-astrea-mcp",
+     "mcp-com-thedailyworkflow-thedailyworkflow-mcp",
+     "mcp-com-mapiron-maps",
+     "mcp-dev-kognite-memory",
+     "mcp-com-pinsharing-maps",
+     "eu-ai-governance"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q032",
+    "domain": "счета-бухгалтерия",
+    "q": "Verzugszinsen Mahnung offene Rechnungen",
+    "expect": [
+     "mcp-com-pagofix-pagofix"
+    ],
+    "avoid": [
+     "mcp-dev-cotlet-invoice2go",
+     "mcp-io-github-bpays-benji-pays"
+    ],
+    "ranked": [
+     "mcp-de-zugferd-validator-validator",
+     "mcp-app-apiguru-amazon-data",
+     "mcp-io-github-diogoup26-mcp-x402",
+     "mcp-com-compsapi-ebay-sold-listings",
+     "german-legal-deadline-calculator"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q033",
+    "domain": "счета-бухгалтерия",
+    "q": "Rechnungen und Beiträge eines e.V. verwalten",
+    "expect": [
+     "mcp-io-github-ki-klub-werder-e-v-openverein"
+    ],
+    "avoid": [
+     "mcp-co-solidinvoice-mcp",
+     "mcp-io-github-golegally-accounting-mcp"
+    ],
+    "ranked": [
+     "mcp-de-zugferd-validator-validator",
+     "german-legal-deadline-calculator"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q034",
+    "domain": "счета-бухгалтерия",
+    "q": "XRechnung als JSON auslesen",
+    "expect": [
+     "mcp-io-github-peculiar-systems-invoicein"
+    ],
+    "avoid": [
+     "mcp-io-github-alex-dev-web-c-de-document-to-json-mcp",
+     "mcp-io-github-brunenjere-facturas-arca-json"
+    ],
+    "ranked": [
+     "mcp-io-github-peculiar-systems-invoicein",
+     "normapi-einvoices",
+     "mcp-dev-invowerk-xrechnung-e-invoice-validator",
+     "mcp-com-invoicexml-invoicexml",
+     "mcp-de-zugferd-validator-validator",
+     "mcp-dev-invoicehub-invoicehub",
+     "mcp-com-einvoicechecker-einvoice",
+     "mcp-io-github-causa-prima-ai-scribo",
+     "mcp-io-github-alex-dev-web-c-de-document-to-json-mcp",
+     "mcp-dev-agentdiet-json-repair"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q035",
+    "domain": "документы-таблицы",
+    "q": "Word-Dokument Änderungen nachverfolgen",
+    "expect": [
+     "docx"
+    ],
+    "avoid": [
+     "google-docs"
+    ],
+    "ranked": [
+     "docx",
+     "docs",
+     "mcp-io-github-latimer-woods-tech-wordis-bond",
+     "mcp-com-asrmemory-asr",
+     "mcp-com-wphealthkit-mcp-server",
+     "mcp-io-github-mistakili-toolora-mcp",
+     "mcp-dev-parsehub-parsehub",
+     "mcp-ai-umowy-polskie-prawo",
+     "mcp-com-speaktoyourdatabase-odoo-mcp",
+     "mcp-io-github-fernandoguiraud16-coder-audio-video-transcriber"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q036",
+    "domain": "документы-таблицы",
+    "q": "Как поправить формулы в Excel-таблице?",
+    "expect": [
+     "xlsx"
+    ],
+    "avoid": [
+     "google-sheets"
+    ],
+    "ranked": [
+     "xlsx",
+     "google-sheets",
+     "text-extraction-engine",
+     "docx",
+     "mcp-ai-saifs-payment-reconciliation",
+     "mcp-io-github-paul-salviani-trust-switchboard",
+     "mcp-io-github-mistakili-toolora-mcp",
+     "mcp-io-github-mrmaciej1-justfill-pdf-forms",
+     "mcp-com-a2awire-benchmark-transcript-audit-2026-09-19-4f00a8c9",
+     "google-workspace"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "google-sheets"
+    ]
+   },
+   {
+    "qid": "Q037",
+    "domain": "документы-таблицы",
+    "q": "PowerPoint Folien mit Sprechernotizen erstellen",
+    "expect": [
+     "pptx"
+    ],
+    "avoid": [
+     "google-slides"
+    ],
+    "ranked": [
+     "mcp-io-github-apaleo-mcp-server",
+     "mcp-io-github-cnucho-methodiq-tools",
+     "pptx",
+     "text-extraction-engine",
+     "google-workspace"
+    ],
+    "hit": true,
+    "rr": 0.3333333333333333,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q038",
+    "domain": "документы-таблицы",
+    "q": "Google Slides thumbnails and pages",
+    "expect": [
+     "google-slides"
+    ],
+    "avoid": [
+     "canva"
+    ],
+    "ranked": [
+     "google-slides",
+     "google-workspace",
+     "canva",
+     "mcp-com-autocontentapi-platform",
+     "notion",
+     "pptx",
+     "mcp-app-openkrill-page-fetch",
+     "mcp-dev-tanod-html-to-markdown",
+     "mcp-com-dondego-wikidata-google-knowledge-mcp",
+     "mcp-eu-nordicmcp-google-mail"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "canva"
+    ]
+   },
+   {
+    "qid": "Q039",
+    "domain": "документы-таблицы",
+    "q": "Google Sheets Zeilen anhängen",
+    "expect": [
+     "google-sheets"
+    ],
+    "avoid": [
+     "xlsx"
+    ],
+    "ranked": [
+     "google-sheets",
+     "mcp-ai-fgac-fgac",
+     "google-workspace",
+     "bigquery",
+     "google-drive",
+     "xlsx",
+     "mcp-ai-switchbooks-switchbooks",
+     "mcp-io-github-getsquish-squish",
+     "mcp-com-dondego-wikidata-google-knowledge-mcp",
+     "mcp-eu-nordicmcp-google-mail"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q040",
+    "domain": "документы-таблицы",
+    "q": "Notion Datenbank Einträge anlegen",
+    "expect": [
+     "notion"
+    ],
+    "avoid": [
+     "google-sheets"
+    ],
+    "ranked": [
+     "notion",
+     "mcp-com-insightfulpipe-notion",
+     "mcp-io-github-gege-mn-ray-mcp",
+     "mcp-com-turbonotify-turbo-notify",
+     "mcp-io-github-ptrinh-final-notice",
+     "mcp-io-github-noriget-agentping",
+     "mcp-io-github-applehorsefrog-vergabe-api",
+     "mcp-com-lycatra-lycatra",
+     "mcp-com-suprsend-mcp",
+     "mcp-ai-dreamlit-mcp"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q041",
+    "domain": "документы-таблицы",
+    "q": "OCR für gescannte PDF-Verträge",
+    "expect": [
+     "pdf",
+     "text-extraction-engine"
+    ],
+    "avoid": [
+     "pdf-viewer-plugin"
+    ],
+    "ranked": [
+     "mcp-io-github-skavio-eu-processing",
+     "mcp-io-github-pdf4me-pdf4me-mcp",
+     "pdf",
+     "text-extraction-engine",
+     "mcp-io-github-fashionmascherine-svg-document-to-json-mcp",
+     "mcp-com-corenexis-api",
+     "mcp-io-github-mistakili-toolora-mcp",
+     "mcp-io-github-andriyvk-apify-document-tools",
+     "mcp-io-github-denyskot1986-finekot-api-mcp",
+     "mcp-app-contendeo-contendeo"
+    ],
+    "hit": true,
+    "rr": 0.3333333333333333,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q042",
+    "domain": "документы-таблицы",
+    "q": "Можно ли заполнить PDF-форму и поставить подпись?",
+    "expect": [
+     "pdf",
+     "pdf-viewer-plugin"
+    ],
+    "avoid": [
+     "text-extraction-engine"
+    ],
+    "ranked": [
+     "pdf-viewer-plugin",
+     "pdf",
+     "docs",
+     "text-extraction-engine",
+     "chrome-browser",
+     "google-sheets",
+     "docx",
+     "normapi-einvoices",
+     "xlsx",
+     "data-protection"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q043",
+    "domain": "документы-таблицы",
+    "q": "Google Docs Dokument bearbeiten",
+    "expect": [
+     "google-docs",
+     "google-workspace"
+    ],
+    "avoid": [
+     "claude-docs-mcp"
+    ],
+    "ranked": [
+     "google-docs",
+     "docs",
+     "claude-docs-mcp",
+     "doc-coauthoring",
+     "docx",
+     "mcp-ai-fgac-fgac",
+     "google-workspace",
+     "google-drive",
+     "microsoft-365",
+     "documentation-generator"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "claude-docs-mcp"
+    ]
+   },
+   {
+    "qid": "Q044",
+    "domain": "документы-таблицы",
+    "q": "Как вести совместную работу над спецификацией с комментариями?",
+    "expect": [
+     "doc-coauthoring",
+     "docs"
+    ],
+    "avoid": [
+     "microsoft-365"
+    ],
+    "ranked": [
+     "doc-coauthoring",
+     "docs",
+     "documentation-generator",
+     "shopify",
+     "nonprofit-grant-operations",
+     "agent-handoff",
+     "nu-legal",
+     "notion",
+     "chat-migration-assistant",
+     "claude-docs-mcp"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q045",
+    "domain": "документы-таблицы",
+    "q": "SharePoint OneDrive Office files access",
+    "expect": [
+     "microsoft-365"
+    ],
+    "avoid": [
+     "google-drive"
+    ],
+    "ranked": [
+     "microsoft-365",
+     "google-drive",
+     "mcp-com-filetypeconverters-converter",
+     "mcp-com-a2awire-benchmark-access-change-request-recertify-2026-09-15-b578285f",
+     "mcp-io-github-wcag-compliance-mcp",
+     "mcp-io-github-ranuk12-ada-audits",
+     "mcp-io-github-groundlogic-ai-source-accessibility-ai",
+     "mcp-io-cypress-mcp-cypress-cloud",
+     "batch-file-renamer",
+     "mcp-ai-fgac-fgac"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "google-drive"
+    ]
+   },
+   {
+    "qid": "Q046",
+    "domain": "документы-таблицы",
+    "q": "Can Claude make a Canva presentation from a template?",
+    "expect": [
+     "canva"
+    ],
+    "avoid": [
+     "pptx"
+    ],
+    "ranked": [
+     "canva",
+     "google-slides",
+     "mcp-ai-gemus-gemus",
+     "mcp-dev-workers-cybermax-tools-cybermax-billsprig",
+     "mcp-ai-starsinger-starsinger-mcp",
+     "make-com",
+     "mcp-io-github-prometheus-maker-audio-video-transcriber",
+     "mcp-com-accountingqb-accountingqb",
+     "mcp-com-dpolens-dpolens",
+     "mcp-io-github-cnucho-methodiq-tools"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q047",
+    "domain": "почта-календарь-встречи",
+    "q": "Gmail: что уже подключено",
+    "expect": [
+     "gmail"
+    ],
+    "avoid": [
+     "mcp-ai-atmark-atmark"
+    ],
+    "ranked": [
+     "morning",
+     "mcp-ai-fgac-fgac",
+     "gmail",
+     "mcp-ai-mailmcp-mailmcp",
+     "mcp-co-lumman-mail",
+     "mcp-com-mcpemails-emails",
+     "mcp-io-github-peter-fusek-oncofiles",
+     "mcp-io-github-totesmagotes-mcp-server-auth",
+     "mcp-ai-atmark-atmark",
+     "mcp-eu-nordicmcp-google-mail"
+    ],
+    "hit": true,
+    "rr": 0.3333333333333333,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q048",
+    "domain": "почта-календарь-встречи",
+    "q": "Как искать письма сразу в Gmail, Outlook и iCloud?",
+    "expect": [
+     "mcp-co-lumman-mail",
+     "mcp-com-mcpemails-emails"
+    ],
+    "avoid": [
+     "gmail"
+    ],
+    "ranked": [
+     "mcp-co-lumman-mail",
+     "mcp-co-lumman-calendar",
+     "mcp-ai-mailmcp-mailmcp",
+     "mcp-com-mcpemails-emails",
+     "mcp-co-prosignature-email-signatures",
+     "mcp-app-openkrill-mailcheck",
+     "gmail",
+     "microsoft-365",
+     "mcp-ai-fgac-fgac",
+     "morning"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q049",
+    "domain": "почта-календарь-встречи",
+    "q": "агентский ящик, не личный Gmail",
+    "expect": [
+     "mcp-ai-artil-artil",
+     "mcp-ai-atmark-atmark",
+     "mcp-com-cooperemail-cooper-email"
+    ],
+    "avoid": [
+     "gmail"
+    ],
+    "ranked": [
+     "legalzoom",
+     "mcp-ai-fgac-fgac",
+     "gmail",
+     "mcp-ai-mailmcp-mailmcp",
+     "mcp-co-lumman-mail",
+     "mcp-com-mcpemails-emails",
+     "mcp-io-github-peter-fusek-oncofiles",
+     "mcp-io-github-totesmagotes-mcp-server-auth",
+     "mcp-ai-atmark-atmark",
+     "mcp-eu-nordicmcp-google-mail"
+    ],
+    "hit": true,
+    "rr": 0.1111111111111111,
+    "recall": 0.3333333333333333,
+    "avoid_in_top3": [
+     "gmail"
+    ]
+   },
+   {
+    "qid": "Q050",
+    "domain": "почта-календарь-встречи",
+    "q": "Какой инструмент делает E-Mail-Entwürfe с подтверждением владельца?",
+    "expect": [
+     "mcp-com-cooperemail-cooper-email",
+     "mcp-com-lockally-email"
+    ],
+    "avoid": [
+     "mcp-dev-emailmd-emailmd",
+     "mcp-dev-mailkite-mail-send"
+    ],
+    "ranked": [
+     "ecosystem-curator",
+     "google-calendar",
+     "midpage-legal-research",
+     "google-drive",
+     "google-slides",
+     "granola",
+     "gmail",
+     "google-docs",
+     "import-memory",
+     "descrybe-legal-engine"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q051",
+    "domain": "почта-календарь-встречи",
+    "q": "Google Kalender Termine und Einladungen",
+    "expect": [
+     "google-calendar",
+     "mcp-co-lumman-calendar"
+    ],
+    "avoid": [
+     "morning"
+    ],
+    "ranked": [
+     "google-calendar",
+     "mcp-io-github-sidneybissoli-medical-terminologies-mcp",
+     "mcp-com-claidex-failure-intelligence",
+     "google-workspace",
+     "mcp-com-dondego-wikidata-google-knowledge-mcp",
+     "mcp-eu-nordicmcp-google-mail",
+     "google-docs",
+     "mcp-io-github-steadyapi-scrapers",
+     "google-sheets",
+     "mcp-ai-fgac-fgac"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q052",
+    "domain": "почта-календарь-встречи",
+    "q": "Как собрать календари Outlook, iCloud и CalDAV в одном месте?",
+    "expect": [
+     "mcp-co-lumman-calendar"
+    ],
+    "avoid": [
+     "google-calendar"
+    ],
+    "ranked": [
+     "mcp-co-lumman-calendar",
+     "mcp-co-lumman-mail",
+     "productivity",
+     "notion",
+     "microsoft-365",
+     "google-calendar",
+     "legal-domain-manager-extended",
+     "mcp-ai-mailmcp-mailmcp",
+     "mcp-com-mcpemails-emails",
+     "mcp-co-prosignature-email-signatures"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q053",
+    "domain": "почта-календарь-встречи",
+    "q": "overlapping recurring meetings, skip weekends",
+    "expect": [
+     "mcp-com-moltlinestudio-timeops"
+    ],
+    "avoid": [
+     "mcp-io-github-donniertf-hub-ca-business-calendar-mcp"
+    ],
+    "ranked": [
+     "mcp-com-operatornest-tools",
+     "mcp-com-skipshit-mcp",
+     "mcp-com-autocontentapi-platform",
+     "mcp-io-github-noriget-agentcron",
+     "mcp-ai-contentsweep-supplier-feeds",
+     "mcp-io-github-catalyst-labs-dev-city-council-meeting-transcripts",
+     "mcp-com-recordmeeting-recordmeeting",
+     "mcp-com-dayschedule-mcp",
+     "mcp-ai-note1-mcp",
+     "mcp-com-liliphant-mcp-mcp"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q054",
+    "domain": "почта-календарь-встречи",
+    "q": "Транскрипты Granola доступны без платного тарифа?",
+    "expect": [
+     "granola"
+    ],
+    "avoid": [
+     "mcp-io-github-vomo-ai-vomo"
+    ],
+    "ranked": [
+     "granola",
+     "google-drive",
+     "computer-use",
+     "productivity",
+     "chrome-browser",
+     "make-com",
+     "smart-backup-assistant",
+     "session-audit-waves",
+     "tinyfish",
+     "guru"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q055",
+    "domain": "почта-календарь-встречи",
+    "q": "Besprechungsprotokoll mit Aufgaben und Tickets",
+    "expect": [
+     "granola",
+     "mcp-ai-note1-mcp",
+     "mcp-io-github-vomo-ai-vomo"
+    ],
+    "avoid": [
+     "mcp-io-github-catalyst-labs-dev-city-council-meeting-transcripts",
+     "mcp-io-github-catalyst-labs-dev-local-government-decision-lookup"
+    ],
+    "ranked": [
+     "mcp-ai-note1-mcp",
+     "mcp-ai-backengine-backengine-mcp",
+     "mcp-com-nextoolsolutions-glpi",
+     "german-legal-deadline-calculator"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.3333333333333333,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q056",
+    "domain": "почта-календарь-встречи",
+    "q": "утренний бриф на день",
+    "expect": [
+     "morning"
+    ],
+    "avoid": [
+     "enterprise-search"
+    ],
+    "ranked": [
+     "morning",
+     "google-calendar",
+     "productivity",
+     "german-legal-deadline-calculator",
+     "legal-domain-manager",
+     "nu-legal"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q057",
+    "domain": "почта-календарь-встречи",
+    "q": "Как поставить напоминание, которое придёт на почту или в календарь?",
+    "expect": [
+     "mcp-com-pingfyr-pingfyr",
+     "mcp-io-github-noriget-agentcron"
+    ],
+    "avoid": [
+     "mcp-com-pushizo-mcp"
+    ],
+    "ranked": [
+     "morning",
+     "productivity",
+     "notion",
+     "google-calendar",
+     "gmail",
+     "enterprise-search",
+     "microsoft-365",
+     "internal-comms",
+     "slack",
+     "lawve-ai"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q058",
+    "domain": "почта-календарь-встречи",
+    "q": "task tracker Linear or Asana",
+    "expect": [
+     "asana",
+     "linear"
+    ],
+    "avoid": [
+     "mcp-io-doriku-task-manager",
+     "mcp-io-github-f-tiger-bpj-ai-tools"
+    ],
+    "ranked": [
+     "asana",
+     "linear",
+     "productivity",
+     "mcp-ai-anomalyarmor-armor-mcp",
+     "mcp-com-ibluetext-ibluetext",
+     "mcp-io-github-lahutchins91-invoice",
+     "mcp-com-a2awire-benchmark-invoice-total-extraction-koda-24cece89",
+     "atlassian",
+     "mcp-com-a2awire-data-medical-research-trial-results-tracker",
+     "mcp-app-wishpool-germany-logistics-mcp"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q059",
+    "domain": "автоматизация",
+    "q": "make.com сценарии запуск отладка",
+    "expect": [
+     "make-com"
+    ],
+    "avoid": [
+     "zapier"
+    ],
+    "ranked": [
+     "make-com",
+     "zapier",
+     "zapier-2",
+     "samautomation-workflows",
+     "ifttt",
+     "plaid-developer-tools",
+     "workflow-automation",
+     "mcp-dev-workers-cybermax-tools-cybermax-billsprig",
+     "chrome-browser",
+     "mcp-io-agentlater-agentlater"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "zapier"
+    ]
+   },
+   {
+    "qid": "Q060",
+    "domain": "автоматизация",
+    "q": "Сколько приложений доступно в Zapier через MCP?",
+    "expect": [
+     "mcp-com-zapier-mcp"
+    ],
+    "avoid": [
+     "mcp-com-ifttt-mcp"
+    ],
+    "ranked": [
+     "zapier-2",
+     "ifttt",
+     "computer-use",
+     "zapier",
+     "built-in-browser",
+     "workflow-automation",
+     "google-workspace",
+     "mcp-com-zapier-mcp",
+     "google-drive",
+     "chrome-browser"
+    ],
+    "hit": true,
+    "rr": 0.125,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q061",
+    "domain": "автоматизация",
+    "q": "IFTTT Applets über MCP bauen",
+    "expect": [
+     "ifttt",
+     "mcp-com-ifttt-mcp"
+    ],
+    "avoid": [
+     "mcp-com-zapier-mcp"
+    ],
+    "ranked": [
+     "mcp-com-ifttt-mcp",
+     "ifttt",
+     "mcp-com-apple-rag-mcp-server",
+     "mcp-ai-sosumi-sosumi",
+     "mcp-io-github-applehorsefrog-vergabe-api",
+     "mcp-io-github-lmslay-tubetext-social-video-transcripts",
+     "zapier",
+     "make-com",
+     "german-legal-deadline-calculator",
+     "mcp-io-github-mcpservings-paper-mcp"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q062",
+    "domain": "автоматизация",
+    "q": "Какой сервис с открытым кодом можно использовать вместо Zapier?",
+    "expect": [
+     "mcp-io-github-blinkboxhq-blinkbox"
+    ],
+    "avoid": [
+     "mcp-com-zapier-mcp",
+     "zapier"
+    ],
+    "ranked": [
+     "icd-10-codes",
+     "clickup",
+     "linear",
+     "monday",
+     "guru",
+     "atlassian-plugin",
+     "hex",
+     "amplitude",
+     "amplitude-eu",
+     "legal-data-hunter"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q063",
+    "domain": "автоматизация",
+    "q": "n8n workflow validation without execution",
+    "expect": [
+     "mcp-co-com-elyraon-workflow-rescue",
+     "mcp-io-github-hacrootechnologies-gydmation",
+     "samautomation-workflows"
+    ],
+    "avoid": [
+     "mcp-com-aiagentcycle-aiagentcycle"
+    ],
+    "ranked": [
+     "mcp-co-com-elyraon-workflow-rescue",
+     "workflow-automation",
+     "samautomation-workflows",
+     "mcp-io-github-cnucho-researchpilot",
+     "mcp-io-github-kubeshop-testkube-mcp",
+     "make-com",
+     "mcp-io-github-hacrootechnologies-gydmation",
+     "mcp-io-github-cognitive-emergence-prooftask",
+     "mcp-io-github-blinkboxhq-blinkbox",
+     "mcp-io-github-chinlee2200-dotcom-bridgecore"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q064",
+    "domain": "автоматизация",
+    "q": "Как отладить вебхуки на localhost и повторить запросы?",
+    "expect": [
+     "mcp-io-github-pipehero-pipehero"
+    ],
+    "avoid": [
+     "mcp-ai-wakeshift-webhooks"
+    ],
+    "ranked": [
+     "mcp-io-github-pipehero-pipehero",
+     "ifttt",
+     "make-com",
+     "harvey",
+     "session-audit-waves",
+     "data-protection",
+     "skill-creator",
+     "morning",
+     "pdf",
+     "verification-foundation"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q065",
+    "domain": "автоматизация",
+    "q": "вебхук-триггер, который будит AI-агента",
+    "expect": [
+     "mcp-ai-wakeshift-webhooks"
+    ],
+    "avoid": [
+     "mcp-io-github-pipehero-pipehero"
+    ],
+    "ranked": [
+     "ifttt",
+     "vault-anything",
+     "agent-discussion",
+     "agent-handoff",
+     "multi-chat-orchestrator",
+     "make-com",
+     "computer-use",
+     "obsidian-notes",
+     "tinyfish",
+     "docs"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q066",
+    "domain": "автоматизация",
+    "q": "Wie leite ich Webhook-Payload-Typen aus echtem Traffic ab?",
+    "expect": [
+     "mcp-com-webhook-studio-webhooks"
+    ],
+    "avoid": [
+     "mcp-io-github-kroqdotdev-webhooks-cc"
+    ],
+    "ranked": [
+     "mcp-com-webhook-studio-webhooks",
+     "german-legal-deadline-calculator",
+     "mcp-dev-agentdiet-prompt-guard",
+     "mcp-io-github-ichkifokkus-fast-data",
+     "legal-domain-manager-extended",
+     "mcp-com-statable-analytics",
+     "mcp-ai-turingtap-turingtap",
+     "mcp-de-viafrei-mcp",
+     "mcp-io-github-pipeworx-io-ip-australia",
+     "mcp-io-github-mastalier1997-austria-property"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q067",
+    "domain": "автоматизация",
+    "q": "workflow orchestration with error handling",
+    "expect": [
+     "workflow-automation"
+    ],
+    "avoid": [
+     "mcp-dev-cloudgate-workflow",
+     "mcp-io-github-jonnyton-workflow-universe-server"
+    ],
+    "ranked": [
+     "workflow-automation",
+     "mcp-co-com-elyraon-workflow-rescue",
+     "mcp-com-agentpmt-agentpmt",
+     "mcp-app-paichart-mcp-hub",
+     "mcp-dev-urlpipe-mcp",
+     "mcp-io-github-mcdca-usertapes-mcp",
+     "mcp-com-agentfirststack-replay",
+     "mcp-dev-cloudgate-workflow",
+     "mcp-io-github-jonnyton-workflow-universe-server",
+     "samautomation-workflows"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q068",
+    "domain": "автоматизация",
+    "q": "Verfahrensanweisung in Flussdiagramm umwandeln",
+    "expect": [
+     "mcp-io-github-eyeinthesky6-unseen-workflow-compiler"
+    ],
+    "avoid": [
+     "mcp-io-github-flowzap-xyz-flowzap"
+    ],
+    "ranked": [],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q069",
+    "domain": "автоматизация",
+    "q": "Какой инструмент без программирования соединяет приложения и запускает сценарии по событиям?",
+    "expect": [
+     "ifttt",
+     "make-com",
+     "zapier"
+    ],
+    "avoid": [
+     "workflow-automation"
+    ],
+    "ranked": [
+     "make-com",
+     "zapier-2",
+     "ifttt",
+     "google-calendar",
+     "deep-research",
+     "samautomation-workflows",
+     "computer-use",
+     "google-workspace",
+     "morning",
+     "chrome-browser"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.6666666666666666,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q070",
+    "domain": "автоматизация",
+    "q": "отложенные HTTP-запросы агента и wake-up",
+    "expect": [
+     "mcp-io-agentlater-agentlater"
+    ],
+    "avoid": [
+     "mcp-com-pingfyr-pingfyr"
+    ],
+    "ranked": [
+     "mcp-ai-ciphyr-agentmart-agentmart",
+     "mcp-dev-pendnt-pendnt",
+     "mcp-io-agentlater-agentlater",
+     "vault-anything",
+     "mcp-ai-wakeshift-webhooks",
+     "mcp-ai-wakeshift-slackline",
+     "session-audit-waves",
+     "claude-code-bundled",
+     "agent-discussion",
+     "tinyfish"
+    ],
+    "hit": true,
+    "rr": 0.3333333333333333,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q071",
+    "domain": "память-знания",
+    "q": "handoff-сводка сессии для нового чата",
+    "expect": [
+     "context-handoff"
+    ],
+    "avoid": [
+     "agent-handoff"
+    ],
+    "ranked": [
+     "context-handoff",
+     "chat-migration-assistant",
+     "agent-handoff",
+     "chat-migration-pro",
+     "memory-toolkit",
+     "multi-chat-orchestrator",
+     "google-docs",
+     "granola",
+     "session-status-sweep",
+     "session-audit-waves"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "agent-handoff"
+    ]
+   },
+   {
+    "qid": "Q072",
+    "domain": "память-знания",
+    "q": "Как перенести затяжной проект в другой диалог и не потерять нить?",
+    "expect": [
+     "chat-migration-assistant",
+     "chat-migration-pro"
+    ],
+    "avoid": [
+     "import-memory"
+    ],
+    "ranked": [
+     "import-memory",
+     "chat-migration-assistant",
+     "context-handoff",
+     "memory-toolkit",
+     "zapier-2",
+     "takeout-drive-cleanup",
+     "web-artifacts-builder",
+     "documentation-generator",
+     "chat-migration-pro",
+     "smart-backup-assistant"
+    ],
+    "hit": true,
+    "rr": 0.5,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "import-memory"
+    ]
+   },
+   {
+    "qid": "Q073",
+    "domain": "память-знания",
+    "q": "checkpoint проверить через Git",
+    "expect": [
+     "chat-migration-pro"
+    ],
+    "avoid": [
+     "chat-migration-assistant"
+    ],
+    "ranked": [
+     "chat-migration-pro",
+     "chat-migration-assistant",
+     "mcp-dev-sprites-mcp",
+     "icd-10-codes",
+     "vault-anything",
+     "memory-toolkit",
+     "xlsx",
+     "computer-use",
+     "context-handoff",
+     "docx"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "chat-migration-assistant"
+    ]
+   },
+   {
+    "qid": "Q074",
+    "domain": "память-знания",
+    "q": "Как перенести Gedächtnis, которое другой ИИ-ассистент накопил обо мне, в Claude?",
+    "expect": [
+     "import-memory"
+    ],
+    "avoid": [
+     "chat-migration-assistant"
+    ],
+    "ranked": [
+     "import-memory",
+     "context-handoff",
+     "memory-toolkit",
+     "amplitude-eu",
+     "verification-foundation",
+     "agent-discussion",
+     "chat-migration-assistant",
+     "amplitude",
+     "chrome-browser",
+     "computer-use"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q075",
+    "domain": "память-знания",
+    "q": "Obsidian: сироты и битые ссылки",
+    "expect": [
+     "obsidian-notes"
+    ],
+    "avoid": [
+     "mcp-co-journalit-journalit"
+    ],
+    "ranked": [
+     "obsidian-notes",
+     "vault-anything",
+     "mcp-co-journalit-journalit",
+     "audit-question-bank",
+     "nu-legal",
+     "german-legal-template-generator",
+     "memory-toolkit",
+     "batch-file-renamer",
+     "verification-foundation",
+     "documentation-generator"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "mcp-co-journalit-journalit"
+    ]
+   },
+   {
+    "qid": "Q076",
+    "domain": "память-знания",
+    "q": "Можно ли собрать базу знаний в формате Obsidian прямо из исходников и документации?",
+    "expect": [
+     "vault-anything"
+    ],
+    "avoid": [
+     "obsidian-notes"
+    ],
+    "ranked": [
+     "obsidian-notes",
+     "doccheck-flexikon",
+     "vault-anything",
+     "guru",
+     "documentation-generator",
+     "enterprise-search",
+     "courtroom5",
+     "multi-skill-system-builder",
+     "session-audit-waves",
+     "deep-research"
+    ],
+    "hit": true,
+    "rr": 0.3333333333333333,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "obsidian-notes"
+    ]
+   },
+   {
+    "qid": "Q077",
+    "domain": "память-знания",
+    "q": "self-hosted Team-Wiki, которую пишет ИИ",
+    "expect": [
+     "mcp-dev-stuga-stuga"
+    ],
+    "avoid": [
+     "mcp-com-getagentwiki-agent-wiki"
+    ],
+    "ranked": [
+     "mcp-dev-stuga-stuga",
+     "mcp-com-getagentwiki-agent-wiki",
+     "obsidian-notes",
+     "documentation-generator",
+     "mcp-io-github-olegnickeshin-telegram-business-mcp",
+     "mcp-app-anakior-atlas-mind",
+     "mcp-dev-clusteragent-cluster-mcp",
+     "mcp-in-theboringpeople-mnema",
+     "mcp-dev-thebridge-bridge",
+     "verification-foundation"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "mcp-com-getagentwiki-agent-wiki"
+    ]
+   },
+   {
+    "qid": "Q078",
+    "domain": "память-знания",
+    "q": "поиск по внутренним знаниям компании",
+    "expect": [
+     "enterprise-search",
+     "mcp-com-knowalabs-knowa"
+    ],
+    "avoid": [
+     "mcp-com-reportgem-global-research"
+    ],
+    "ranked": [
+     "enterprise-search",
+     "guru",
+     "internal-comms",
+     "doccheck-flexikon",
+     "deep-research",
+     "ecosystem-curator",
+     "icd-10-codes",
+     "duplicate-hunter",
+     "canva",
+     "legal-data-hunter"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q079",
+    "domain": "память-знания",
+    "q": "заметки и закладки в чате",
+    "expect": [
+     "mcp-app-sensefold-sensefold",
+     "mcp-cn-moonlybox-moonlink",
+     "mcp-com-hjarni-hjarni"
+    ],
+    "avoid": [
+     "mcp-app-flowershow-flowershow"
+    ],
+    "ranked": [
+     "notion",
+     "granola",
+     "memory-toolkit",
+     "docs",
+     "pptx",
+     "doc-coauthoring",
+     "obsidian-notes",
+     "chat-migration-assistant",
+     "morning",
+     "google-slides"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q080",
+    "domain": "память-знания",
+    "q": "Как сделать, чтобы каждая новая сессия Claude не начиналась с нуля?",
+    "expect": [
+     "mcp-com-deerdawn-deerdawn",
+     "memory-toolkit"
+    ],
+    "avoid": [
+     "mcp-app-twiceshy-twiceshy"
+    ],
+    "ranked": [
+     "claude-code-bundled",
+     "context-handoff",
+     "claude-docs-mcp",
+     "session-status-sweep",
+     "chrome-browser",
+     "takeout-drive-cleanup",
+     "pdf",
+     "ecosystem-curator",
+     "doc-coauthoring",
+     "normapi-einvoices"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q081",
+    "domain": "память-знания",
+    "q": "Übergabe zwischen mehreren Agenten",
+    "expect": [
+     "mcp-com-llm-bus-llm-bus",
+     "mcp-io-github-josephibra-handoff-mcp-server"
+    ],
+    "avoid": [
+     "context-handoff"
+    ],
+    "ranked": [
+     "mcp-com-a2awire-agent-inbox",
+     "mcp-com-agentpmt-agentpmt",
+     "mcp-com-clauxel-agentmemorymcp-agentmemorymcp-mcp",
+     "mcp-com-agentemaillist-ai-free-transactional-email-smtp-relay",
+     "mcp-dev-agenttool-agenttool",
+     "mcp-io-agentlater-agentlater",
+     "mcp-com-brelsfordsoftware-agent-bounty-jobs",
+     "mcp-ai-ciphyr-agentmart-agentmart",
+     "mcp-dev-agent-module-mcp",
+     "mcp-io-github-jakubtrousil-agentsjunction"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q082",
+    "domain": "память-знания",
+    "q": "Notion-Seiten finden und lesen",
+    "expect": [
+     "notion"
+    ],
+    "avoid": [
+     "google-docs"
+    ],
+    "ranked": [
+     "notion",
+     "mcp-com-insightfulpipe-notion",
+     "mcp-com-superagnt-email-finder",
+     "mcp-com-findleademails-mcp",
+     "mcp-io-github-gege-mn-ray-mcp",
+     "mcp-com-findabis-findabis",
+     "mcp-com-mcpbundles-uk-court-finder",
+     "mcp-com-turbonotify-turbo-notify",
+     "mcp-io-github-ptrinh-final-notice",
+     "mcp-io-github-hkchao-findtime-mcp-server"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q083",
+    "domain": "комплаенс-медицина-данные",
+    "q": "классификация риска по AI Act",
+    "expect": [
+     "eu-ai-governance",
+     "mcp-eu-regulatoryai-sovereign-ai-act-mcp",
+     "mcp-io-github-sercanmetalore-ai-act-compliance-mcp"
+    ],
+    "avoid": [
+     "mcp-io-github-kajaril-sovereignty-scan-mcp"
+    ],
+    "ranked": [
+     "eu-ai-governance",
+     "eu-ai-act-mcp",
+     "data-protection",
+     "mcp-eu-regulatoryai-sovereign-ai-act-mcp",
+     "mcp-com-aiactradar-ai-act-radar",
+     "mcp-io-github-ark-forge-mcp-eu-ai-act",
+     "mcp-io-github-sercanmetalore-ai-act-compliance-mcp",
+     "mcp-ai-cotal-cotal",
+     "mcp-io-github-larshiensch99-warden",
+     "mcp-ai-harny-context"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q084",
+    "domain": "комплаенс-медицина-данные",
+    "q": "Какие сроки AI Act уже действуют сейчас и где за ними следить?",
+    "expect": [
+     "mcp-com-aiactradar-ai-act-radar",
+     "mcp-com-lunarasociety-intelligence"
+    ],
+    "avoid": [
+     "mcp-com-doubleaigents-www-dsar"
+    ],
+    "ranked": [
+     "eu-ai-act-mcp",
+     "data-protection",
+     "lulius",
+     "german-legal-deadline-calculator",
+     "legal-domain-manager",
+     "atlassian-2",
+     "court-document-analyzer",
+     "chrome-browser",
+     "built-in-browser",
+     "agent-discussion"
+    ],
+    "hit": false,
+    "rr": 0.0,
+    "recall": 0.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q085",
+    "domain": "комплаенс-медицина-данные",
+    "q": "сканер AI Act и GDPR",
+    "expect": [
+     "mcp-io-github-ark-forge-mcp-eu-ai-act"
+    ],
+    "avoid": [
+     "mcp-io-github-br0ski777-gdpr-scanner",
+     "mcp-io-github-kajaril-sovereignty-scan-mcp"
+    ],
+    "ranked": [
+     "mcp-io-github-ark-forge-mcp-eu-ai-act",
+     "mcp-eu-ansvar-eu-regulations",
+     "mcp-io-github-mydatapass-mydatapass",
+     "data-protection",
+     "text-extraction-engine",
+     "mcp-io-github-br0ski777-gdpr-scanner",
+     "eu-ai-governance",
+     "mcp-com-rulemesh-compliance",
+     "mcp-com-doubleaigents-www-dsar",
+     "mcp-io-github-siteverdict-siteverdict"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q086",
+    "domain": "комплаенс-медицина-данные",
+    "q": "Wann brauche ich eine DPIA (DSFA) für ein KI-Projekt?",
+    "expect": [
+     "data-protection",
+     "eu-ai-governance",
+     "mcp-de-fraghugo-frag-hugo"
+    ],
+    "avoid": [
+     "mcp-io-github-ojaskord-data-compliance-mcp"
+    ],
+    "ranked": [
+     "mcp-de-fraghugo-frag-hugo",
+     "eu-ai-governance",
+     "data-protection",
+     "mcp-io-github-ichkifokkus-fast-data",
+     "mcp-io-github-cartonpliant-fr-legal-kit",
+     "mcp-app-openkrill-transcript-kit",
+     "mcp-com-clipcliper-clipcliper",
+     "mcp-com-getspm-spm",
+     "mcp-ai-fairmind-project-context",
+     "mcp-io-github-auto1225-quotebill"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q087",
+    "domain": "комплаенс-медицина-данные",
+    "q": "RoPA nach Art. 30 DSGVO aufsetzen",
+    "expect": [
+     "data-protection",
+     "mcp-de-fraghugo-frag-hugo"
+    ],
+    "avoid": [
+     "mcp-com-dpolens-dpolens"
+    ],
+    "ranked": [
+     "data-protection",
+     "mcp-io-github-lildaddyo-braintube-mcp",
+     "mcp-com-artifactshare-artifactshare",
+     "mcp-io-github-pipeworx-io-ema-article57",
+     "mcp-ai-artil-artil",
+     "mcp-com-a2awire-data-pubmed-biomedical-paper-research-article",
+     "mcp-io-github-pipeworx-io-nl-wetten",
+     "mcp-io-github-mister-franklin-wetwetwet-legislation",
+     "mcp-io-github-bosco-labs-eur-lex-uk-dutch-law",
+     "web-artifacts-builder"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q088",
+    "domain": "комплаенс-медицина-данные",
+    "q": "GDPR DSAR response deadline",
+    "expect": [
+     "data-protection",
+     "mcp-com-doubleaigents-www-dsar"
+    ],
+    "avoid": [
+     "mcp-com-moltlinestudio-regclock"
+    ],
+    "ranked": [
+     "mcp-com-doubleaigents-www-dsar",
+     "mcp-com-moltlinestudio-regclock",
+     "data-protection",
+     "mcp-dev-agentdiet-prompt-guard",
+     "mcp-io-github-br0ski777-gdpr-scanner",
+     "mcp-com-rulemesh-compliance",
+     "mcp-dev-hatchloop-compliance-check",
+     "mcp-io-github-mydatapass-mydatapass",
+     "mcp-com-dpolens-dpolens",
+     "mcp-eu-ansvar-eu-regulations"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "mcp-com-moltlinestudio-regclock"
+    ]
+   },
+   {
+    "qid": "Q089",
+    "domain": "комплаенс-медицина-данные",
+    "q": "немецкая медицинская энциклопедия для врачей",
+    "expect": [
+     "doccheck-flexikon"
+    ],
+    "avoid": [
+     "mcp-io-github-pipeworx-io-pubmed"
+    ],
+    "ranked": [
+     "doccheck-flexikon",
+     "court-document-analyzer",
+     "legal-domain-manager",
+     "german-legal-template-generator",
+     "zitierfest",
+     "normapi-einvoices",
+     "nu-legal",
+     "icd-10-codes",
+     "verification-foundation",
+     "german-legal-deadline-calculator"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q090",
+    "domain": "комплаенс-медицина-данные",
+    "q": "Коды МКБ-10 по версии ВОЗ",
+    "expect": [
+     "icd-10-codes",
+     "mcp-io-github-stayce-icd-mcp"
+    ],
+    "avoid": [
+     "mcp-io-accurecord-icd10-coding",
+     "mcp-io-github-cyanheads-medical-codes-mcp-server"
+    ],
+    "ranked": [
+     "icd-10-codes",
+     "nonprofit-grant-operations",
+     "mcp-io-github-gsms-b-indian-legal-mcp",
+     "mcp-com-pipecorn-mcp",
+     "data",
+     "mcp-io-github-hacrootechnologies-gydmation",
+     "mcp-com-transcribevideototext-transcribe",
+     "mcp-com-osir-domain-registrar",
+     "mcp-app-sallim-korea-realty",
+     "mcp-io-github-echomindr-echomindr"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 0.5,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q091",
+    "domain": "комплаенс-медицина-данные",
+    "q": "Welche Evidenz braucht ein KI-Medizinprodukt bei der FDA?",
+    "expect": [
+     "mcp-com-healthai-radar"
+    ],
+    "avoid": [
+     "mcp-io-github-donniertf-hub-ca-medical-devices-mcp",
+     "mcp-io-github-martc03-public-health"
+    ],
+    "ranked": [
+     "mcp-com-healthai-radar",
+     "mcp-io-github-pipeworx-io-symmap",
+     "mcp-io-github-pipeworx-io-fda-inspections",
+     "mcp-io-github-jesleytassili-glitch-healthcare-fda-clinical-mcp",
+     "mcp-io-github-sercanmetalore-clinical-fda-mcp",
+     "mcp-io-github-foundrynet-compliance-mcp",
+     "mcp-io-github-pipeworx-io-biotech-news",
+     "mcp-io-github-martc03-public-health",
+     "mcp-io-github-lexthirteen-ai-orinyx-mcp",
+     "mcp-io-github-hifarrer-cure-cancer-with-ai"
+    ],
+    "hit": true,
+    "rr": 1.0,
+    "recall": 1.0,
+    "avoid_in_top3": []
+   },
+   {
+    "qid": "Q092",
+    "domain": "комплаенс-медицина-данные",
+    "q": "Как вытащить данные из BigQuery для аналитики?",
+    "expect": [
+     "bigquery"
+    ],
+    "avoid": [
+     "definite",
+     "hex"
+    ],
+    "ranked": [
+     "amplitude",
+     "amplitude-eu",
+     "definite",
+     "bigquery",
+     "data",
+     "hex",
+     "google-sheets",
+     "shopify",
+     "make-com",
+     "plaid-developer-tools"
+    ],
+    "hit": true,
+    "rr": 0.25,
+    "recall": 1.0,
+    "avoid_in_top3": [
+     "definite"
+    ]
+   },
+   {
+    "qid": "Q093",
+    "domain": "комплаенс-медицина-данные",
+    "q": "Есть ли веб-аналитика без cookies и баннера?",
+    "expect": [
+     "mcp-com-statable-analytics",
+     "mcp-io-github-djedi-slimlytics",
+     "mcp-io-github-meetclawdius-measure-events"
+    ],
+    "avoid": [
+     "amplitude",
+     "mcp-com-dmarkoff-mcp"
+    ],
+    "ranked": [
+     "deep-research",
+     "ifttt",
+     "hex",
+     "computer-use",
+     "amplitude-eu",
+     "make-com",
+     "courtroom5",
+     "mcp-com-statable-analytics",
+     "mcp-io-github-djedi-slimlytics",
+     "mcp-ai-certscore-mcp-light"
+    ],
+    "hit": true,
+    "rr": 0.125,
+    "recall": 0.6666666666666666,
+    "avoid_in_top3": []
+   }
+  ]
+ }
+}
