@@ -35,7 +35,7 @@ tags: ["Granola", "встречи", "транскрипты", "заметки", 
 ## Возможности
 - Поиск и чтение: `search_meetings`, `search_transcripts`, `get_meetings`, `get_meeting_transcript`, `list_meeting_folders` [2].
 - Самый медленный инструмент `query_granola_meetings`: по инструкциям сервера его используют, только если `search_meetings` и `get_meetings` не ответили на вопрос [2][3].
-- Изменение заметок и папок: `add_note_to_folder`, `create_folder`, `update_folder`, `remove_note_from_folder`, `update_private_notes` [2].
+- По именам инструментов, это инструменты изменения заметок и папок: `add_note_to_folder`, `create_folder`, `update_folder`, `remove_note_from_folder`, `update_private_notes`; поведение в выдержках не описано [2].
 - Сводки, шаблоны и вложения: `generate_summary`, `list_templates`, `get_meeting_attachment` [2].
 - Перед ответом о том, что говорили или решили на конкретной встрече, сервер велит прочитать её через `get_meetings` [3].
 
@@ -57,12 +57,12 @@ tags: ["Granola", "встречи", "транскрипты", "заметки", 
 - Мнение: если нужен календарь предстоящих встреч, коннектор не подходит: инструменты истории не показывают предстоящие события [3].
 
 ## Альтернативы
-- [[notion]] — заметки и базы знаний, если протоколы ведутся там.
-- [[google-calendar]] — даты и события встреч в календаре; предстоящие события Granola не показывает [3], см. карточку.
-- [[obsidian-notes]] — скилл, который по описанию делает папку с Markdown хранилищем Obsidian.
+- [[notion]] — см. карточку; если протоколы ведутся в Notion.
+- [[google-calendar]] — предстоящие события Granola не показывает [3]; см. карточку.
+- [[obsidian-notes]] — см. карточку.
 
 ## Источники
-1. инвентарь сессии: запись позиции (ListConnectors, ListSkills, системные уведомления) — raw://session/2026-11-10/inventory.json (снимок 2026-11-10, сверка не проводилась)
+1. инвентарь сессии: запись позиции (поле source: ListConnectors) — raw://session/2026-11-10/inventory.json (снимок 2026-11-10, сверка не проводилась)
 2. список инструментов, загруженных в сессию — raw://session/2026-11-10/tools-by-server.txt (снимок 2026-11-10, сверка не проводилась)
 3. системные инструкции MCP-сервера (сессия 2026-11-10) — raw://session/2026-11-10/evidence/mcp-instructions.txt (снимок 2026-11-10, сверка не проводилась)
 

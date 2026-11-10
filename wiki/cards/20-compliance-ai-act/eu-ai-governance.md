@@ -51,8 +51,8 @@ jurisdiction: "EU"
 - Мнение: команды вне Европы, так как описание адресовано европейским командам [2].
 
 ## Альтернативы
-- [[eu-ai-act-mcp]] — MCP-сервер по AI Act с 10 инструментами: классификация, статьи, сроки.
-- [[data-protection]] — GDPR-скиллы: инциденты, DPIA, запросы субъектов данных, RoPA и DPA.
+- [[eu-ai-act-mcp]] — см. карточку; политика конфиденциальности плагина ведёт в репозиторий eu-ai-act-mcp [2].
+- [[data-protection]] — DPIA есть и в этом плагине [1][2]; состав GDPR-скиллов см. в карточке.
 
 ## Источники
 1. Инвентарь сессии: запись позиции (список скиллов сессии), снимок 2026-11-10 — raw://session/2026-11-10/inventory.json
@@ -61,4 +61,6 @@ jurisdiction: "EU"
 
 ## Заявлено автором
 > «Source-grounded EU AI Act governance for European legal, compliance, privacy, security, and AI governance teams: classification, DPIA and FRIA workflows, vendor review, policy review, and evidence packs.» [2]
+
+Поле platform_description записи инвентаря [1], дословно (заявление записи, не проверенный факт):
 > «Скиллы AI Act: классификация риска, соответствие, оценка вендора, DPIA, политика, управление рисками, документация» [1]
