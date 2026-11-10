@@ -45,4 +45,4 @@
 | Q079 | заметки и закладки в чате | mcp-app-sensefold-sensefold, mcp-cn-moonlybox-moonlink, mcp-com-hjarni-hjarni | notion, granola, memory-toolkit, pptx, docs |
 | Q080 | Как сделать, чтобы каждая новая сессия Claude не начиналась с нуля? | mcp-com-deerdawn-deerdawn, memory-toolkit | claude-code-bundled, context-handoff, claude-docs-mcp, session-status-sweep, chrome-browser |
 | Q081 | Übergabe zwischen mehreren Agenten | mcp-com-llm-bus-llm-bus, mcp-io-github-josephibra-handoff-mcp-server | mcp-com-a2awire-agent-inbox, mcp-com-agentpmt-agentpmt, mcp-com-clauxel-agentmemorymcp-agentmemorymcp-mcp, mcp-com-agentemaillist-ai-free-transactional-email-smtp-relay, mcp-dev-agenttool-agenttool |
-| Q084 | Какие сроки AI Act уже действуют сейчас и где за ними следить? | mcp-com-aiactradar-ai-act-radar, mcp-com-lunarasociety-intelligence | eu-ai-act-mcp, data-protection, lulius, legal-domain-manager, german-legal-deadline-calculator |
+| Q084 | Какие сроки AI Act уже действуют сейчас и где за ними следить? | mcp-com-aiactradar-ai-act-radar, mcp-com-lunarasociety-intelligence | eu-ai-act-mcp, data-protection, lulius, atlassian-2, legal-domain-manager |

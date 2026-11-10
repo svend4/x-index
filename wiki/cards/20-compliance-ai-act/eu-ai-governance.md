@@ -16,13 +16,13 @@ snapshot: "2026-11-10"
 verified_on: null
 updated: "2026-11-10"
 group: "AI Act"
-tags: ["AI Act", "EU AI Act", "Регламент 2024/1689", "DPIA", "FRIA", "оценка вендоров", "evidence pack"]
+tags: ["AI Act", "EU AI Act", "eu-ai-governance", "DPIA", "FRIA", "оценка вендоров", "evidence pack"]
 jurisdiction: "EU"
 ---
 # Lexbeam EU AI Governance
 
 ## Суть
-- Плагин Lexbeam Software для юридических, комплаенс-, privacy-, security- и AI-governance-команд в Европе: классификация, DPIA и FRIA, проверка вендоров и политик, пакеты доказательств [2].
+- По описанию поставщика [2], плагин предназначен для юридических, комплаенс-, privacy-, security- и AI-governance-команд в Европе: классификация, DPIA и FRIA, проверка вендоров и политик, пакеты доказательств. Юрисдикция — EU (выведен по [2]: название плагина в манифесте содержит EU AI Act governance).
 - В описании платформы: скиллы по классификации риска, соответствию, оценке вендора, DPIA, политике, управлению рисками и документации [1].
 
 ## Для чего
@@ -35,7 +35,8 @@ jurisdiction: "EU"
 - Скиллы: классификация риска, соответствие, оценка вендора, DPIA, политика, управление рисками, документация [1].
 - Рабочие процессы DPIA и FRIA [2].
 - Проверка вендоров и политик; пакеты доказательств (evidence packs) [2].
-- Строка сервера [[eu-ai-act-mcp]] в списке инструментов сессии имеет префикс инструментов mcp__plugin_eu-ai-governance_eu-ai-act__ [3]: по префиксу сервер загружен как часть плагина (вывод по префиксу имён).
+- Инструменты MCP-сервера [[eu-ai-act-mcp]] по списку инструментов сессии [3]: классификация (euaiact_classify_system, euaiact_assess_system), исключение по статье 6(3) (euaiact_assess_art6_3_exception), порог GPAI (euaiact_check_gpai_systemic_risk), статьи и обязательства (euaiact_get_article, euaiact_get_obligations), сроки и штрафы (euaiact_check_deadlines, euaiact_calculate_penalty), чек-лист приложения IV (euaiact_annex_iv_checklist), вопросы (euaiact_answer_question) [3]. Префикс имён инструментов — mcp__plugin_eu-ai-governance_eu-ai-act__ [3]: по нему сервер загружен как часть плагина (вывод по префиксу имён).
+- Полный перечень скиллов плагина в выдержках не подтверждён: нет данных; в platform_description [1] перечислены темы.
 
 ## Чем выделяется
 - Заявлено автором: подход назван «Source-grounded EU AI Act governance» [2].

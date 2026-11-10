@@ -1739,8 +1739,8 @@
      "legal-domain-manager",
      "doc-coauthoring",
      "legal-domain-manager-extended",
-     "german-legal-template-generator",
-     "german-legal-deadline-calculator"
+     "german-legal-deadline-calculator",
+     "german-legal-template-generator"
     ],
     "hit": true,
     "rr": 1.0,
@@ -2129,8 +2129,8 @@
      "mcp-io-github-sfhajji-lex"
     ],
     "ranked": [
-     "mcp-io-arxo-de-bgb",
      "german-legal-deadline-calculator",
+     "mcp-io-arxo-de-bgb",
      "nu-legal",
      "hex",
      "ifttt",
@@ -2530,8 +2530,8 @@
      "mcp-io-github-paul-salviani-trust-switchboard",
      "mcp-io-github-mistakili-toolora-mcp",
      "mcp-io-github-mrmaciej1-justfill-pdf-forms",
-     "mcp-com-a2awire-benchmark-transcript-audit-2026-09-19-4f00a8c9",
-     "google-workspace"
+     "google-workspace",
+     "mcp-com-a2awire-benchmark-transcript-audit-2026-09-19-4f00a8c9"
     ],
     "hit": true,
     "rr": 1.0,
@@ -3797,8 +3797,8 @@
      "mcp-com-findleademails-mcp",
      "mcp-io-github-gege-mn-ray-mcp",
      "mcp-com-findabis-findabis",
-     "mcp-com-mcpbundles-uk-court-finder",
      "mcp-com-turbonotify-turbo-notify",
+     "mcp-com-mcpbundles-uk-court-finder",
      "mcp-io-github-ptrinh-final-notice",
      "mcp-io-github-hkchao-findtime-mcp-server"
     ],
@@ -3851,13 +3851,13 @@
      "eu-ai-act-mcp",
      "data-protection",
      "lulius",
+     "atlassian-2",
      "legal-domain-manager",
      "german-legal-deadline-calculator",
-     "atlassian-2",
+     "eu-ai-governance",
      "court-document-analyzer",
      "chrome-browser",
-     "built-in-browser",
-     "agent-discussion"
+     "built-in-browser"
     ],
     "hit": false,
     "rr": 0.0,
@@ -3913,8 +3913,8 @@
      "mcp-app-openkrill-transcript-kit",
      "mcp-com-clipcliper-clipcliper",
      "mcp-com-getspm-spm",
-     "mcp-ai-fairmind-project-context",
-     "mcp-io-github-auto1225-quotebill"
+     "mcp-io-github-auto1225-quotebill",
+     "mcp-ai-fairmind-project-context"
     ],
     "hit": true,
     "rr": 1.0,
@@ -3999,7 +3999,7 @@
      "nu-legal",
      "icd-10-codes",
      "verification-foundation",
-     "german-legal-deadline-calculator"
+     "descrybe-legal-engine"
     ],
     "hit": true,
     "rr": 1.0,
@@ -4251,8 +4251,8 @@
      "legal-domain-manager",
      "doc-coauthoring",
      "legal-domain-manager-extended",
-     "german-legal-template-generator",
-     "german-legal-deadline-calculator"
+     "german-legal-deadline-calculator",
+     "german-legal-template-generator"
     ],
     "hit": true,
     "rr": 1.0,
@@ -4641,8 +4641,8 @@
      "mcp-io-github-sfhajji-lex"
     ],
     "ranked": [
-     "mcp-io-arxo-de-bgb",
      "german-legal-deadline-calculator",
+     "mcp-io-arxo-de-bgb",
      "nu-legal",
      "hex",
      "ifttt",
@@ -5042,8 +5042,8 @@
      "mcp-io-github-paul-salviani-trust-switchboard",
      "mcp-io-github-mistakili-toolora-mcp",
      "mcp-io-github-mrmaciej1-justfill-pdf-forms",
-     "mcp-com-a2awire-benchmark-transcript-audit-2026-09-19-4f00a8c9",
-     "google-workspace"
+     "google-workspace",
+     "mcp-com-a2awire-benchmark-transcript-audit-2026-09-19-4f00a8c9"
     ],
     "hit": true,
     "rr": 1.0,
@@ -6309,8 +6309,8 @@
      "mcp-com-findleademails-mcp",
      "mcp-io-github-gege-mn-ray-mcp",
      "mcp-com-findabis-findabis",
-     "mcp-com-mcpbundles-uk-court-finder",
      "mcp-com-turbonotify-turbo-notify",
+     "mcp-com-mcpbundles-uk-court-finder",
      "mcp-io-github-ptrinh-final-notice",
      "mcp-io-github-hkchao-findtime-mcp-server"
     ],
@@ -6363,13 +6363,13 @@
      "eu-ai-act-mcp",
      "data-protection",
      "lulius",
+     "atlassian-2",
      "legal-domain-manager",
      "german-legal-deadline-calculator",
-     "atlassian-2",
+     "eu-ai-governance",
      "court-document-analyzer",
      "chrome-browser",
-     "built-in-browser",
-     "agent-discussion"
+     "built-in-browser"
     ],
     "hit": false,
     "rr": 0.0,
@@ -6425,8 +6425,8 @@
      "mcp-app-openkrill-transcript-kit",
      "mcp-com-clipcliper-clipcliper",
      "mcp-com-getspm-spm",
-     "mcp-ai-fairmind-project-context",
-     "mcp-io-github-auto1225-quotebill"
+     "mcp-io-github-auto1225-quotebill",
+     "mcp-ai-fairmind-project-context"
     ],
     "hit": true,
     "rr": 1.0,
@@ -6511,7 +6511,7 @@
      "nu-legal",
      "icd-10-codes",
      "verification-foundation",
-     "german-legal-deadline-calculator"
+     "descrybe-legal-engine"
     ],
     "hit": true,
     "rr": 1.0,
